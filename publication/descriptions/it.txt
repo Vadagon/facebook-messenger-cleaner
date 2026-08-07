@@ -1,0 +1,23 @@
+🧹 Pulisci Facebook Messenger più velocemente con Messenger Cleaner.
+
+Messenger Cleaner è un’estensione Chrome per eliminare in blocco le conversazioni di Facebook Messenger, archiviare le chat e ripristinare le conversazioni archiviate da un comodo pannello laterale. Organizza una casella di posta affollata senza aprire manualmente ogni menu.
+
+✨ FUNZIONI PRINCIPALI
+• Eliminazione in blocco delle conversazioni Messenger
+• Archiviazione di più chat Facebook
+• Ripristino delle chat archiviate
+• Pannello laterale sincronizzato con schede e navigazione
+• Avanzamento in tempo reale e pulsante di arresto
+• Pausa sicura quando la scheda è nascosta
+• Diverse velocità di elaborazione
+
+🔒 PRIVACY
+L’elaborazione avviene localmente nel browser e nella sessione Facebook esistente. L’estensione non raccoglie contenuti dei messaggi, password, cookie, liste di amici o dati delle conversazioni. Non include pubblicità né tracciamento comportamentale.
+
+🎁 PULIZIA GRATUITA GIORNALIERA
+Esegui fino a 10 eliminazioni o archiviazioni riuscite al giorno. Il ripristino delle chat archiviate è gratuito. Per operazioni più grandi è disponibile l’accesso illimitato.
+
+⚠️ IMPORTANTE
+L’eliminazione di una conversazione può essere permanente. Prima di eliminare è richiesta una conferma esplicita. Mantieni visibile la scheda Messenger durante il processo.
+
+Riprendi il controllo della tua casella Facebook Messenger con uno strumento rapido e semplice.

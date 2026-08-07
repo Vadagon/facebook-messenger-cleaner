@@ -1,0 +1,23 @@
+🧹 Räume Facebook Messenger schneller mit Messenger Cleaner auf.
+
+Messenger Cleaner ist eine Chrome-Erweiterung zum massenhaften Löschen von Facebook-Messenger-Unterhaltungen, Archivieren von Chats und Wiederherstellen archivierter Gespräche. Alle Funktionen befinden sich in einem übersichtlichen Seitenpanel, das Tabwechsel und die Navigation in Messenger direkt erkennt.
+
+✨ WICHTIGE FUNKTIONEN
+• Messenger-Unterhaltungen gesammelt löschen
+• Mehrere Facebook-Chats archivieren
+• Archivierte Chats wiederherstellen
+• Permanentes Seitenpanel mit Live-Fortschritt
+• Stopp-Schaltfläche und sichere Pause im Hintergrund
+• Mehrere Verarbeitungsgeschwindigkeiten
+• Unterstützung beliebter Facebook-Oberflächensprachen
+
+🔒 DATENSCHUTZ
+Die Verarbeitung findet lokal in deinem Browser und deiner bestehenden Facebook-Sitzung statt. Messenger Cleaner sammelt keine Nachrichteninhalte, Passwörter, Cookies, Freundeslisten oder Unterhaltungsdaten. Es gibt keine Werbung und kein Verhaltens-Tracking.
+
+🎁 TÄGLICH KOSTENLOS
+Bis zu 10 erfolgreiche Lösch- oder Archivierungsaktionen pro Tag sind kostenlos. Das Wiederherstellen archivierter Chats bleibt kostenlos. Für größere Aufräumaktionen steht unbegrenzter Zugriff zur Verfügung.
+
+⚠️ WICHTIG
+Das Löschen einer Unterhaltung kann endgültig sein. Vor dem Löschen ist eine ausdrückliche Bestätigung erforderlich. Lass den Messenger-Tab während der Verarbeitung sichtbar.
+
+Bringe Ordnung in deinen Facebook-Messenger-Posteingang – schneller löschen, archivieren und wiederherstellen.

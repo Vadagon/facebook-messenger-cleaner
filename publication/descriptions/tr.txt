@@ -1,0 +1,23 @@
+🧹 Facebook Messenger’ı Messenger Cleaner ile daha hızlı temizleyin.
+
+Messenger Cleaner; Facebook Messenger konuşmalarını toplu silmek, sohbetleri arşivlemek ve arşivlenmiş konuşmaları kullanışlı bir yan panelden geri yüklemek için geliştirilmiş bir Chrome uzantısıdır. Her konuşmanın menüsünü tek tek açmadan kalabalık Messenger gelen kutunuzu düzenleyin.
+
+✨ TEMEL ÖZELLİKLER
+• Messenger konuşmalarını toplu silme
+• Birden fazla Facebook sohbetini arşivleme
+• Arşivlenmiş sohbetleri geri yükleme
+• Sekme ve Messenger gezinmesini anında izleyen yan panel
+• Canlı ilerleme ve durdurma düğmesi
+• Sekme gizlendiğinde güvenli duraklatma
+• Birden fazla işlem hızı
+
+🔒 GİZLİLİK
+Tüm işlemler tarayıcınızda ve mevcut Facebook oturumunuzda yerel olarak yapılır. Uzantı mesaj içeriklerini, Facebook şifrelerini, çerezleri, arkadaş listelerini veya konuşma verilerini toplamaz. Reklam ve davranış takibi içermez.
+
+🎁 GÜNLÜK ÜCRETSİZ TEMİZLİK
+Günde 10 başarılı silme veya arşivleme işlemi ücretsizdir. Arşivlenmiş sohbetleri geri yüklemek ücretsizdir. Büyük temizlikler için sınırsız erişim alın.
+
+⚠️ ÖNEMLİ
+Bir konuşmayı silmek kalıcı olabilir. Silmeden önce açık onay gerekir. İşlem sırasında Messenger sekmesini görünür tutun.
+
+Facebook Messenger gelen kutunuzu hızlı ve kolay bir toplu yönetim aracıyla düzenleyin.

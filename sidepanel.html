@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Messenger Cleaner</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header class="topbar">
+    <img class="brand-mark" src="icons/icon48.png" width="40" height="40" alt="">
+    <div class="brand-copy">
+      <h1 data-i18n="panelTitle">Messenger Cleaner</h1>
+      <p data-i18n="panelSubtitle">Bulk clean your Facebook chats</p>
+    </div>
+    <button id="accessBadge" class="upgrade-badge" type="button" data-i18n="getUnlimited">GET UNLIMITED</button>
+  </header>
+
+  <main>
+    <section id="connectCard" class="card step-card step-active">
+      <div class="step-title">
+        <span class="step-number">1</span>
+        <h2 data-i18n="connectMessenger">Open Messenger</h2>
+        <span id="connectBadge" class="step-badge waiting" data-i18n="waiting">Waiting</span>
+      </div>
+      <p class="step-copy" data-i18n="connectDescription">Open your Messenger inbox in the tab beside this panel.</p>
+
+      <div class="connection-row" aria-live="polite">
+        <span id="contextDot" class="connection-dot"></span>
+        <div class="connection-copy">
+          <strong id="contextTitle" data-i18n="checkingTab">Checking current tab…</strong>
+          <span id="contextUrl"></span>
+        </div>
+        <button id="refreshButton" class="icon-button" type="button" data-i18n-aria="refresh" aria-label="Refresh">↻</button>
+      </div>
+
+      <div id="unsupportedView" class="open-messenger" hidden>
+        <p data-i18n="openMessengerDescription">Switch to a Messenger inbox to start cleaning conversations.</p>
+        <button id="openMessengerButton" class="primary-button" type="button" data-i18n="openMessengerButton">Open Messenger</button>
+      </div>
+    </section>
+
+    <div id="controlsView" hidden>
+      <section id="actionStep" class="card step-card step-active">
+        <div class="step-title">
+          <span class="step-number">2</span>
+          <h2 data-i18n="chooseCleanupAction">Choose an action</h2>
+          <span id="actionBadge" class="step-badge" data-i18n="ready">Ready</span>
+        </div>
+        <div class="step-subrow">
+          <p class="step-copy" data-i18n="actionDescription">Choose what Messenger Cleaner should do with your conversations.</p>
+          <label class="speed-control">
+            <span data-i18n="speed">Speed</span>
+            <select id="speedSelect">
+              <option value="safe" data-i18n="speedSafe">Safe</option>
+              <option value="normal" data-i18n="speedNormal">Normal</option>
+              <option value="fast" data-i18n="speedFast">Fast</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button class="action-option delete-option" type="button" data-operation="delete">
+            <span class="action-icon" aria-hidden="true">⌫</span>
+            <span><strong data-i18n="deleteAll">Delete all chats</strong><small data-i18n="deleteAllDescription">Permanently remove every visible conversation</small></span>
+            <b aria-hidden="true">›</b>
+          </button>
+          <button class="action-option archive-option" type="button" data-operation="archive">
+            <span class="action-icon" aria-hidden="true">▣</span>
+            <span><strong data-i18n="archiveAll">Archive all chats</strong><small data-i18n="archiveAllDescription">Move inbox conversations into the archive</small></span>
+            <b aria-hidden="true">›</b>
+          </button>
+          <button class="action-option restore-option" type="button" data-operation="unarchive">
+            <span class="action-icon" aria-hidden="true">↥</span>
+            <span><strong data-i18n="restoreAll">Restore archived chats</strong><small data-i18n="restoreAllDescription">Open Archived chats to restore conversations</small></span>
+            <b aria-hidden="true">›</b>
+          </button>
+        </div>
+      </section>
+
+      <section id="runStep" class="card step-card step-disabled">
+        <div class="step-title">
+          <span class="step-number">3</span>
+          <h2 data-i18n="processTitle">Process conversations</h2>
+          <span id="runBadge" class="step-badge waiting" data-i18n="waiting">Waiting</span>
+        </div>
+
+        <div id="statusCard" class="process-status" aria-live="polite">
+          <div class="status-heading">
+            <span id="statusSpinner" class="spinner" hidden></span>
+            <span id="statusReadyIcon" class="status-ready" aria-hidden="true">✓</span>
+            <div>
+              <span id="statusKicker" data-i18n="ready">Ready</span>
+              <strong id="statusMessage" data-i18n="chooseAction">Choose an action above</strong>
+            </div>
+            <button id="stopButton" class="stop-button" type="button" hidden data-i18n="stop">Stop</button>
+          </div>
+
+          <section id="quotaCard" class="quota-progress" aria-live="polite" hidden>
+            <div class="progress-label">
+              <span data-i18n="dailyFreeUsage">Daily free usage</span>
+              <strong id="quotaCount">0/10</strong>
+            </div>
+            <div class="track"><i id="quotaFill"></i></div>
+            <div class="quota-footer">
+              <span data-i18n="quotaExplanation">Deletes and archives share a limit of 10 per day.</span>
+              <button id="upgradeButton" type="button" data-i18n="getUnlimited">Get unlimited</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <aside class="notice">
+        <span aria-hidden="true">!</span>
+        <p><strong data-i18n="keepTabVisible">Keep the Messenger tab visible.</strong> <span data-i18n="pauseNotice">Cleaning pauses safely when you switch away and resumes when you return.</span></p>
+      </aside>
+    </div>
+
+    <footer>
+      <p><span aria-hidden="true">◈</span> <span data-i18n="localPrivacy">Runs locally in your browser</span> · <span data-i18n="noData">No message data collected</span></p>
+      <span id="extensionVersion">v—</span>
+    </footer>
+  </main>
+
+  <dialog id="confirmDialog">
+    <form method="dialog" class="dialog-content">
+      <div class="dialog-icon danger">!</div>
+      <h2 data-i18n="confirmDeleteTitle">Delete every conversation?</h2>
+      <p data-i18n="confirmDeleteDescription">This cannot be undone. Messenger may permanently remove the conversations and their message history.</p>
+      <label class="confirm-check"><input id="confirmCheckbox" type="checkbox"><span data-i18n="confirmDeleteCheckbox">I understand this action is permanent</span></label>
+      <div class="dialog-actions">
+        <button value="cancel" class="secondary-button" data-i18n="cancel">Cancel</button>
+        <button id="confirmDeleteButton" value="confirm" class="danger-button" disabled data-i18n="deleteNow">Delete now</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="upgradeDialog">
+    <form method="dialog" class="dialog-content">
+      <button class="dialog-close" value="close" data-i18n-aria="close" aria-label="Close">×</button>
+      <div class="dialog-icon upgrade">∞</div>
+      <p class="dialog-eyebrow" data-i18n="freePlanLimit">FREE PLAN LIMIT</p>
+      <h2 id="upgradeTitle" data-i18n="dailyLimitTitle">Your 10 free actions are used</h2>
+      <p id="upgradeDescription" data-i18n="dailyLimitDescription">The free plan includes 10 deletes or archives each day. Upgrade for unlimited cleaning.</p>
+      <ul class="benefits">
+        <li data-i18n="unlimitedBenefit">Unlimited deletes and archives</li>
+        <li data-i18n="allExtensionsBenefit">Access to the CleanMySocial bundle</li>
+        <li data-i18n="lifetimeBenefit">One-time purchase</li>
+      </ul>
+      <button id="purchaseButton" class="primary-button" type="button" data-i18n="getUnlimitedAccess">Get unlimited access</button>
+      <div class="license-divider"><span data-i18n="alreadyPurchased">Already purchased?</span></div>
+      <div class="license-row">
+        <input id="licenseInput" type="text" autocomplete="off" spellcheck="false" data-i18n-placeholder="licensePlaceholder" placeholder="License key">
+        <button id="unlockButton" type="button" data-i18n="unlock">Unlock</button>
+      </div>
+      <p id="licenseMessage" class="license-message" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <dialog id="reviewDialog">
+    <form method="dialog" class="dialog-content">
+      <div class="dialog-icon review">★</div>
+      <p class="dialog-eyebrow" data-i18n="batchComplete">BATCH COMPLETE</p>
+      <h2 data-i18n="reviewTitle">Enjoying Messenger Cleaner?</h2>
+      <p data-i18n="reviewDescription">A quick Chrome Web Store review helps more people discover the extension.</p>
+      <div class="dialog-actions">
+        <button value="later" class="secondary-button" data-i18n="maybeLater">Maybe later</button>
+        <button id="reviewButton" type="button" class="primary-button" data-i18n="leaveReview">Leave a review</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

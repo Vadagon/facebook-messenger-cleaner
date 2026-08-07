@@ -1,0 +1,86 @@
+{
+  "extensionName": { "message": "Messenger Cleaner – Delete All Facebook Messages" },
+  "extensionShortName": { "message": "Messenger Cleaner" },
+  "extensionDescription": { "message": "Bulk delete Facebook Messenger conversations and remove unwanted messages to clean your inbox in 1 click." },
+  "panelTitle": { "message": "Messenger Cleaner" },
+  "checkingTab": { "message": "Checking current tab…" },
+  "refresh": { "message": "Refresh" },
+  "openMessengerTitle": { "message": "Open Facebook Messenger" },
+  "openMessengerDescription": { "message": "Switch to a Messenger inbox to start cleaning conversations." },
+  "openMessengerButton": { "message": "Open Messenger" },
+  "ready": { "message": "Ready" },
+  "chooseAction": { "message": "Choose an action below" },
+  "stop": { "message": "Stop" },
+  "inboxTools": { "message": "INBOX TOOLS" },
+  "bulkActions": { "message": "Bulk actions" },
+  "speed": { "message": "Speed" },
+  "speedSafe": { "message": "Safe" },
+  "speedNormal": { "message": "Normal" },
+  "speedFast": { "message": "Fast" },
+  "deleteAll": { "message": "Delete all chats" },
+  "deleteAllDescription": { "message": "Permanently remove every visible conversation" },
+  "archiveAll": { "message": "Archive all chats" },
+  "archiveAllDescription": { "message": "Move inbox conversations into the archive" },
+  "restoreAll": { "message": "Restore archived chats" },
+  "restoreAllDescription": { "message": "Open Archived chats to restore conversations" },
+  "keepTabVisible": { "message": "Keep the Messenger tab visible." },
+  "pauseNotice": { "message": "Cleaning pauses safely when you switch away and resumes when you return." },
+  "localPrivacy": { "message": "Runs locally in your browser" },
+  "noData": { "message": "No message data collected" },
+  "confirmDeleteTitle": { "message": "Delete every conversation?" },
+  "confirmDeleteDescription": { "message": "This cannot be undone. Messenger may permanently remove the conversations and their message history." },
+  "confirmDeleteCheckbox": { "message": "I understand this action is permanent" },
+  "cancel": { "message": "Cancel" },
+  "deleteNow": { "message": "Delete now" },
+  "connectedToMessenger": { "message": "Connected to Messenger" },
+  "loadingMessenger": { "message": "Loading Messenger…" },
+  "notOnMessenger": { "message": "Messenger is not active" },
+  "noActiveTab": { "message": "No active tab" },
+  "openArchivedTooltip": { "message": "Open Archived chats to restore conversations" },
+  "archiveUnavailableTooltip": { "message": "Archiving is unavailable on Archived chats" },
+  "working": { "message": "Working" },
+  "paused": { "message": "Paused" },
+  "complete": { "message": "Complete" },
+  "stopped": { "message": "Stopped" },
+  "error": { "message": "Error" },
+  "status": { "message": "Status" },
+  "startFailed": { "message": "Could not start the operation." },
+  "starting": { "message": "Starting…" }
+  ,"freeBadge": { "message": "FREE" }
+  ,"unlimitedBadge": { "message": "UNLIMITED" }
+  ,"dailyFreeUsage": { "message": "Daily free usage" }
+  ,"getUnlimited": { "message": "GET UNLIMITED" }
+  ,"quotaExplanation": { "message": "Deletes and archives share a limit of 10 per day." }
+  ,"close": { "message": "Close" }
+  ,"freePlanLimit": { "message": "FREE PLAN LIMIT" }
+  ,"dailyLimitTitle": { "message": "Your 10 free actions are used" }
+  ,"dailyLimitDescription": { "message": "The free plan includes 10 deletes or archives each day. Upgrade for unlimited cleaning." }
+  ,"upgradeTitle": { "message": "Unlock unlimited cleaning" }
+  ,"upgradeDescription": { "message": "Remove the daily limit and clean your social accounts whenever you want." }
+  ,"unlimitedBenefit": { "message": "Unlimited deletes and archives" }
+  ,"allExtensionsBenefit": { "message": "Access to the CleanMySocial bundle" }
+  ,"lifetimeBenefit": { "message": "One-time purchase" }
+  ,"getUnlimitedAccess": { "message": "Get unlimited access" }
+  ,"alreadyPurchased": { "message": "Already purchased?" }
+  ,"licensePlaceholder": { "message": "License key" }
+  ,"unlock": { "message": "Unlock" }
+  ,"checkingLicense": { "message": "Checking license…" }
+  ,"licenseActivated": { "message": "Unlimited access activated." }
+  ,"licenseInvalid": { "message": "That license key is not active." }
+  ,"batchComplete": { "message": "BATCH COMPLETE" }
+  ,"reviewTitle": { "message": "Enjoying Messenger Cleaner?" }
+  ,"reviewDescription": { "message": "A quick Chrome Web Store review helps more people discover the extension." }
+  ,"maybeLater": { "message": "Maybe later" }
+  ,"leaveReview": { "message": "Leave a review" }
+  ,"panelSubtitle": { "message": "Bulk clean your Facebook chats" }
+  ,"connectMessenger": { "message": "Open Messenger" }
+  ,"connectDescription": { "message": "Open your Messenger inbox in the tab beside this panel." }
+  ,"waiting": { "message": "Waiting" }
+  ,"connected": { "message": "Connected" }
+  ,"loading": { "message": "Loading" }
+  ,"chooseCleanupAction": { "message": "Choose an action" }
+  ,"actionDescription": { "message": "Choose what Messenger Cleaner should do with your conversations." }
+  ,"processTitle": { "message": "Process conversations" }
+  ,"inboxView": { "message": "Inbox" }
+  ,"archivedView": { "message": "Archived" }
+}

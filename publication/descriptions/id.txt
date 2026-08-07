@@ -1,0 +1,23 @@
+🧹 Bersihkan Facebook Messenger lebih cepat dengan Messenger Cleaner.
+
+Messenger Cleaner adalah ekstensi Chrome untuk menghapus percakapan Facebook Messenger secara massal, mengarsipkan chat, dan memulihkan percakapan yang diarsipkan melalui panel samping yang praktis. Rapikan kotak masuk Messenger tanpa membuka menu setiap percakapan satu per satu.
+
+✨ FITUR UTAMA
+• Hapus percakapan Messenger secara massal
+• Arsipkan beberapa chat Facebook
+• Pulihkan chat dari Arsip
+• Panel samping yang mengikuti perpindahan tab dan navigasi Messenger
+• Progres langsung dan tombol berhenti
+• Jeda aman saat tab disembunyikan
+• Beberapa pilihan kecepatan
+
+🔒 PRIVASI
+Semua proses berlangsung secara lokal di browser dan sesi Facebook Anda. Ekstensi tidak mengumpulkan isi pesan, kata sandi Facebook, cookie, daftar teman, atau data percakapan. Tidak ada iklan atau pelacakan perilaku.
+
+🎁 PEMBERSIHAN GRATIS HARIAN
+Gunakan hingga 10 tindakan hapus atau arsip yang berhasil per hari. Memulihkan chat yang diarsipkan tetap gratis. Dapatkan akses tanpa batas untuk pembersihan kotak masuk yang lebih besar.
+
+⚠️ PENTING
+Menghapus percakapan dapat bersifat permanen. Konfirmasi tegas diperlukan sebelum penghapusan. Biarkan tab Messenger tetap terlihat selama proses berjalan.
+
+Kelola kotak masuk Facebook Messenger dengan alat massal yang cepat dan sederhana.

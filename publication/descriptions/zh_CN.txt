@@ -1,0 +1,24 @@
+🧹 使用 Messenger Cleaner 更快清理 Facebook Messenger。
+
+Messenger Cleaner 是一款 Chrome 扩展程序，可通过便捷的侧边栏批量删除 Facebook Messenger 对话、归档聊天以及恢复已归档的对话。无需逐个打开聊天菜单，即可整理拥挤的 Messenger 收件箱。
+
+✨ 主要功能
+• 批量删除 Messenger 对话
+• 一次归档多个 Facebook 聊天
+• 恢复已归档的聊天
+• 侧边栏实时跟随标签页和 Messenger 页面导航
+• 实时进度、停止按钮和每日用量显示
+• 标签页隐藏时安全暂停
+• 多种处理速度
+• 支持多种常用 Facebook 界面语言
+
+🔒 隐私优先
+所有处理均在您的浏览器和现有 Facebook 登录会话中本地完成。Messenger Cleaner 不会收集消息内容、Facebook 密码、Cookie、好友列表或对话数据，也不包含广告或行为跟踪。
+
+🎁 每日免费清理
+每天可免费完成最多 10 次删除或归档操作。恢复已归档聊天不计入限制。如需处理更大的 Messenger 收件箱，可升级为无限使用。
+
+⚠️ 重要提示
+删除对话可能无法撤销。执行删除前必须明确确认。操作期间请保持 Messenger 标签页可见。
+
+使用快速、清晰的批量聊天管理工具，轻松整理您的 Facebook Messenger 收件箱。

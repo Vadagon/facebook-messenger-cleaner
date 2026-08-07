@@ -1,0 +1,23 @@
+🧹 Nettoyez Facebook Messenger plus rapidement avec Messenger Cleaner.
+
+Messenger Cleaner est une extension Chrome conçue pour supprimer des conversations Facebook Messenger en masse, archiver des discussions et restaurer les conversations archivées depuis un panneau latéral pratique. Organisez une boîte de réception surchargée sans ouvrir manuellement chaque menu.
+
+✨ FONCTIONNALITÉS
+• Suppression groupée des conversations Messenger
+• Archivage de plusieurs discussions Facebook
+• Restauration depuis les discussions archivées
+• Panneau latéral synchronisé avec les onglets et la navigation
+• Progression en direct et commande d’arrêt
+• Pause sécurisée lorsque l’onglet est masqué
+• Plusieurs vitesses de traitement
+
+🔒 RESPECT DE LA VIE PRIVÉE
+Le traitement s’effectue localement dans votre navigateur et votre session Facebook existante. L’extension ne collecte ni contenu de messages, ni mots de passe, ni cookies, ni listes d’amis, ni données de conversation. Aucun suivi publicitaire ou comportemental n’est intégré.
+
+🎁 UTILISATION GRATUITE QUOTIDIENNE
+Effectuez jusqu’à 10 suppressions ou archivages réussis par jour. La restauration des discussions archivées est gratuite. Passez à l’accès illimité pour les nettoyages importants.
+
+⚠️ IMPORTANT
+La suppression d’une conversation peut être définitive. Une confirmation explicite est toujours demandée avant la suppression. Gardez l’onglet Messenger visible pendant l’opération.
+
+Reprenez le contrôle de votre boîte de réception Facebook Messenger avec un outil rapide et simple.

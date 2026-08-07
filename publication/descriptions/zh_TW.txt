@@ -1,0 +1,24 @@
+🧹 使用 Messenger Cleaner 更快整理 Facebook Messenger。
+
+Messenger Cleaner 是一款 Chrome 擴充功能，可從方便的側邊面板批次刪除 Facebook Messenger 對話、封存聊天室，以及還原已封存的對話。不必逐一開啟聊天室選單，也能快速整理擁擠的 Messenger 收件匣。
+
+✨ 主要功能
+• 批次刪除 Messenger 對話
+• 一次封存多個 Facebook 聊天室
+• 還原已封存的聊天室
+• 側邊面板即時跟隨分頁與 Messenger 導航
+• 即時進度、停止按鈕與每日用量
+• 分頁隱藏時安全暫停
+• 多種處理速度
+• 支援多種常用 Facebook 介面語言
+
+🔒 重視隱私
+所有處理都在您的瀏覽器與現有 Facebook 登入工作階段中本機完成。Messenger Cleaner 不會收集訊息內容、Facebook 密碼、Cookie、好友名單或對話資料，也沒有廣告或行為追蹤。
+
+🎁 每日免費整理
+每天最多可免費完成 10 次刪除或封存。還原已封存聊天室不受限制。若要進行更大型的 Messenger 整理，可升級為無限使用。
+
+⚠️ 重要提醒
+刪除對話可能無法復原，執行前必須明確確認。操作期間請保持 Messenger 分頁可見。
+
+用更快速、清楚的批次工具管理 Facebook Messenger 收件匣。
