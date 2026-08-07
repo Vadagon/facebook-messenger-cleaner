@@ -22,7 +22,7 @@ The supplied artwork is included at 16, 32, 48, and 128 px under `icons/` and is
 
 - Delete is permanent and requires an explicit confirmation in the side panel.
 - Free access includes 10 successful deletes or archives per local calendar day; restore actions are not metered.
-- A shared CleanMySocial license removes the daily limit. Checkout and license validation use `cleanmysocial.verblike.com`.
+- A CleanMySocial license removes the daily limit. Checkout and license validation use `cleanmysocial.verblike.com`. The check asks as `facebook-messenger-cleaner`, not the shared `cleanmysocial` group, so a licence bought for another tool does not unlock this one.
 - Operations pause while their Messenger tab is hidden and resume when the tab becomes visible.
 - The panel follows active-tab changes, full navigations, and Messenger single-page navigations.
 - Facebook changes its interface periodically. Action matching is semantic and multilingual, but selectors should still be tested against the current live interface before publishing.
