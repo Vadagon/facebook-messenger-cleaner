@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Supprimer tous les messages Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Supprimez en masse les conversations Facebook Messenger et nettoyez votre boîte de réception plus vite." }
+  "fbDailyLimitDescription": {
+    "message": "Le plan gratuit comprend 20 actions de nettoyage chaque jour. Mise à niveau pour un nettoyage illimité."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook inclut 20 actions gratuites sur les conversations par jour."
+  },
+  "fbMilestoneMessage": {
+    "message": "Vous avez supprimé $1 conversations !"
+  },
+  "milestoneTitle": {
+    "message": "Super travail !"
+  },
+  "milestoneReviewAsk": {
+    "message": "Vous appréciez Messenger Cleaner ? Un examen rapide aide les autres à le trouver."
+  },
+  "footerReview": {
+    "message": "Vous appréciez Messenger Cleaner ? Laisser un avis"
+  },
+  "fbPromoQuestion": {
+    "message": "Besoin également de nettoyer votre liste d'amis ?"
+  },
+  "fbPromoName": {
+    "message": "Suppresseur d'amis de masse pour Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Supprimer tous les messages Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Supprimez en masse les conversations Facebook Messenger et nettoyez votre boîte de réception plus vite."
+  },
+  "panelTitle": {
+    "message": "Nettoyeur de messager"
+  },
+  "checkingTab": {
+    "message": "Vérification de l'onglet actuel…"
+  },
+  "refresh": {
+    "message": "Actualiser"
+  },
+  "openMessengerTitle": {
+    "message": "Ouvrez Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "Passez à une boîte de réception Messenger pour commencer à nettoyer les conversations."
+  },
+  "openMessengerButton": {
+    "message": "Ouvrir Messenger"
+  },
+  "ready": {
+    "message": "Prêt"
+  },
+  "chooseAction": {
+    "message": "Choisissez une action ci-dessous"
+  },
+  "stop": {
+    "message": "Arrêter"
+  },
+  "inboxTools": {
+    "message": "OUTILS DE LA BOÎTE DE RÉCEPTION"
+  },
+  "bulkActions": {
+    "message": "Actions groupées"
+  },
+  "speed": {
+    "message": "Vitesse"
+  },
+  "speedSafe": {
+    "message": "Coffre-fort"
+  },
+  "speedNormal": {
+    "message": "Normale"
+  },
+  "speedFast": {
+    "message": "Rapide"
+  },
+  "deleteAll": {
+    "message": "Supprimer toutes les discussions"
+  },
+  "deleteAllDescription": {
+    "message": "Supprimer définitivement toutes les conversations visibles"
+  },
+  "archiveAll": {
+    "message": "Archiver toutes les discussions"
+  },
+  "archiveAllDescription": {
+    "message": "Déplacer les conversations de la boîte de réception dans les archives"
+  },
+  "restoreAll": {
+    "message": "Restaurer les discussions archivées"
+  },
+  "restoreAllDescription": {
+    "message": "Ouvrez les discussions archivées pour restaurer les conversations"
+  },
+  "keepTabVisible": {
+    "message": "Gardez l'onglet Messenger visible."
+  },
+  "pauseNotice": {
+    "message": "Le nettoyage s'arrête en toute sécurité lorsque vous vous éloignez et reprend à votre retour."
+  },
+  "localPrivacy": {
+    "message": "S'exécute localement dans votre navigateur"
+  },
+  "noData": {
+    "message": "Aucune donnée de message collectée"
+  },
+  "confirmDeleteTitle": {
+    "message": "Supprimer toutes les conversations ?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Cela ne peut pas être annulé. Messenger peut supprimer définitivement les conversations et leur historique de messages."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Je comprends que cette action est permanente"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "deleteNow": {
+    "message": "Supprimer maintenant"
+  },
+  "connectedToMessenger": {
+    "message": "Connecté à Messenger"
+  },
+  "loadingMessenger": {
+    "message": "Chargement de Messenger…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger n'est pas actif"
+  },
+  "noActiveTab": {
+    "message": "Aucun onglet actif"
+  },
+  "openArchivedTooltip": {
+    "message": "Ouvrez les discussions archivées pour restaurer les conversations"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "L'archivage n'est pas disponible sur les discussions archivées"
+  },
+  "working": {
+    "message": "Travailler"
+  },
+  "paused": {
+    "message": "En pause"
+  },
+  "complete": {
+    "message": "Terminé"
+  },
+  "stopped": {
+    "message": "Arrêté"
+  },
+  "error": {
+    "message": "Erreur"
+  },
+  "status": {
+    "message": "Statut"
+  },
+  "startFailed": {
+    "message": "Impossible de démarrer l'opération."
+  },
+  "starting": {
+    "message": "Commencer…"
+  },
+  "freeBadge": {
+    "message": "GRATUIT"
+  },
+  "unlimitedBadge": {
+    "message": "ILLIMITÉ"
+  },
+  "dailyFreeUsage": {
+    "message": "Utilisation gratuite quotidienne"
+  },
+  "getUnlimited": {
+    "message": "OBTENEZ UN ILLIMITÉ"
+  },
+  "quotaExplanation": {
+    "message": "Toutes les actions de nettoyage sur Facebook et Instagram partagent une limite de 10 par jour."
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "freePlanLimit": {
+    "message": "LIMITE DU FORFAIT GRATUIT"
+  },
+  "dailyLimitTitle": {
+    "message": "Vos 10 actions gratuites sont utilisées"
+  },
+  "dailyLimitDescription": {
+    "message": "Le plan gratuit comprend 10 actions de nettoyage chaque jour. Mise à niveau pour un nettoyage illimité."
+  },
+  "upgradeTitle": {
+    "message": "Débloquez un nettoyage illimité"
+  },
+  "upgradeDescription": {
+    "message": "Supprimez la limite quotidienne et nettoyez vos comptes sociaux quand vous le souhaitez."
+  },
+  "unlimitedBenefit": {
+    "message": "Actions de nettoyage illimitées"
+  },
+  "allExtensionsBenefit": {
+    "message": "Accès au forfait CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Achat unique"
+  },
+  "getUnlimitedAccess": {
+    "message": "Obtenez un accès illimité"
+  },
+  "alreadyPurchased": {
+    "message": "Déjà acheté ?"
+  },
+  "licensePlaceholder": {
+    "message": "Clé de licence"
+  },
+  "unlock": {
+    "message": "Déverrouiller"
+  },
+  "checkingLicense": {
+    "message": "Vérification de la licence…"
+  },
+  "licenseActivated": {
+    "message": "Accès illimité activé."
+  },
+  "licenseInvalid": {
+    "message": "Cette clé de licence n'est pas active."
+  },
+  "batchComplete": {
+    "message": "LOT COMPLET"
+  },
+  "reviewTitle": {
+    "message": "Vous appréciez Messenger Cleaner ?"
+  },
+  "reviewDescription": {
+    "message": "Un examen rapide du Chrome Web Store aide davantage de personnes à découvrir l'extension."
+  },
+  "maybeLater": {
+    "message": "Peut-être plus tard"
+  },
+  "leaveReview": {
+    "message": "Laisser un avis"
+  },
+  "panelSubtitle": {
+    "message": "Nettoyez en masse vos discussions Facebook"
+  },
+  "connectMessenger": {
+    "message": "Ouvrir Messenger"
+  },
+  "connectDescription": {
+    "message": "Ouvrez votre boîte de réception Messenger dans l'onglet à côté de ce panneau."
+  },
+  "waiting": {
+    "message": "En attente"
+  },
+  "connected": {
+    "message": "Connecté"
+  },
+  "loading": {
+    "message": "Chargement"
+  },
+  "chooseCleanupAction": {
+    "message": "Choisissez une action"
+  },
+  "actionDescription": {
+    "message": "Choisissez ce que Messenger Cleaner doit faire avec vos conversations."
+  },
+  "processTitle": {
+    "message": "Traiter les conversations"
+  },
+  "inboxView": {
+    "message": "Boîte de réception"
+  },
+  "archivedView": {
+    "message": "Archivé"
+  }
 }

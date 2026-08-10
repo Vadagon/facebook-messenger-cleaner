@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Hapus Semua Pesan Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Hapus percakapan Facebook Messenger secara massal dan bersihkan kotak masuk lebih cepat." }
+  "fbDailyLimitDescription": {
+    "message": "Paket gratis mencakup 20 tindakan pembersihan setiap hari. Tingkatkan untuk pembersihan tanpa batas."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook mencakup 20 tindakan percakapan gratis per hari."
+  },
+  "fbMilestoneMessage": {
+    "message": "Anda telah menghapus $1 percakapan!"
+  },
+  "milestoneTitle": {
+    "message": "Kerja bagus!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Menikmati Pembersih DM? Tinjauan singkat membantu orang lain menemukannya."
+  },
+  "footerReview": {
+    "message": "Menikmati Pembersih DM? Tinggalkan ulasan"
+  },
+  "fbPromoQuestion": {
+    "message": "Perlu membersihkan daftar teman Anda juga?"
+  },
+  "fbPromoName": {
+    "message": "Penghapus Teman Massal untuk Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Hapus Semua Pesan Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Hapus percakapan Facebook Messenger secara massal dan bersihkan kotak masuk lebih cepat."
+  },
+  "panelTitle": {
+    "message": "Pembersih Messenger"
+  },
+  "checkingTab": {
+    "message": "Memeriksa tab saat ini…"
+  },
+  "refresh": {
+    "message": "Segarkan"
+  },
+  "openMessengerTitle": {
+    "message": "Buka Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "Beralih ke kotak masuk Messenger untuk mulai membersihkan percakapan."
+  },
+  "openMessengerButton": {
+    "message": "Buka Messenger"
+  },
+  "ready": {
+    "message": "Siap"
+  },
+  "chooseAction": {
+    "message": "Pilih tindakan di bawah ini"
+  },
+  "stop": {
+    "message": "Berhenti"
+  },
+  "inboxTools": {
+    "message": "ALAT KOTAK MASUK"
+  },
+  "bulkActions": {
+    "message": "Tindakan massal"
+  },
+  "speed": {
+    "message": "Kecepatan"
+  },
+  "speedSafe": {
+    "message": "Aman"
+  },
+  "speedNormal": {
+    "message": "Biasa"
+  },
+  "speedFast": {
+    "message": "Cepat"
+  },
+  "deleteAll": {
+    "message": "Hapus semua obrolan"
+  },
+  "deleteAllDescription": {
+    "message": "Hapus secara permanen setiap percakapan yang terlihat"
+  },
+  "archiveAll": {
+    "message": "Arsipkan semua obrolan"
+  },
+  "archiveAllDescription": {
+    "message": "Pindahkan percakapan kotak masuk ke dalam arsip"
+  },
+  "restoreAll": {
+    "message": "Pulihkan obrolan yang diarsipkan"
+  },
+  "restoreAllDescription": {
+    "message": "Buka Obrolan yang Diarsipkan untuk memulihkan percakapan"
+  },
+  "keepTabVisible": {
+    "message": "Jaga agar tab Messenger tetap terlihat."
+  },
+  "pauseNotice": {
+    "message": "Pembersihan dijeda dengan aman saat Anda beralih dan dilanjutkan saat Anda kembali."
+  },
+  "localPrivacy": {
+    "message": "Berjalan secara lokal di browser Anda"
+  },
+  "noData": {
+    "message": "Tidak ada data pesan yang dikumpulkan"
+  },
+  "confirmDeleteTitle": {
+    "message": "Hapus setiap percakapan?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Hal ini tidak dapat dibatalkan. Messenger dapat menghapus percakapan dan riwayat pesannya secara permanen."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Saya memahami tindakan ini bersifat permanen"
+  },
+  "cancel": {
+    "message": "Batalkan"
+  },
+  "deleteNow": {
+    "message": "Hapus sekarang"
+  },
+  "connectedToMessenger": {
+    "message": "Terhubung ke Messenger"
+  },
+  "loadingMessenger": {
+    "message": "Memuat Messenger…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger tidak aktif"
+  },
+  "noActiveTab": {
+    "message": "Tidak ada tab yang aktif"
+  },
+  "openArchivedTooltip": {
+    "message": "Buka Obrolan yang Diarsipkan untuk memulihkan percakapan"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Pengarsipan tidak tersedia pada obrolan yang Diarsipkan"
+  },
+  "working": {
+    "message": "Bekerja"
+  },
+  "paused": {
+    "message": "Dijeda"
+  },
+  "complete": {
+    "message": "Lengkap"
+  },
+  "stopped": {
+    "message": "Berhenti"
+  },
+  "error": {
+    "message": "Kesalahan"
+  },
+  "status": {
+    "message": "Status"
+  },
+  "startFailed": {
+    "message": "Tidak dapat memulai operasi."
+  },
+  "starting": {
+    "message": "Mulai…"
+  },
+  "freeBadge": {
+    "message": "GRATIS"
+  },
+  "unlimitedBadge": {
+    "message": "TANPA BATAS"
+  },
+  "dailyFreeUsage": {
+    "message": "Penggunaan gratis setiap hari"
+  },
+  "getUnlimited": {
+    "message": "DAPATKAN TANPA BATAS"
+  },
+  "quotaExplanation": {
+    "message": "Semua tindakan pembersihan Facebook dan Instagram memiliki batas 10 tindakan per hari."
+  },
+  "close": {
+    "message": "Tutup"
+  },
+  "freePlanLimit": {
+    "message": "BATAS PAKET GRATIS"
+  },
+  "dailyLimitTitle": {
+    "message": "10 tindakan gratis Anda digunakan"
+  },
+  "dailyLimitDescription": {
+    "message": "Paket gratis mencakup 10 tindakan pembersihan setiap hari. Tingkatkan untuk pembersihan tanpa batas."
+  },
+  "upgradeTitle": {
+    "message": "Buka kunci pembersihan tanpa batas"
+  },
+  "upgradeDescription": {
+    "message": "Hapus batas harian dan bersihkan akun sosial Anda kapan pun Anda mau."
+  },
+  "unlimitedBenefit": {
+    "message": "Tindakan pembersihan tanpa batas"
+  },
+  "allExtensionsBenefit": {
+    "message": "Akses ke paket CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Pembelian satu kali"
+  },
+  "getUnlimitedAccess": {
+    "message": "Dapatkan akses tanpa batas"
+  },
+  "alreadyPurchased": {
+    "message": "Sudah dibeli?"
+  },
+  "licensePlaceholder": {
+    "message": "Kunci lisensi"
+  },
+  "unlock": {
+    "message": "Buka kunci"
+  },
+  "checkingLicense": {
+    "message": "Memeriksa lisensi…"
+  },
+  "licenseActivated": {
+    "message": "Akses tak terbatas diaktifkan."
+  },
+  "licenseInvalid": {
+    "message": "Kunci lisensi itu tidak aktif."
+  },
+  "batchComplete": {
+    "message": "BATCH SELESAI"
+  },
+  "reviewTitle": {
+    "message": "Menikmati Pembersih Messenger?"
+  },
+  "reviewDescription": {
+    "message": "Tinjauan singkat Toko Web Chrome membantu lebih banyak orang menemukan ekstensi tersebut."
+  },
+  "maybeLater": {
+    "message": "Mungkin nanti"
+  },
+  "leaveReview": {
+    "message": "Tinggalkan ulasan"
+  },
+  "panelSubtitle": {
+    "message": "Bersihkan obrolan Facebook Anda secara massal"
+  },
+  "connectMessenger": {
+    "message": "Buka Messenger"
+  },
+  "connectDescription": {
+    "message": "Buka kotak masuk Messenger Anda di tab di samping panel ini."
+  },
+  "waiting": {
+    "message": "Menunggu"
+  },
+  "connected": {
+    "message": "Terhubung"
+  },
+  "loading": {
+    "message": "Memuat"
+  },
+  "chooseCleanupAction": {
+    "message": "Pilih suatu tindakan"
+  },
+  "actionDescription": {
+    "message": "Pilih apa yang harus dilakukan Messenger Cleaner dengan percakapan Anda."
+  },
+  "processTitle": {
+    "message": "Proses percakapan"
+  },
+  "inboxView": {
+    "message": "Kotak masuk"
+  },
+  "archivedView": {
+    "message": "Diarsipkan"
+  }
 }

@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – حذف جميع رسائل Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "احذف محادثات Facebook Messenger دفعة واحدة ونظّف صندوق الوارد بسرعة أكبر." }
+  "fbDailyLimitDescription": {
+    "message": "تتضمن الخطة المجانية أي 20 إجراءات تنظيف كل يوم. الترقية لتنظيف غير محدود."
+  },
+  "fbQuotaExplanation": {
+    "message": "يتضمن Facebook 20 إجراءً مجانيًا للمحادثات يوميًا."
+  },
+  "fbMilestoneMessage": {
+    "message": "لقد حذفت $1 من المحادثات!"
+  },
+  "milestoneTitle": {
+    "message": "عمل عظيم!"
+  },
+  "milestoneReviewAsk": {
+    "message": "هل تستمتع بـ Messenger Cleaner؟ تساعد المراجعة السريعة الآخرين في العثور عليه."
+  },
+  "footerReview": {
+    "message": "هل تستمتع بـ Messenger Cleaner؟ ترك التعليق"
+  },
+  "fbPromoQuestion": {
+    "message": "هل تحتاج إلى تنظيف قائمة أصدقائك أيضًا؟"
+  },
+  "fbPromoName": {
+    "message": "مزيل الأصدقاء الشامل للفيسبوك"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – حذف جميع رسائل Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "احذف محادثات Facebook Messenger دفعة واحدة ونظّف صندوق الوارد بسرعة أكبر."
+  },
+  "panelTitle": {
+    "message": "منظف رسول"
+  },
+  "checkingTab": {
+    "message": "جارٍ التحقق من علامة التبويب الحالية..."
+  },
+  "refresh": {
+    "message": "تحديث"
+  },
+  "openMessengerTitle": {
+    "message": "افتح فيسبوك ماسنجر"
+  },
+  "openMessengerDescription": {
+    "message": "قم بالتبديل إلى البريد الوارد لبرنامج Messenger لبدء تنظيف المحادثات."
+  },
+  "openMessengerButton": {
+    "message": "افتح الماسنجر"
+  },
+  "ready": {
+    "message": "جاهز"
+  },
+  "chooseAction": {
+    "message": "اختر إجراءً أدناه"
+  },
+  "stop": {
+    "message": "توقف"
+  },
+  "inboxTools": {
+    "message": "أدوات البريد الوارد"
+  },
+  "bulkActions": {
+    "message": "الإجراءات السائبة"
+  },
+  "speed": {
+    "message": "السرعة"
+  },
+  "speedSafe": {
+    "message": "آمنة"
+  },
+  "speedNormal": {
+    "message": "عادي"
+  },
+  "speedFast": {
+    "message": "سريع"
+  },
+  "deleteAll": {
+    "message": "حذف جميع الدردشات"
+  },
+  "deleteAllDescription": {
+    "message": "قم بإزالة كل محادثة مرئية نهائيًا"
+  },
+  "archiveAll": {
+    "message": "أرشفة جميع الدردشات"
+  },
+  "archiveAllDescription": {
+    "message": "نقل محادثات البريد الوارد إلى الأرشيف"
+  },
+  "restoreAll": {
+    "message": "استعادة الدردشات المؤرشفة"
+  },
+  "restoreAllDescription": {
+    "message": "افتح الدردشات المؤرشفة لاستعادة المحادثات"
+  },
+  "keepTabVisible": {
+    "message": "أبقِ علامة تبويب Messenger مرئية."
+  },
+  "pauseNotice": {
+    "message": "يتوقف التنظيف مؤقتًا بشكل آمن عند التبديل بعيدًا ويستأنف عند العودة."
+  },
+  "localPrivacy": {
+    "message": "يعمل محليا في المتصفح الخاص بك"
+  },
+  "noData": {
+    "message": "لم يتم جمع بيانات الرسالة"
+  },
+  "confirmDeleteTitle": {
+    "message": "هل تريد حذف كل محادثة؟"
+  },
+  "confirmDeleteDescription": {
+    "message": "لا يمكن التراجع عن هذا. قد يقوم Messenger بإزالة المحادثات وسجل رسائلها نهائيًا."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "أنا أفهم أن هذا الإجراء دائم"
+  },
+  "cancel": {
+    "message": "إلغاء"
+  },
+  "deleteNow": {
+    "message": "احذف الآن"
+  },
+  "connectedToMessenger": {
+    "message": "متصل بالماسنجر"
+  },
+  "loadingMessenger": {
+    "message": "جارٍ تحميل المراسلة..."
+  },
+  "notOnMessenger": {
+    "message": "الماسنجر غير نشط"
+  },
+  "noActiveTab": {
+    "message": "لا توجد علامة تبويب نشطة"
+  },
+  "openArchivedTooltip": {
+    "message": "افتح الدردشات المؤرشفة لاستعادة المحادثات"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "الأرشفة غير متاحة في الدردشات المؤرشفة"
+  },
+  "working": {
+    "message": "العمل"
+  },
+  "paused": {
+    "message": "متوقف مؤقتًا"
+  },
+  "complete": {
+    "message": "كامل"
+  },
+  "stopped": {
+    "message": "توقف"
+  },
+  "error": {
+    "message": "خطأ"
+  },
+  "status": {
+    "message": "الحالة"
+  },
+  "startFailed": {
+    "message": "لا يمكن بدء العملية."
+  },
+  "starting": {
+    "message": "جارٍ البدء…"
+  },
+  "freeBadge": {
+    "message": "مجاني"
+  },
+  "unlimitedBadge": {
+    "message": "غير محدود"
+  },
+  "dailyFreeUsage": {
+    "message": "الاستخدام اليومي المجاني"
+  },
+  "getUnlimited": {
+    "message": "احصل على عدد غير محدود"
+  },
+  "quotaExplanation": {
+    "message": "تشترك جميع إجراءات تنظيف Facebook وInstagram بحد أقصى 10 في اليوم."
+  },
+  "close": {
+    "message": "إغلاق"
+  },
+  "freePlanLimit": {
+    "message": "حد الخطة المجانية"
+  },
+  "dailyLimitTitle": {
+    "message": "يتم استخدام الإجراءات العشرة المجانية الخاصة بك"
+  },
+  "dailyLimitDescription": {
+    "message": "تتضمن الخطة المجانية أي 10 إجراءات تنظيف كل يوم. الترقية لتنظيف غير محدود."
+  },
+  "upgradeTitle": {
+    "message": "فتح تنظيف غير محدود"
+  },
+  "upgradeDescription": {
+    "message": "قم بإزالة الحد اليومي وتنظيف حساباتك الاجتماعية وقتما تشاء."
+  },
+  "unlimitedBenefit": {
+    "message": "إجراءات تنظيف غير محدودة"
+  },
+  "allExtensionsBenefit": {
+    "message": "الوصول إلى حزمة CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "شراء لمرة واحدة"
+  },
+  "getUnlimitedAccess": {
+    "message": "احصل على وصول غير محدود"
+  },
+  "alreadyPurchased": {
+    "message": "اشتريت بالفعل؟"
+  },
+  "licensePlaceholder": {
+    "message": "مفتاح الترخيص"
+  },
+  "unlock": {
+    "message": "فتح"
+  },
+  "checkingLicense": {
+    "message": "جارٍ التحقق من الترخيص…"
+  },
+  "licenseActivated": {
+    "message": "تم تفعيل الوصول غير المحدود."
+  },
+  "licenseInvalid": {
+    "message": "مفتاح الترخيص هذا غير نشط."
+  },
+  "batchComplete": {
+    "message": "الدفعة كاملة"
+  },
+  "reviewTitle": {
+    "message": "هل تستمتع بمنظف Messenger؟"
+  },
+  "reviewDescription": {
+    "message": "تساعد المراجعة السريعة لسوق Chrome الإلكتروني المزيد من الأشخاص على اكتشاف الامتداد."
+  },
+  "maybeLater": {
+    "message": "ربما في وقت لاحق"
+  },
+  "leaveReview": {
+    "message": "ترك التعليق"
+  },
+  "panelSubtitle": {
+    "message": "قم بتنظيف محادثات الفيسبوك الخاصة بك بشكل جماعي"
+  },
+  "connectMessenger": {
+    "message": "افتح الماسنجر"
+  },
+  "connectDescription": {
+    "message": "افتح صندوق الوارد الخاص بـ Messenger في علامة التبويب الموجودة بجوار هذه اللوحة."
+  },
+  "waiting": {
+    "message": "في انتظار"
+  },
+  "connected": {
+    "message": "متصل"
+  },
+  "loading": {
+    "message": "جاري التحميل"
+  },
+  "chooseCleanupAction": {
+    "message": "اختر إجراءً"
+  },
+  "actionDescription": {
+    "message": "اختر ما يجب أن يفعله Messenger Cleaner في محادثاتك."
+  },
+  "processTitle": {
+    "message": "معالجة المحادثات"
+  },
+  "inboxView": {
+    "message": "البريد الوارد"
+  },
+  "archivedView": {
+    "message": "مؤرشف"
+  }
 }

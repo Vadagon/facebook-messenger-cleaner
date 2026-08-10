@@ -16,7 +16,7 @@ Messenger Cleaner is a productivity-focused Chrome extension for bulk deleting F
 Conversation processing happens locally in your browser and within your existing Facebook session. Messenger Cleaner does not collect message contents, Facebook passwords, cookies, friend lists, or conversation data. No advertising or behavioral tracking is included.
 
 🎁 FREE DAILY CLEANUP
-Use up to 10 successful delete or archive actions per day. Restoring archived chats is free. Upgrade to unlimited access when you need larger Messenger inbox cleanups.
+Use up to 20 successful delete, archive, or restore actions per day. Upgrade to unlimited access when you need larger Messenger inbox cleanups.
 
 ⚠️ IMPORTANT
 Deleting a conversation can be permanent. Messenger Cleaner requires explicit confirmation before deletion. Facebook may change its interface, so keep the Messenger tab visible while an operation runs.

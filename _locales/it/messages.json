@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Elimina tutti i messaggi Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Elimina in blocco le conversazioni Facebook Messenger e pulisci più rapidamente la posta in arrivo." }
+  "fbDailyLimitDescription": {
+    "message": "Il piano gratuito include 20 eliminazioni, archiviazioni o ripristini al giorno. Esegui l’upgrade per una pulizia illimitata."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook include 20 azioni gratuite sulle conversazioni al giorno."
+  },
+  "fbMilestoneMessage": {
+    "message": "Hai eliminato $1 conversazioni!"
+  },
+  "milestoneTitle": {
+    "message": "Ottimo lavoro!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Ti piace Messenger Cleaner? Una breve recensione aiuta gli altri a trovarlo."
+  },
+  "footerReview": {
+    "message": "Ti piace Messenger Cleaner? Lascia una recensione"
+  },
+  "fbPromoQuestion": {
+    "message": "Vuoi anche ripulire la lista degli amici?"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Elimina tutti i messaggi Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Elimina in blocco le conversazioni Facebook Messenger e pulisci più rapidamente la posta in arrivo."
+  },
+  "panelTitle": {
+    "message": "Messenger Cleaner"
+  },
+  "checkingTab": {
+    "message": "Controllo scheda corrente in corso..."
+  },
+  "refresh": {
+    "message": "Aggiorna"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "Passa a una casella di posta di Messenger per iniziare a pulire le conversazioni."
+  },
+  "openMessengerButton": {
+    "message": "Apri Messenger"
+  },
+  "ready": {
+    "message": "Pronto"
+  },
+  "chooseAction": {
+    "message": "Scegli un'azione qui sotto"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "inboxTools": {
+    "message": "STRUMENTI PER LA POSTA IN ARRIVO"
+  },
+  "bulkActions": {
+    "message": "Azioni in blocco"
+  },
+  "speed": {
+    "message": "Velocità"
+  },
+  "speedSafe": {
+    "message": "Sicuro"
+  },
+  "speedNormal": {
+    "message": "Normale"
+  },
+  "speedFast": {
+    "message": "Veloce"
+  },
+  "deleteAll": {
+    "message": "Elimina tutte le chat"
+  },
+  "deleteAllDescription": {
+    "message": "Rimuovi permanentemente ogni conversazione visibile"
+  },
+  "archiveAll": {
+    "message": "Archivia tutte le chat"
+  },
+  "archiveAllDescription": {
+    "message": "Sposta le conversazioni della posta in arrivo nell'archivio"
+  },
+  "restoreAll": {
+    "message": "Ripristina le chat archiviate"
+  },
+  "restoreAllDescription": {
+    "message": "Apri le chat archiviate per ripristinare le conversazioni"
+  },
+  "keepTabVisible": {
+    "message": "Mantieni visibile la scheda Messenger."
+  },
+  "pauseNotice": {
+    "message": "La pulizia si interrompe in modo sicuro quando ci si allontana e riprende al ritorno."
+  },
+  "localPrivacy": {
+    "message": "Funziona localmente nel tuo browser"
+  },
+  "noData": {
+    "message": "Nessun dato di messaggio raccolto"
+  },
+  "confirmDeleteTitle": {
+    "message": "Eliminare ogni conversazione?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Questa operazione non può essere annullata. Messenger può rimuovere definitivamente le conversazioni e la cronologia dei messaggi."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Comprendo che questa azione è permanente"
+  },
+  "cancel": {
+    "message": "Annulla"
+  },
+  "deleteNow": {
+    "message": "Cancella ora"
+  },
+  "connectedToMessenger": {
+    "message": "Connesso a Messenger"
+  },
+  "loadingMessenger": {
+    "message": "Caricamento Messenger in corso..."
+  },
+  "notOnMessenger": {
+    "message": "Messenger non è attivo"
+  },
+  "noActiveTab": {
+    "message": "Nessuna scheda attiva"
+  },
+  "openArchivedTooltip": {
+    "message": "Apri le chat archiviate per ripristinare le conversazioni"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "L'archiviazione non è disponibile nelle chat archiviate"
+  },
+  "working": {
+    "message": "Lavorare"
+  },
+  "paused": {
+    "message": "Pausa"
+  },
+  "complete": {
+    "message": "Completa"
+  },
+  "stopped": {
+    "message": "Interrotto"
+  },
+  "error": {
+    "message": "Errore"
+  },
+  "status": {
+    "message": "Stato"
+  },
+  "startFailed": {
+    "message": "Impossibile avviare l'operazione."
+  },
+  "starting": {
+    "message": "Avvio in corso…"
+  },
+  "freeBadge": {
+    "message": "GRATIS"
+  },
+  "unlimitedBadge": {
+    "message": "ILLIMITATO"
+  },
+  "dailyFreeUsage": {
+    "message": "Utilizzo gratuito giornaliero"
+  },
+  "getUnlimited": {
+    "message": "Illimitato!"
+  },
+  "quotaExplanation": {
+    "message": "Cancellazioni e archivi condividono un limite di 10 al giorno."
+  },
+  "close": {
+    "message": "Chiudi"
+  },
+  "freePlanLimit": {
+    "message": "LIMITE DEL PIANO GRATUITO"
+  },
+  "dailyLimitTitle": {
+    "message": "Le tue 10 azioni gratuite vengono utilizzate"
+  },
+  "dailyLimitDescription": {
+    "message": "Il piano gratuito include 10 cancellazioni o archivi ogni giorno. Esegui l'upgrade per una pulizia illimitata."
+  },
+  "upgradeTitle": {
+    "message": "Sblocca una pulizia illimitata"
+  },
+  "upgradeDescription": {
+    "message": "Rimuovi il limite giornaliero e pulisci i tuoi account social ogni volta che vuoi."
+  },
+  "unlimitedBenefit": {
+    "message": "Cancellazioni e archivi illimitati"
+  },
+  "allExtensionsBenefit": {
+    "message": "Accesso al bundle CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Acquisto una tantum"
+  },
+  "getUnlimitedAccess": {
+    "message": "Ottieni l'Accesso Illimitato"
+  },
+  "alreadyPurchased": {
+    "message": "Già acquistato?"
+  },
+  "licensePlaceholder": {
+    "message": "Chiave della licenza"
+  },
+  "unlock": {
+    "message": "Sblocca"
+  },
+  "checkingLicense": {
+    "message": "Verifica della licenza in corso ..."
+  },
+  "licenseActivated": {
+    "message": "Accesso illimitato attivato."
+  },
+  "licenseInvalid": {
+    "message": "la licenza non è attiva."
+  },
+  "batchComplete": {
+    "message": "LOTTO COMPLETO"
+  },
+  "reviewTitle": {
+    "message": "Ti piace Messenger Cleaner?"
+  },
+  "reviewDescription": {
+    "message": "Una rapida recensione del Chrome Web Store aiuta più persone a scoprire l'estensione."
+  },
+  "maybeLater": {
+    "message": "Forse più tardi"
+  },
+  "leaveReview": {
+    "message": "Lascia una recensione"
+  },
+  "panelSubtitle": {
+    "message": "Pulisci in blocco le tue chat di Facebook"
+  },
+  "connectMessenger": {
+    "message": "Apri Messenger"
+  },
+  "connectDescription": {
+    "message": "Apri la tua casella di posta di Messenger nella scheda accanto a questo pannello."
+  },
+  "waiting": {
+    "message": "Attendi"
+  },
+  "connected": {
+    "message": "Connesso"
+  },
+  "loading": {
+    "message": "Caricamento in corso"
+  },
+  "chooseCleanupAction": {
+    "message": "Seleziona un’azione"
+  },
+  "actionDescription": {
+    "message": "Scegli cosa Messenger Cleaner dovrebbe fare con le tue conversazioni."
+  },
+  "processTitle": {
+    "message": "Elabora conversazioni"
+  },
+  "inboxView": {
+    "message": "Posta in arrivo"
+  },
+  "archivedView": {
+    "message": "Archiviato"
+  }
 }

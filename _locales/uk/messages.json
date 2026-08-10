@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Видалити всі повідомлення Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Масово видаляйте розмови Facebook Messenger і швидше очищайте вхідні повідомлення." }
+  "fbDailyLimitDescription": {
+    "message": "Безкоштовний план включає 20 видалень, архівувань або відновлень на день. Оновіть для необмеженого очищення."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook надає 20 безкоштовних дій із розмовами на день."
+  },
+  "fbMilestoneMessage": {
+    "message": "Ви видалили $1 розмов!"
+  },
+  "milestoneTitle": {
+    "message": "Чудова робота!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Подобається Messenger Cleaner? Короткий відгук допоможе іншим знайти розширення."
+  },
+  "footerReview": {
+    "message": "Подобається Messenger Cleaner? Залиште відгук"
+  },
+  "fbPromoQuestion": {
+    "message": "Хочете також упорядкувати список друзів?"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Видалити всі повідомлення Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Масово видаляйте розмови Facebook Messenger і швидше очищайте вхідні повідомлення."
+  },
+  "panelTitle": {
+    "message": "Засіб для прибирання месенджерів"
+  },
+  "checkingTab": {
+    "message": "Перевірка поточної вкладки…"
+  },
+  "refresh": {
+    "message": "Оновити"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger "
+  },
+  "openMessengerDescription": {
+    "message": "Щоб почати прибирати розмови, перейдіть у папку «Вхідні» в месенджері."
+  },
+  "openMessengerButton": {
+    "message": "Відкрити месенджер"
+  },
+  "ready": {
+    "message": "Готовий"
+  },
+  "chooseAction": {
+    "message": "Виберіть дію нижче"
+  },
+  "stop": {
+    "message": "Зупинити"
+  },
+  "inboxTools": {
+    "message": "ІНСТРУМЕНТИ ПАПКИ «ВХІДНІ»"
+  },
+  "bulkActions": {
+    "message": "Групові дії"
+  },
+  "speed": {
+    "message": "Швидкість"
+  },
+  "speedSafe": {
+    "message": "Безпека"
+  },
+  "speedNormal": {
+    "message": "Звичайна"
+  },
+  "speedFast": {
+    "message": "Швидко"
+  },
+  "deleteAll": {
+    "message": "Видалити всі чати"
+  },
+  "deleteAllDescription": {
+    "message": "Назавжди видалити кожну видиму розмову"
+  },
+  "archiveAll": {
+    "message": "Архівувати всі чати"
+  },
+  "archiveAllDescription": {
+    "message": "Перемістити розмови у папці «Вхідні» в архів"
+  },
+  "restoreAll": {
+    "message": "Відновити заархівовані чати"
+  },
+  "restoreAllDescription": {
+    "message": "Відкрийте архівні чати, щоб відновити розмови"
+  },
+  "keepTabVisible": {
+    "message": "Зберігайте вкладку \"Месенджер\" видимою."
+  },
+  "pauseNotice": {
+    "message": "Прибирання безпечно призупиняється, коли ви відключаєтеся, і відновлюється, коли ви повертаєтеся."
+  },
+  "localPrivacy": {
+    "message": "Запускається локально у вашому браузері"
+  },
+  "noData": {
+    "message": "Дані про повідомлення не зібрані"
+  },
+  "confirmDeleteTitle": {
+    "message": "Видалити кожну розмову?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Цю дію неможливо скасувати. Месенджер може назавжди видалити розмови та історію повідомлень."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Я розумію, що ця дія є постійною"
+  },
+  "cancel": {
+    "message": "Скасувати"
+  },
+  "deleteNow": {
+    "message": "Видалити зараз"
+  },
+  "connectedToMessenger": {
+    "message": "Підключено до месенджера"
+  },
+  "loadingMessenger": {
+    "message": "Завантаження месенджера…"
+  },
+  "notOnMessenger": {
+    "message": "Месенджер неактивний"
+  },
+  "noActiveTab": {
+    "message": "Активна вкладка"
+  },
+  "openArchivedTooltip": {
+    "message": "Відкрийте архівні чати, щоб відновити розмови"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Архівування недоступне в архівних чатах"
+  },
+  "working": {
+    "message": "Робочі"
+  },
+  "paused": {
+    "message": "Призупинено"
+  },
+  "complete": {
+    "message": "Завершити"
+  },
+  "stopped": {
+    "message": "Вимкнено"
+  },
+  "error": {
+    "message": "Помилка"
+  },
+  "status": {
+    "message": "Статус"
+  },
+  "startFailed": {
+    "message": "Не вдалося запустити операцію."
+  },
+  "starting": {
+    "message": "Запуск"
+  },
+  "freeBadge": {
+    "message": "FREE"
+  },
+  "unlimitedBadge": {
+    "message": "НЕОБМЕЖЕНИЙ."
+  },
+  "dailyFreeUsage": {
+    "message": "Щоденне безкоштовне користування"
+  },
+  "getUnlimited": {
+    "message": "ОТРИМАЙТЕ НЕОБМЕЖЕНУ КІЛЬКІСТЬ"
+  },
+  "quotaExplanation": {
+    "message": "Кількість видалень і архівів не може перевищувати 10 на день."
+  },
+  "close": {
+    "message": "Закрити"
+  },
+  "freePlanLimit": {
+    "message": "ЛІМІТ БЕЗКОШТОВНОГО ПЛАНУ"
+  },
+  "dailyLimitTitle": {
+    "message": "Використовуються ваші 10 вільних дій"
+  },
+  "dailyLimitDescription": {
+    "message": "Безкоштовний план включає 10 видалень або архівів щодня. Підвищення рівня для необмеженого прибирання."
+  },
+  "upgradeTitle": {
+    "message": "Розблокуйте необмежене прибирання"
+  },
+  "upgradeDescription": {
+    "message": "Зніміть щоденний ліміт і очистіть акаунти в соціальних мережах у будь-який час."
+  },
+  "unlimitedBenefit": {
+    "message": "Необмежена кількість видалень і архівів"
+  },
+  "allExtensionsBenefit": {
+    "message": "Доступ до пакета CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Одноразова покупка"
+  },
+  "getUnlimitedAccess": {
+    "message": "Отримайте необмежений доступ"
+  },
+  "alreadyPurchased": {
+    "message": "Вже придбано?"
+  },
+  "licensePlaceholder": {
+    "message": "Ліцензійний ключ"
+  },
+  "unlock": {
+    "message": "Розблокувати"
+  },
+  "checkingLicense": {
+    "message": "Перевірка ліцензії…"
+  },
+  "licenseActivated": {
+    "message": "Необмежений доступ активовано."
+  },
+  "licenseInvalid": {
+    "message": "Ліцензійний ключ активний."
+  },
+  "batchComplete": {
+    "message": "ПАКЕТ ЗАВЕРШЕНО"
+  },
+  "reviewTitle": {
+    "message": "Насолоджуєтесь засобом для прибирання месенджерів?"
+  },
+  "reviewDescription": {
+    "message": "Швидкий відгук про веб-магазин Chrome допоможе більшій кількості людей дізнатися про розширення."
+  },
+  "maybeLater": {
+    "message": "Можливо пізніше"
+  },
+  "leaveReview": {
+    "message": "Залишити відгук"
+  },
+  "panelSubtitle": {
+    "message": "Масове очищення чатів у Facebook"
+  },
+  "connectMessenger": {
+    "message": "Відкрити месенджер"
+  },
+  "connectDescription": {
+    "message": "Відкрийте папку «Вхідні» у месенджері на вкладці поруч із цією панеллю."
+  },
+  "waiting": {
+    "message": "Очікування"
+  },
+  "connected": {
+    "message": "У Грі"
+  },
+  "loading": {
+    "message": "Завантаження"
+  },
+  "chooseCleanupAction": {
+    "message": "Виберіть дію"
+  },
+  "actionDescription": {
+    "message": "Виберіть, що Messenger Cleaner повинен робити з вашими розмовами."
+  },
+  "processTitle": {
+    "message": "Обробляти розмови"
+  },
+  "inboxView": {
+    "message": "Вхідні"
+  },
+  "archivedView": {
+    "message": "Архівовано"
+  }
 }

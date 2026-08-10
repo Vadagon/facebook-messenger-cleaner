@@ -15,7 +15,7 @@ Messenger Cleaner ist eine Chrome-Erweiterung zum massenhaften Löschen von Face
 Die Verarbeitung findet lokal in deinem Browser und deiner bestehenden Facebook-Sitzung statt. Messenger Cleaner sammelt keine Nachrichteninhalte, Passwörter, Cookies, Freundeslisten oder Unterhaltungsdaten. Es gibt keine Werbung und kein Verhaltens-Tracking.
 
 🎁 TÄGLICH KOSTENLOS
-Bis zu 10 erfolgreiche Lösch- oder Archivierungsaktionen pro Tag sind kostenlos. Das Wiederherstellen archivierter Chats bleibt kostenlos. Für größere Aufräumaktionen steht unbegrenzter Zugriff zur Verfügung.
+Bis zu 20 erfolgreiche Lösch-, Archivierungs- oder Wiederherstellungsaktionen pro Tag sind kostenlos. Für größere Aufräumaktionen steht unbegrenzter Zugriff zur Verfügung.
 
 ⚠️ WICHTIG
 Das Löschen einer Unterhaltung kann endgültig sein. Vor dem Löschen ist eine ausdrückliche Bestätigung erforderlich. Lass den Messenger-Tab während der Verarbeitung sichtbar.

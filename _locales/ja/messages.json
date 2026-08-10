@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Facebookメッセージを一括削除" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Facebook Messengerの会話を一括削除し、受信トレイをすばやく整理します。" }
+  "fbDailyLimitDescription": {
+    "message": "無料プランには、毎日 20 回のクリーンアップ アクションが含まれています。アップグレードすると、無制限のクリーニングが可能になります。"
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebookでは1日20件の会話操作を無料で利用できます。"
+  },
+  "fbMilestoneMessage": {
+    "message": "$1件の会話を削除しました！"
+  },
+  "milestoneTitle": {
+    "message": "素晴らしい仕事だ！"
+  },
+  "milestoneReviewAsk": {
+    "message": "DM クリーナーをお楽しみですか?簡単なレビューは他の人が見つけるのに役立ちます。"
+  },
+  "footerReview": {
+    "message": "DM クリーナーをお楽しみですか?レビューを残す"
+  },
+  "fbPromoQuestion": {
+    "message": "友達リストも整理する必要がありますか?"
+  },
+  "fbPromoName": {
+    "message": "Facebook 用大量友達リムーバー"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Facebookメッセージを一括削除"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Facebook Messengerの会話を一括削除し、受信トレイをすばやく整理します。"
+  },
+  "panelTitle": {
+    "message": "メッセンジャークリーナー"
+  },
+  "checkingTab": {
+    "message": "現在のタブを確認しています…"
+  },
+  "refresh": {
+    "message": "リフレッシュ"
+  },
+  "openMessengerTitle": {
+    "message": "Facebookメッセンジャーを開く"
+  },
+  "openMessengerDescription": {
+    "message": "メッセンジャーの受信トレイに切り替えて、会話のクリーンアップを開始します。"
+  },
+  "openMessengerButton": {
+    "message": "メッセンジャーを開く"
+  },
+  "ready": {
+    "message": "準備完了"
+  },
+  "chooseAction": {
+    "message": "以下のアクションを選択してください"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "inboxTools": {
+    "message": "受信トレイツール"
+  },
+  "bulkActions": {
+    "message": "一括アクション"
+  },
+  "speed": {
+    "message": "速度"
+  },
+  "speedSafe": {
+    "message": "安全"
+  },
+  "speedNormal": {
+    "message": "ノーマル"
+  },
+  "speedFast": {
+    "message": "速い"
+  },
+  "deleteAll": {
+    "message": "すべてのチャットを削除する"
+  },
+  "deleteAllDescription": {
+    "message": "表示されているすべての会話を完全に削除します"
+  },
+  "archiveAll": {
+    "message": "すべてのチャットをアーカイブする"
+  },
+  "archiveAllDescription": {
+    "message": "受信トレイの会話をアーカイブに移動する"
+  },
+  "restoreAll": {
+    "message": "アーカイブされたチャットを復元する"
+  },
+  "restoreAllDescription": {
+    "message": "アーカイブされたチャットを開いて会話を復元する"
+  },
+  "keepTabVisible": {
+    "message": "「メッセンジャー」タブを表示したままにします。"
+  },
+  "pauseNotice": {
+    "message": "掃除は、切り替えると安全に一時停止され、戻ると再開されます。"
+  },
+  "localPrivacy": {
+    "message": "ブラウザでローカルに実行"
+  },
+  "noData": {
+    "message": "メッセージデータは収集されません"
+  },
+  "confirmDeleteTitle": {
+    "message": "すべての会話を削除しますか?"
+  },
+  "confirmDeleteDescription": {
+    "message": "これを元に戻すことはできません。メッセンジャーは会話とそのメッセージ履歴を永久に削除する場合があります。"
+  },
+  "confirmDeleteCheckbox": {
+    "message": "このアクションは永続的なものであることを理解しています"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "deleteNow": {
+    "message": "今すぐ削除"
+  },
+  "connectedToMessenger": {
+    "message": "メッセンジャーに接続しました"
+  },
+  "loadingMessenger": {
+    "message": "メッセンジャーを読み込み中…"
+  },
+  "notOnMessenger": {
+    "message": "メッセンジャーはアクティブではありません"
+  },
+  "noActiveTab": {
+    "message": "アクティブなタブがありません"
+  },
+  "openArchivedTooltip": {
+    "message": "アーカイブされたチャットを開いて会話を復元する"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "アーカイブされたチャットではアーカイブは利用できません"
+  },
+  "working": {
+    "message": "働く"
+  },
+  "paused": {
+    "message": "一時停止中"
+  },
+  "complete": {
+    "message": "完了"
+  },
+  "stopped": {
+    "message": "停止しました"
+  },
+  "error": {
+    "message": "エラー"
+  },
+  "status": {
+    "message": "ステータス"
+  },
+  "startFailed": {
+    "message": "操作を開始できませんでした。"
+  },
+  "starting": {
+    "message": "開始中…"
+  },
+  "freeBadge": {
+    "message": "無料"
+  },
+  "unlimitedBadge": {
+    "message": "無制限"
+  },
+  "dailyFreeUsage": {
+    "message": "毎日の無料使用量"
+  },
+  "getUnlimited": {
+    "message": "無制限に入手"
+  },
+  "quotaExplanation": {
+    "message": "Facebook と Instagram のすべてのクリーンアップ アクションには、1 日あたり 10 件の制限があります。"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "freePlanLimit": {
+    "message": "無料プランの制限"
+  },
+  "dailyLimitTitle": {
+    "message": "10 個の無料アクションが使用されます"
+  },
+  "dailyLimitDescription": {
+    "message": "無料プランには、毎日 10 回のクリーンアップ アクションが含まれています。アップグレードすると、無制限のクリーニングが可能になります。"
+  },
+  "upgradeTitle": {
+    "message": "無制限のクリーニングのロックを解除する"
+  },
+  "upgradeDescription": {
+    "message": "1 日あたりの制限を解除し、いつでもソーシャル アカウントをクリーンアップします。"
+  },
+  "unlimitedBenefit": {
+    "message": "無制限のクリーンアップアクション"
+  },
+  "allExtensionsBenefit": {
+    "message": "CleanMySocial バンドルへのアクセス"
+  },
+  "lifetimeBenefit": {
+    "message": "1回限りの購入"
+  },
+  "getUnlimitedAccess": {
+    "message": "無制限にアクセスできる"
+  },
+  "alreadyPurchased": {
+    "message": "すでに購入済みですか?"
+  },
+  "licensePlaceholder": {
+    "message": "ライセンスキー"
+  },
+  "unlock": {
+    "message": "ロックを解除する"
+  },
+  "checkingLicense": {
+    "message": "ライセンスを確認中…"
+  },
+  "licenseActivated": {
+    "message": "無制限のアクセスが有効になりました。"
+  },
+  "licenseInvalid": {
+    "message": "そのライセンス キーはアクティブではありません。"
+  },
+  "batchComplete": {
+    "message": "バッチが完了しました"
+  },
+  "reviewTitle": {
+    "message": "メッセンジャー クリーナーをお楽しみですか?"
+  },
+  "reviewDescription": {
+    "message": "Chrome ウェブストアで簡単にレビューすると、より多くの人が拡張機能を発見できるようになります。"
+  },
+  "maybeLater": {
+    "message": "たぶん後で"
+  },
+  "leaveReview": {
+    "message": "レビューを残す"
+  },
+  "panelSubtitle": {
+    "message": "Facebook チャットを一括クリーンアップ"
+  },
+  "connectMessenger": {
+    "message": "メッセンジャーを開く"
+  },
+  "connectDescription": {
+    "message": "このパネルの横のタブでメッセンジャーの受信箱を開きます。"
+  },
+  "waiting": {
+    "message": "待っています"
+  },
+  "connected": {
+    "message": "接続済み"
+  },
+  "loading": {
+    "message": "読み込み中"
+  },
+  "chooseCleanupAction": {
+    "message": "アクションを選択してください"
+  },
+  "actionDescription": {
+    "message": "Messenger Cleaner が会話に対して何を行うかを選択します。"
+  },
+  "processTitle": {
+    "message": "会話を処理する"
+  },
+  "inboxView": {
+    "message": "受信箱"
+  },
+  "archivedView": {
+    "message": "アーカイブ済み"
+  }
 }

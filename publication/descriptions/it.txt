@@ -15,7 +15,7 @@ Messenger Cleaner è un’estensione Chrome per eliminare in blocco le conversaz
 L’elaborazione avviene localmente nel browser e nella sessione Facebook esistente. L’estensione non raccoglie contenuti dei messaggi, password, cookie, liste di amici o dati delle conversazioni. Non include pubblicità né tracciamento comportamentale.
 
 🎁 PULIZIA GRATUITA GIORNALIERA
-Esegui fino a 10 eliminazioni o archiviazioni riuscite al giorno. Il ripristino delle chat archiviate è gratuito. Per operazioni più grandi è disponibile l’accesso illimitato.
+Esegui fino a 20 eliminazioni, archiviazioni o ripristini al giorno. Per operazioni più grandi è disponibile l’accesso illimitato.
 
 ⚠️ IMPORTANTE
 L’eliminazione di una conversazione può essere permanente. Prima di eliminare è richiesta una conferma esplicita. Mantieni visibile la scheda Messenger durante il processo.

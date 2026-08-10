@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – حذف همه پیام‌های Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "گفت‌وگوهای Facebook Messenger را گروهی حذف کنید و صندوق ورودی را سریع‌تر پاک‌سازی کنید." }
+  "fbDailyLimitDescription": {
+    "message": "طرح رایگان شامل ۲۰ حذف، بایگانی یا بازیابی در روز است. برای استفاده نامحدود ارتقا دهید."
+  },
+  "fbQuotaExplanation": {
+    "message": "فیسبوک روزانه ۲۰ اقدام رایگان برای گفتگوها ارائه می‌دهد."
+  },
+  "fbMilestoneMessage": {
+    "message": "شما $1 گفتگو را حذف کرده‌اید!"
+  },
+  "milestoneTitle": {
+    "message": "عالی بود!"
+  },
+  "milestoneReviewAsk": {
+    "message": "از Messenger Cleaner راضی هستید؟ یک نظر کوتاه به دیگران کمک می‌کند آن را پیدا کنند."
+  },
+  "footerReview": {
+    "message": "از Messenger Cleaner راضی هستید؟ نظر بدهید"
+  },
+  "fbPromoQuestion": {
+    "message": "می‌خواهید فهرست دوستانتان را هم مرتب کنید؟"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – حذف همه پیام‌های Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "گفت‌وگوهای Facebook Messenger را گروهی حذف کنید و صندوق ورودی را سریع‌تر پاک‌سازی کنید."
+  },
+  "panelTitle": {
+    "message": "پاک کننده مسنجر"
+  },
+  "checkingTab": {
+    "message": "بررسی برگه فعلی…"
+  },
+  "refresh": {
+    "message": "رفرش"
+  },
+  "openMessengerTitle": {
+    "message": "پیام رسان فیسبوک"
+  },
+  "openMessengerDescription": {
+    "message": "برای شروع پاکسازی مکالمات، به صندوق ورودی مسنجر بروید."
+  },
+  "openMessengerButton": {
+    "message": "مسنجر را باز کنید"
+  },
+  "ready": {
+    "message": "آماده"
+  },
+  "chooseAction": {
+    "message": "یک اقدام زیر را انتخاب کنید"
+  },
+  "stop": {
+    "message": "قطع"
+  },
+  "inboxTools": {
+    "message": "ابزارهای صندوق ورودی"
+  },
+  "bulkActions": {
+    "message": "اقدام گروهی"
+  },
+  "speed": {
+    "message": "سرعت"
+  },
+  "speedSafe": {
+    "message": "ایمن"
+  },
+  "speedNormal": {
+    "message": "احساسی عادی داشتم."
+  },
+  "speedFast": {
+    "message": "Fast"
+  },
+  "deleteAll": {
+    "message": "حذف همه چت‌ها"
+  },
+  "deleteAllDescription": {
+    "message": "حذف دائمی هر مکالمه قابل مشاهده"
+  },
+  "archiveAll": {
+    "message": "بایگانی کردن همه چت‌ها"
+  },
+  "archiveAllDescription": {
+    "message": "انتقال مکالمات صندوق ورودی به بایگانی"
+  },
+  "restoreAll": {
+    "message": "بازیابی چت‌های بایگانی‌شده"
+  },
+  "restoreAllDescription": {
+    "message": "برای بازیابی مکالمات، چت‌های بایگانی‌شده را باز کنید"
+  },
+  "keepTabVisible": {
+    "message": "تب مسنجر را قابل مشاهده نگه دارید."
+  },
+  "pauseNotice": {
+    "message": "تمیز کردن با دور شدن شما متوقف می‌شود و با بازگشت شما از سر گرفته می‌شود."
+  },
+  "localPrivacy": {
+    "message": "به صورت محلی در مرورگر شما اجرا می‌شود"
+  },
+  "noData": {
+    "message": "هیچ داده‌ای از پیام‌ها جمع‌آوری نشده است"
+  },
+  "confirmDeleteTitle": {
+    "message": "همه مکالمات را حذف کنم؟"
+  },
+  "confirmDeleteDescription": {
+    "message": "این قابل بازگشت نیست. مسنجر ممکن است مکالمات و سابقه پیام آنها را برای همیشه حذف کند."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "من متوجه هستم که این اقدام دائمی است"
+  },
+  "cancel": {
+    "message": "لغو کنید"
+  },
+  "deleteNow": {
+    "message": "حذف کنید"
+  },
+  "connectedToMessenger": {
+    "message": "متصل به مسنجر"
+  },
+  "loadingMessenger": {
+    "message": "در حال بارگیری مسنجر…"
+  },
+  "notOnMessenger": {
+    "message": "مسنجر فعال نیست"
+  },
+  "noActiveTab": {
+    "message": "تب فعال"
+  },
+  "openArchivedTooltip": {
+    "message": "برای بازیابی مکالمات، چت‌های بایگانی‌شده را باز کنید"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "بایگانی در چت‌های بایگانی‌شده در دسترس نیست"
+  },
+  "working": {
+    "message": "کار کردن"
+  },
+  "paused": {
+    "message": "متوقّف"
+  },
+  "complete": {
+    "message": "کامل شده"
+  },
+  "stopped": {
+    "message": "متوقف شده"
+  },
+  "error": {
+    "message": "خطا"
+  },
+  "status": {
+    "message": "وضعیت"
+  },
+  "startFailed": {
+    "message": "نتوانست عملیات را شروع کند."
+  },
+  "starting": {
+    "message": "در حال شروع..."
+  },
+  "freeBadge": {
+    "message": "رایگان"
+  },
+  "unlimitedBadge": {
+    "message": "نامحدود"
+  },
+  "dailyFreeUsage": {
+    "message": "استفاده رایگان روزانه"
+  },
+  "getUnlimited": {
+    "message": "نامحدود دریافت کنید"
+  },
+  "quotaExplanation": {
+    "message": "حذف‌ها و بایگانی‌ها محدودیت ۱۰ مورد در روز را دارند."
+  },
+  "close": {
+    "message": "بستن"
+  },
+  "freePlanLimit": {
+    "message": "محدودیت طرح رایگان"
+  },
+  "dailyLimitTitle": {
+    "message": "10 اقدام رایگان شما استفاده شده است"
+  },
+  "dailyLimitDescription": {
+    "message": "طرح رایگان شامل ۱۰ حذف یا بایگانی در هر روز است. برای پاکسازی نامحدود، ارتقا دهید."
+  },
+  "upgradeTitle": {
+    "message": "باز کردن قفل نامحدود برای تمیز کردن"
+  },
+  "upgradeDescription": {
+    "message": "محدودیت روزانه را بردارید و هر زمان که خواستید حساب‌های شبکه‌های اجتماعی خود را پاک کنید."
+  },
+  "unlimitedBenefit": {
+    "message": "حذف و بایگانی نامحدود"
+  },
+  "allExtensionsBenefit": {
+    "message": "دسترسی به بسته CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "خرید یکباره"
+  },
+  "getUnlimitedAccess": {
+    "message": "دسترسی نامحدود"
+  },
+  "alreadyPurchased": {
+    "message": "قبلاً خریداری کرده اید؟"
+  },
+  "licensePlaceholder": {
+    "message": "کلید لایسنس"
+  },
+  "unlock": {
+    "message": "باز کردن قفل"
+  },
+  "checkingLicense": {
+    "message": "بررسی مجوز…"
+  },
+  "licenseActivated": {
+    "message": "دسترسی نامحدود فعال شد."
+  },
+  "licenseInvalid": {
+    "message": "مجوز شما برای این آدرس فعال نیست!"
+  },
+  "batchComplete": {
+    "message": "دسته کامل شد"
+  },
+  "reviewTitle": {
+    "message": "از مسنجر کلینر لذت می‌برید؟"
+  },
+  "reviewDescription": {
+    "message": "یک بررسی سریع از فروشگاه وب کروم به افراد بیشتری کمک می‌کند تا این افزونه را کشف کنند."
+  },
+  "maybeLater": {
+    "message": "شاید بعدا"
+  },
+  "leaveReview": {
+    "message": "ارسال نقد و بررسی"
+  },
+  "panelSubtitle": {
+    "message": "چت‌های فیسبوک خود را به صورت دسته جمعی تمیز کنید"
+  },
+  "connectMessenger": {
+    "message": "مسنجر را باز کنید"
+  },
+  "connectDescription": {
+    "message": "صندوق ورودی مسنجر خود را در برگه کنار این پنل باز کنید."
+  },
+  "waiting": {
+    "message": "در انتظار"
+  },
+  "connected": {
+    "message": "وصل شد"
+  },
+  "loading": {
+    "message": "درحال بارگذاری"
+  },
+  "chooseCleanupAction": {
+    "message": "انتخاب یک اقدام"
+  },
+  "actionDescription": {
+    "message": "انتخاب کنید که مسنجر کلینر با مکالمات شما چه کاری انجام دهد."
+  },
+  "processTitle": {
+    "message": "مکالمات را پردازش کنید"
+  },
+  "inboxView": {
+    "message": "پیام ها"
+  },
+  "archivedView": {
+    "message": "بایگانی شده"
+  }
 }

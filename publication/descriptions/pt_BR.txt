@@ -15,7 +15,7 @@ Messenger Cleaner é uma extensão do Chrome para excluir conversas do Facebook 
 O processamento acontece localmente no navegador e na sua sessão atual do Facebook. A extensão não coleta conteúdo de mensagens, senhas, cookies, listas de amigos ou dados das conversas. Não há anúncios nem rastreamento comportamental.
 
 🎁 LIMPEZA GRÁTIS DIÁRIA
-Faça até 10 exclusões ou arquivamentos concluídos por dia. Restaurar chats arquivados é grátis. Obtenha acesso ilimitado quando precisar organizar uma caixa de entrada maior.
+Faça até 20 exclusões, arquivamentos ou restaurações por dia. Obtenha acesso ilimitado quando precisar organizar uma caixa de entrada maior.
 
 ⚠️ IMPORTANTE
 Excluir uma conversa pode ser permanente. O Messenger Cleaner exige confirmação explícita antes da exclusão. Mantenha a aba do Messenger visível durante o processo.

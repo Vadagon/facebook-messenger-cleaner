@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Xóa tất cả tin nhắn Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Xóa hàng loạt cuộc trò chuyện Facebook Messenger và dọn dẹp hộp thư đến nhanh hơn." }
+  "fbDailyLimitDescription": {
+    "message": "Gói miễn phí bao gồm 20 hành động dọn dẹp bất kỳ mỗi ngày. Nâng cấp để làm sạch không giới hạn."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook bao gồm 20 thao tác cuộc trò chuyện miễn phí mỗi ngày."
+  },
+  "fbMilestoneMessage": {
+    "message": "Bạn đã xóa $1 cuộc trò chuyện!"
+  },
+  "milestoneTitle": {
+    "message": "Làm tốt lắm!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Bạn thích Messenger Cleaner? Đánh giá nhanh sẽ giúp người khác tìm thấy nó."
+  },
+  "footerReview": {
+    "message": "Bạn thích Messenger Cleaner? Để lại đánh giá"
+  },
+  "fbPromoQuestion": {
+    "message": "Bạn cũng cần dọn dẹp danh sách bạn bè của mình?"
+  },
+  "fbPromoName": {
+    "message": "Công cụ xóa bạn bè hàng loạt cho Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Xóa tất cả tin nhắn Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Xóa hàng loạt cuộc trò chuyện Facebook Messenger và dọn dẹp hộp thư đến nhanh hơn."
+  },
+  "panelTitle": {
+    "message": "Trình dọn dẹp tin nhắn"
+  },
+  "checkingTab": {
+    "message": "Đang kiểm tra tab hiện tại…"
+  },
+  "refresh": {
+    "message": "Làm mới"
+  },
+  "openMessengerTitle": {
+    "message": "Mở Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "Chuyển sang hộp thư đến Messenger để bắt đầu dọn dẹp cuộc trò chuyện."
+  },
+  "openMessengerButton": {
+    "message": "Mở Messenger"
+  },
+  "ready": {
+    "message": "Sẵn sàng"
+  },
+  "chooseAction": {
+    "message": "Chọn một hành động dưới đây"
+  },
+  "stop": {
+    "message": "Dừng lại"
+  },
+  "inboxTools": {
+    "message": "CÔNG CỤ INBOX"
+  },
+  "bulkActions": {
+    "message": "Hành động hàng loạt"
+  },
+  "speed": {
+    "message": "Tốc độ"
+  },
+  "speedSafe": {
+    "message": "An toàn"
+  },
+  "speedNormal": {
+    "message": "Bình thường"
+  },
+  "speedFast": {
+    "message": "Nhanh"
+  },
+  "deleteAll": {
+    "message": "Xóa tất cả các cuộc trò chuyện"
+  },
+  "deleteAllDescription": {
+    "message": "Xóa vĩnh viễn mọi cuộc trò chuyện hiển thị"
+  },
+  "archiveAll": {
+    "message": "Lưu trữ tất cả các cuộc trò chuyện"
+  },
+  "archiveAllDescription": {
+    "message": "Di chuyển các cuộc hội thoại trong hộp thư đến vào kho lưu trữ"
+  },
+  "restoreAll": {
+    "message": "Khôi phục các cuộc trò chuyện đã lưu trữ"
+  },
+  "restoreAllDescription": {
+    "message": "Mở cuộc trò chuyện đã lưu trữ để khôi phục cuộc trò chuyện"
+  },
+  "keepTabVisible": {
+    "message": "Giữ tab Messenger hiển thị."
+  },
+  "pauseNotice": {
+    "message": "Quá trình dọn dẹp sẽ tạm dừng một cách an toàn khi bạn chuyển đi và tiếp tục lại khi bạn quay lại."
+  },
+  "localPrivacy": {
+    "message": "Chạy cục bộ trong trình duyệt của bạn"
+  },
+  "noData": {
+    "message": "Không có dữ liệu tin nhắn nào được thu thập"
+  },
+  "confirmDeleteTitle": {
+    "message": "Xóa mọi cuộc trò chuyện?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Điều này không thể hoàn tác được. Messenger có thể xóa vĩnh viễn các cuộc trò chuyện và lịch sử tin nhắn của chúng."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Tôi hiểu hành động này là vĩnh viễn"
+  },
+  "cancel": {
+    "message": "Hủy bỏ"
+  },
+  "deleteNow": {
+    "message": "Xóa ngay"
+  },
+  "connectedToMessenger": {
+    "message": "Đã kết nối với Messenger"
+  },
+  "loadingMessenger": {
+    "message": "Đang tải Messenger…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger không hoạt động"
+  },
+  "noActiveTab": {
+    "message": "Không có tab hoạt động"
+  },
+  "openArchivedTooltip": {
+    "message": "Mở cuộc trò chuyện đã lưu trữ để khôi phục cuộc trò chuyện"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Tính năng lưu trữ không khả dụng trên các cuộc trò chuyện đã lưu trữ"
+  },
+  "working": {
+    "message": "Đang làm việc"
+  },
+  "paused": {
+    "message": "Đã tạm dừng"
+  },
+  "complete": {
+    "message": "Hoàn thành"
+  },
+  "stopped": {
+    "message": "Đã dừng"
+  },
+  "error": {
+    "message": "Lỗi"
+  },
+  "status": {
+    "message": "Trạng thái"
+  },
+  "startFailed": {
+    "message": "Không thể bắt đầu hoạt động."
+  },
+  "starting": {
+    "message": "Bắt đầu…"
+  },
+  "freeBadge": {
+    "message": "MIỄN PHÍ"
+  },
+  "unlimitedBadge": {
+    "message": "KHÔNG GIỚI HẠN"
+  },
+  "dailyFreeUsage": {
+    "message": "Sử dụng miễn phí hàng ngày"
+  },
+  "getUnlimited": {
+    "message": "NHẬN KHÔNG GIỚI HẠN"
+  },
+  "quotaExplanation": {
+    "message": "Tất cả các hành động dọn dẹp trên Facebook và Instagram đều có chung giới hạn 10 lần mỗi ngày."
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "freePlanLimit": {
+    "message": "GIỚI HẠN GÓI MIỄN PHÍ"
+  },
+  "dailyLimitTitle": {
+    "message": "10 hành động miễn phí của bạn được sử dụng"
+  },
+  "dailyLimitDescription": {
+    "message": "Gói miễn phí bao gồm 10 hành động dọn dẹp bất kỳ mỗi ngày. Nâng cấp để làm sạch không giới hạn."
+  },
+  "upgradeTitle": {
+    "message": "Mở khóa làm sạch không giới hạn"
+  },
+  "upgradeDescription": {
+    "message": "Xóa giới hạn hàng ngày và xóa tài khoản xã hội của bạn bất cứ khi nào bạn muốn."
+  },
+  "unlimitedBenefit": {
+    "message": "Hành động dọn dẹp không giới hạn"
+  },
+  "allExtensionsBenefit": {
+    "message": "Truy cập vào gói CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Mua một lần"
+  },
+  "getUnlimitedAccess": {
+    "message": "Nhận quyền truy cập không giới hạn"
+  },
+  "alreadyPurchased": {
+    "message": "Đã mua chưa?"
+  },
+  "licensePlaceholder": {
+    "message": "Mã cấp phép"
+  },
+  "unlock": {
+    "message": "Mở khóa"
+  },
+  "checkingLicense": {
+    "message": "Đang kiểm tra giấy phép…"
+  },
+  "licenseActivated": {
+    "message": "Đã kích hoạt quyền truy cập không giới hạn."
+  },
+  "licenseInvalid": {
+    "message": "Mã cấp phép đó không hoạt động."
+  },
+  "batchComplete": {
+    "message": "HOÀN THÀNH HÀNG LOẠI"
+  },
+  "reviewTitle": {
+    "message": "Bạn thích Messenger Cleaner?"
+  },
+  "reviewDescription": {
+    "message": "Bài đánh giá nhanh về Cửa hàng Chrome trực tuyến sẽ giúp nhiều người khám phá tiện ích mở rộng hơn."
+  },
+  "maybeLater": {
+    "message": "Có lẽ sau này"
+  },
+  "leaveReview": {
+    "message": "Để lại đánh giá"
+  },
+  "panelSubtitle": {
+    "message": "Dọn dẹp hàng loạt cuộc trò chuyện trên Facebook của bạn"
+  },
+  "connectMessenger": {
+    "message": "Mở Messenger"
+  },
+  "connectDescription": {
+    "message": "Mở hộp thư đến Messenger của bạn trong tab bên cạnh bảng này."
+  },
+  "waiting": {
+    "message": "Đang chờ"
+  },
+  "connected": {
+    "message": "Đã kết nối"
+  },
+  "loading": {
+    "message": "Đang tải"
+  },
+  "chooseCleanupAction": {
+    "message": "Chọn một hành động"
+  },
+  "actionDescription": {
+    "message": "Chọn những gì Messenger Cleaner sẽ làm với cuộc trò chuyện của bạn."
+  },
+  "processTitle": {
+    "message": "Xử lý cuộc hội thoại"
+  },
+  "inboxView": {
+    "message": "Hộp thư đến"
+  },
+  "archivedView": {
+    "message": "Đã lưu trữ"
+  }
 }

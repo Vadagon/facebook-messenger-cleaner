@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Удалить все сообщения Facebook" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Массово удаляйте переписки Facebook Messenger и быстрее очищайте входящие сообщения." }
+  "fbDailyLimitDescription": {
+    "message": "Бесплатный план включает в себя любые 20 действий по уборке каждый день. Обновите для неограниченной уборки."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook включает 20 бесплатных действий с диалогами в день."
+  },
+  "fbMilestoneMessage": {
+    "message": "Вы удалили $1 диалогов!"
+  },
+  "milestoneTitle": {
+    "message": "Отличная работа!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Нравится Messenger Cleaner? Быстрый обзор поможет другим найти его."
+  },
+  "footerReview": {
+    "message": "Нравится Messenger Cleaner? Оставить отзыв"
+  },
+  "fbPromoQuestion": {
+    "message": "Вам тоже нужно почистить список друзей?"
+  },
+  "fbPromoName": {
+    "message": "Массовое удаление друзей для Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Удалить все сообщения Facebook"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Массово удаляйте переписки Facebook Messenger и быстрее очищайте входящие сообщения."
+  },
+  "panelTitle": {
+    "message": "Посыльный очиститель"
+  },
+  "checkingTab": {
+    "message": "Проверка текущей вкладки…"
+  },
+  "refresh": {
+    "message": "Обновить"
+  },
+  "openMessengerTitle": {
+    "message": "Откройте Facebook Мессенджер"
+  },
+  "openMessengerDescription": {
+    "message": "Переключитесь на почтовый ящик Messenger, чтобы начать очистку разговоров."
+  },
+  "openMessengerButton": {
+    "message": "Открыть Мессенджер"
+  },
+  "ready": {
+    "message": "Готово"
+  },
+  "chooseAction": {
+    "message": "Выберите действие ниже"
+  },
+  "stop": {
+    "message": "Стоп"
+  },
+  "inboxTools": {
+    "message": "ИНСТРУМЕНТЫ ДЛЯ ВХОДЯЩИХ"
+  },
+  "bulkActions": {
+    "message": "Массовые действия"
+  },
+  "speed": {
+    "message": "Скорость"
+  },
+  "speedSafe": {
+    "message": "Сейф"
+  },
+  "speedNormal": {
+    "message": "Нормальный"
+  },
+  "speedFast": {
+    "message": "Быстро"
+  },
+  "deleteAll": {
+    "message": "Удалить все чаты"
+  },
+  "deleteAllDescription": {
+    "message": "Навсегда удалить все видимые разговоры"
+  },
+  "archiveAll": {
+    "message": "Архивировать все чаты"
+  },
+  "archiveAllDescription": {
+    "message": "Переместить входящие разговоры в архив"
+  },
+  "restoreAll": {
+    "message": "Восстановить архивированные чаты"
+  },
+  "restoreAllDescription": {
+    "message": "Откройте архивированные чаты, чтобы восстановить разговоры."
+  },
+  "keepTabVisible": {
+    "message": "Держите вкладку Messenger видимой."
+  },
+  "pauseNotice": {
+    "message": "Уборка безопасно приостанавливается, когда вы отключаетесь, и возобновляется, когда вы возвращаетесь."
+  },
+  "localPrivacy": {
+    "message": "Запускается локально в вашем браузере"
+  },
+  "noData": {
+    "message": "Данные о сообщениях не собираются."
+  },
+  "confirmDeleteTitle": {
+    "message": "Удалить все разговоры?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Это невозможно отменить. Messenger может навсегда удалить разговоры и историю сообщений."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Я понимаю, что это действие является постоянным"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "deleteNow": {
+    "message": "Удалить сейчас"
+  },
+  "connectedToMessenger": {
+    "message": "Подключено к Мессенджеру"
+  },
+  "loadingMessenger": {
+    "message": "Загрузка Мессенджера…"
+  },
+  "notOnMessenger": {
+    "message": "Мессенджер не активен"
+  },
+  "noActiveTab": {
+    "message": "Нет активной вкладки"
+  },
+  "openArchivedTooltip": {
+    "message": "Откройте архивированные чаты, чтобы восстановить разговоры."
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Архивирование недоступно в архивированных чатах."
+  },
+  "working": {
+    "message": "Работаю"
+  },
+  "paused": {
+    "message": "Приостановлено"
+  },
+  "complete": {
+    "message": "Завершить"
+  },
+  "stopped": {
+    "message": "Остановлено"
+  },
+  "error": {
+    "message": "Ошибка"
+  },
+  "status": {
+    "message": "Статус"
+  },
+  "startFailed": {
+    "message": "Не удалось начать операцию."
+  },
+  "starting": {
+    "message": "Начало…"
+  },
+  "freeBadge": {
+    "message": "БЕСПЛАТНО"
+  },
+  "unlimitedBadge": {
+    "message": "БЕЗОГРАНИЧЕННЫЙ"
+  },
+  "dailyFreeUsage": {
+    "message": "Ежедневное бесплатное использование"
+  },
+  "getUnlimited": {
+    "message": "ПОЛУЧИТЕ БЕЗОГРАНИЧЕННОСТЬ"
+  },
+  "quotaExplanation": {
+    "message": "Все действия по очистке Facebook и Instagram имеют общий лимит — 10 в день."
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "freePlanLimit": {
+    "message": "ОГРАНИЧЕНИЕ БЕСПЛАТНОГО ПЛАНА"
+  },
+  "dailyLimitTitle": {
+    "message": "Ваши 10 бесплатных действий использованы"
+  },
+  "dailyLimitDescription": {
+    "message": "Бесплатный план включает в себя любые 10 действий по уборке каждый день. Обновите для неограниченной уборки."
+  },
+  "upgradeTitle": {
+    "message": "Разблокируйте неограниченную уборку"
+  },
+  "upgradeDescription": {
+    "message": "Снимите дневной лимит и очищайте свои аккаунты в социальных сетях, когда захотите."
+  },
+  "unlimitedBenefit": {
+    "message": "Неограниченное количество действий по очистке"
+  },
+  "allExtensionsBenefit": {
+    "message": "Доступ к пакету CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "Разовая покупка"
+  },
+  "getUnlimitedAccess": {
+    "message": "Получите неограниченный доступ"
+  },
+  "alreadyPurchased": {
+    "message": "Уже купили?"
+  },
+  "licensePlaceholder": {
+    "message": "Лицензионный ключ"
+  },
+  "unlock": {
+    "message": "Разблокировать"
+  },
+  "checkingLicense": {
+    "message": "Проверка лицензии…"
+  },
+  "licenseActivated": {
+    "message": "Безлимитный доступ активирован."
+  },
+  "licenseInvalid": {
+    "message": "Этот лицензионный ключ не активен."
+  },
+  "batchComplete": {
+    "message": "ПАРТИЯ ЗАВЕРШЕНА"
+  },
+  "reviewTitle": {
+    "message": "Нравится Messenger Cleaner?"
+  },
+  "reviewDescription": {
+    "message": "Краткий обзор Интернет-магазина Chrome поможет большему количеству людей узнать о расширении."
+  },
+  "maybeLater": {
+    "message": "Может быть, позже"
+  },
+  "leaveReview": {
+    "message": "Оставить отзыв"
+  },
+  "panelSubtitle": {
+    "message": "Массовая очистка чатов Facebook"
+  },
+  "connectMessenger": {
+    "message": "Открыть Мессенджер"
+  },
+  "connectDescription": {
+    "message": "Откройте свой почтовый ящик Messenger на вкладке рядом с этой панелью."
+  },
+  "waiting": {
+    "message": "Ожидание"
+  },
+  "connected": {
+    "message": "Подключено"
+  },
+  "loading": {
+    "message": "Загрузка"
+  },
+  "chooseCleanupAction": {
+    "message": "Выберите действие"
+  },
+  "actionDescription": {
+    "message": "Выберите, что Messenger Cleaner должен делать с вашими разговорами."
+  },
+  "processTitle": {
+    "message": "Обрабатывать разговоры"
+  },
+  "inboxView": {
+    "message": "Входящие"
+  },
+  "archivedView": {
+    "message": "В архиве"
+  }
 }

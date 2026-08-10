@@ -3,7 +3,7 @@
   "name": "__MSG_extensionName__",
   "short_name": "__MSG_extensionShortName__",
   "description": "__MSG_extensionDescription__",
-  "version": "52",
+  "version": "53",
   "default_locale": "en",
   "minimum_chrome_version": "114",
   "icons": {
@@ -26,7 +26,8 @@
     "https://cleanmysocial.verblike.com/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
   },
   "action": {
     "default_title": "__MSG_extensionShortName__",
@@ -38,7 +39,7 @@
     }
   },
   "side_panel": {
-    "default_path": "sidepanel.html"
+    "default_path": "src/panel/facebook.html"
   },
   "content_scripts": [
     {
@@ -48,7 +49,7 @@
         "https://m.facebook.com/messages/*",
         "https://www.messenger.com/*"
       ],
-      "js": ["content.js"],
+      "js": ["src/lib/facebook-content.js"],
       "run_at": "document_idle"
     }
   ]

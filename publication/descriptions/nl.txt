@@ -15,7 +15,7 @@ Messenger Cleaner is een Chrome-extensie waarmee je Facebook Messenger-gesprekke
 Alles wordt lokaal verwerkt in je browser en bestaande Facebook-sessie. De extensie verzamelt geen berichtinhoud, Facebook-wachtwoorden, cookies, vriendenlijsten of gespreksgegevens. Er zijn geen advertenties of gedragstrackers.
 
 🎁 DAGELIJKS GRATIS OPRUIMEN
-Voer dagelijks maximaal 10 geslaagde verwijder- of archiveeracties uit. Het herstellen van gearchiveerde chats is gratis. Voor grotere opruimacties is onbeperkte toegang beschikbaar.
+Voer dagelijks maximaal 20 geslaagde verwijder-, archiveer- of herstelacties uit. Voor grotere opruimacties is onbeperkte toegang beschikbaar.
 
 ⚠️ BELANGRIJK
 Het verwijderen van een gesprek kan permanent zijn. Voor verwijderen is altijd een duidelijke bevestiging nodig. Houd het Messenger-tabblad zichtbaar tijdens het proces.

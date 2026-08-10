@@ -4,6 +4,7 @@
 
   const state = {
     running: false,
+    operationId: null,
     operation: null,
     processed: 0,
     stopRequested: false,
@@ -60,25 +61,30 @@
     }
   }
 
-  async function getAccessState() {
-    const response = await chrome.runtime.sendMessage({ type: 'GET_ACCESS_STATE' });
+  async function readFacebookEntitlement() {
+    const response = await chrome.runtime.sendMessage({ type: 'cms.entitlement.state.read', platform: 'facebook' });
     if (!response?.ok || !response.access) throw new Error(response?.error || 'Could not check access.');
     return response.access;
   }
 
-  async function ensureMeteredAccess(operation) {
-    if (!['delete', 'archive'].includes(operation)) return null;
-    const access = await getAccessState();
+  async function assertFacebookQuota(operation) {
+    if (!['delete', 'archive', 'unarchive'].includes(operation)) return null;
+    const access = await readFacebookEntitlement();
     if (!access.unlimited && access.remaining <= 0) throw new DailyLimitError();
     return access;
   }
 
-  async function recordMeteredAction(operation) {
-    if (!['delete', 'archive'].includes(operation)) return null;
-    const response = await chrome.runtime.sendMessage({ type: 'RECORD_METERED_ACTION' });
-    if (!response?.ok) throw new Error(response?.error || 'Could not update daily usage.');
+  async function reserveFacebookUsage(operation) {
+    if (!['delete', 'archive', 'unarchive'].includes(operation)) return null;
+    const response = await chrome.runtime.sendMessage({ type: 'cms.entitlement.usage.reserve', platform: 'facebook' });
+    if (!response?.ok) throw new Error(response?.error || 'Could not reserve daily usage.');
     if (!response.allowed) throw new DailyLimitError();
-    return response.access;
+    return response.reservationId || null;
+  }
+
+  async function releaseFacebookUsage(reservationId) {
+    if (!reservationId) return;
+    await chrome.runtime.sendMessage({ type: 'cms.entitlement.usage.release', reservationId }).catch(() => {});
   }
 
   function visible(element) {
@@ -112,25 +118,26 @@
       'h1, h2, [role="heading"], [aria-label="Archived chats"], [aria-label="Archived threads"]'
     );
     return [...headings].some(element => {
-      const text = normalizedText(element);
+      const text = normalizeControlText(element);
       return archiveLabels.some(label => text.includes(label));
     });
   }
 
-  function pageState() {
+  function snapshotMessengerPage() {
     return {
-      type: 'PAGE_STATE',
+      type: 'cms.facebook.page.state',
       url: location.href,
       title: document.title,
       archived: isArchivedPage(),
       ready: document.readyState !== 'loading',
-      operation: operationSnapshot()
+      operation: snapshotMessengerOperation()
     };
   }
 
-  function operationSnapshot() {
+  function snapshotMessengerOperation() {
     return {
       running: state.running,
+      operationId: state.operationId,
       operation: state.operation,
       processed: state.processed,
       paused: state.paused,
@@ -139,28 +146,28 @@
     };
   }
 
-  function publishPageState() {
+  function broadcastMessengerPage() {
     state.lastUrl = location.href;
     state.lastArchived = isArchivedPage();
-    chrome.runtime.sendMessage(pageState()).catch(() => {});
+    chrome.runtime.sendMessage(snapshotMessengerPage()).catch(() => {});
   }
 
-  function publishOperation(status, message) {
+  function broadcastMessengerOperation(status, message) {
     state.status = status;
     state.message = message;
-    chrome.runtime.sendMessage({ type: 'OPERATION_STATE', ...operationSnapshot() }).catch(() => {});
+    chrome.runtime.sendMessage({ type: 'cms.facebook.operation.state', ...snapshotMessengerOperation() }).catch(() => {});
   }
 
-  function normalizedText(element) {
+  function normalizeControlText(element) {
     return [element?.innerText, element?.textContent, element?.getAttribute?.('aria-label'), element?.title]
       .filter(Boolean).join(' ').trim().toLocaleLowerCase();
   }
 
-  function containsWord(text, words) {
+  function matchesAnyPhrase(text, words) {
     return words.some(word => text.includes(word));
   }
 
-  function getRows() {
+  function collectConversationRows() {
     const selectors = [
       '[data-virtualized-list-anchor]',
       '[data-testid="mwthreadlist-item"]',
@@ -190,7 +197,7 @@
     return [...rows];
   }
 
-  function getScrollContainer() {
+  function locateConversationScroller() {
     const named = document.querySelectorAll(
       '[aria-label*="Chats" i], [aria-label*="Archived" i], [data-testid="mwthreadlist-items"], [role="main"] [role="list"]'
     );
@@ -206,7 +213,7 @@
     return document.scrollingElement;
   }
 
-  function findMenuButton(row) {
+  function locateRowMenuTrigger(row) {
     const labelled = row.querySelector(
       '[aria-label*="more" i], [aria-label*="option" i], [aria-label*="menu" i], [aria-haspopup="menu"]'
     );
@@ -222,23 +229,23 @@
     return buttons.sort((a, b) => b.getBoundingClientRect().right - a.getBoundingClientRect().right)[0] || null;
   }
 
-  function findOpenMenu() {
+  function locateOpenContextMenu() {
     const candidates = document.querySelectorAll(
       '[role="menu"], [role="listbox"], [role="dialog"], [data-testid*="menu" i], [data-testid*="dropdown" i]'
     );
     return [...candidates].find(menu => visible(menu) && menu.querySelector('[role="menuitem"], [role="option"], button')) || null;
   }
 
-  async function openMenu(row) {
+  async function openConversationMenu(row) {
     row.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
     row.dispatchEvent(new PointerEvent('pointerover', { bubbles: true }));
     await wait(80);
-    const button = findMenuButton(row);
+    const button = locateRowMenuTrigger(row);
     if (button) {
       button.click();
       for (let attempt = 0; attempt < 12; attempt += 1) {
         await wait(35);
-        const menu = findOpenMenu();
+        const menu = locateOpenContextMenu();
         if (menu) return menu;
       }
     }
@@ -254,67 +261,70 @@
       }));
       for (let attempt = 0; attempt < 12; attempt += 1) {
         await wait(35);
-        const menu = findOpenMenu();
+        const menu = locateOpenContextMenu();
         if (menu) return menu;
       }
     } catch {}
     return null;
   }
 
-  function findAction(menu, words) {
+  function locateMenuAction(menu, words) {
     const selectors = [
       '[role="menuitem"]', '[role="option"]', 'button', 'li',
       '[role="button"]', 'a', '[tabindex="0"]'
     ];
     for (const selector of selectors) {
       const item = [...menu.querySelectorAll(selector)]
-        .filter(element => visible(element) && containsWord(normalizedText(element), words))
-        .sort((a, b) => normalizedText(a).length - normalizedText(b).length)[0];
+        .filter(element => visible(element) && matchesAnyPhrase(normalizeControlText(element), words))
+        .sort((a, b) => normalizeControlText(a).length - normalizeControlText(b).length)[0];
       if (item) return item;
     }
     return null;
   }
 
-  async function findActionScrolling(menu, words) {
-    let item = findAction(menu, words);
+  async function locateScrollableMenuAction(menu, words) {
+    let item = locateMenuAction(menu, words);
     if (item) return item;
     if (menu.scrollHeight <= menu.clientHeight) return null;
     for (let attempt = 0; attempt < 8; attempt += 1) {
       if (menu.scrollTop + menu.clientHeight >= menu.scrollHeight - 2) break;
       menu.scrollBy({ top: 70, behavior: 'instant' });
       await wait(90);
-      item = findAction(menu, words);
+      item = locateMenuAction(menu, words);
       if (item) return item;
     }
     return null;
   }
 
-  function findConfirmButton() {
+  function locateDeleteConfirmation() {
     const dialog = [...document.querySelectorAll('[role="dialog"], [role="alertdialog"], [aria-modal="true"]')].find(visible);
     if (!dialog) return null;
     const buttons = [...dialog.querySelectorAll('button, [role="button"]')].filter(visible);
-    return buttons.find(button => containsWord(normalizedText(button), WORDS.confirmDelete)) || null;
+    return buttons.find(button => matchesAnyPhrase(normalizeControlText(button), WORDS.confirmDelete)) || null;
   }
 
-  async function waitWhilePaused() {
+  async function waitForVisibleMessenger() {
     while (state.paused && !state.stopRequested) await wait(180);
   }
 
-  async function actOnRow(row, operation) {
+  async function processConversationRow(row, operation) {
     if (state.stopRequested || !row?.isConnected) return false;
-    await waitWhilePaused();
+    await waitForVisibleMessenger();
     if (state.stopRequested) return false;
-    await ensureMeteredAccess(operation);
+    await assertFacebookQuota(operation);
 
-    const menu = await openMenu(row);
+    const menu = await openConversationMenu(row);
     if (!menu) return false;
     await wait(delay('menu'));
-    const item = await findActionScrolling(menu, WORDS[operation]);
+    const item = await locateScrollableMenuAction(menu, WORDS[operation]);
     if (!item) {
       document.body.click();
       return false;
     }
     item.scrollIntoView({ behavior: 'instant', block: 'nearest' });
+
+    let reservationId = null;
+    if (operation !== 'delete') reservationId = await reserveFacebookUsage(operation);
     item.click();
     await wait(delay('action'));
 
@@ -322,13 +332,14 @@
       const deadline = Date.now() + 4000;
       let confirm = null;
       while (!confirm && Date.now() < deadline && !state.stopRequested) {
-        confirm = findConfirmButton();
+        confirm = locateDeleteConfirmation();
         if (!confirm) await wait(60);
       }
       if (!confirm) {
         document.body.click();
         return false;
       }
+      reservationId = await reserveFacebookUsage(operation);
       confirm.click();
       await wait(delay('confirm'));
     } else if (operation === 'unarchive') {
@@ -340,31 +351,34 @@
         await wait(80);
       }
       const currentHref = row.querySelector('a[href*="/t/"]')?.href || '';
-      if (row.isConnected && currentHref === originalHref) return false;
+      if (row.isConnected && currentHref === originalHref) {
+        await releaseFacebookUsage(reservationId);
+        return false;
+      }
     }
-    await recordMeteredAction(operation);
     return true;
   }
 
-  async function run(operation) {
+  async function executeConversationBatch(operation) {
     state.running = true;
+    state.operationId = crypto.randomUUID?.() || `fb-${Date.now()}-${Math.random().toString(36).slice(2)}`;
     state.operation = operation;
     state.processed = 0;
     state.stopRequested = false;
-    publishOperation('running', 'Scanning conversations…');
+    broadcastMessengerOperation('running', 'Scanning conversations…');
 
     let emptyPasses = 0;
     let stalledPasses = 0;
     try {
       while (!state.stopRequested) {
-        await waitWhilePaused();
+        await waitForVisibleMessenger();
         if (state.stopRequested) break;
         if (operation === 'archive' && isArchivedPage()) throw new Error('Archive is unavailable on Archived chats.');
         if (operation === 'unarchive' && !isArchivedPage()) throw new Error('Open Archived chats before restoring conversations.');
 
-        const rows = getRows();
+        const rows = collectConversationRows();
         if (!rows.length) {
-          getScrollContainer()?.scrollBy?.({ top: 500, behavior: 'instant' });
+          locateConversationScroller()?.scrollBy?.({ top: 500, behavior: 'instant' });
           await wait(delay('scan'));
           emptyPasses += 1;
           if (emptyPasses >= 5) break;
@@ -376,11 +390,11 @@
         const batch = operation === 'unarchive' ? rows.slice(0, 1) : rows;
         for (const row of batch) {
           if (state.stopRequested) break;
-          const succeeded = await actOnRow(row, operation);
+          const succeeded = await processConversationRow(row, operation);
           if (succeeded) {
             state.processed += 1;
             changed += 1;
-            publishOperation('running', `${operationLabel(operation)} ${state.processed} conversation${state.processed === 1 ? '' : 's'}…`);
+            broadcastMessengerOperation('running', `${presentTenseOperation(operation)} ${state.processed} conversation${state.processed === 1 ? '' : 's'}…`);
           }
           await wait(delay('between'));
         }
@@ -390,51 +404,56 @@
       }
 
       const stopped = state.stopRequested;
-      publishOperation(stopped ? 'stopped' : 'done',
-        `${stopped ? 'Stopped' : 'Finished'} — ${state.processed} conversation${state.processed === 1 ? '' : 's'} ${pastLabel(operation)}.`);
+      broadcastMessengerOperation(stopped ? 'stopped' : 'done',
+        `${stopped ? 'Stopped' : 'Finished'} — ${state.processed} conversation${state.processed === 1 ? '' : 's'} ${pastTenseOperation(operation)}.`);
     } catch (error) {
-      if (error instanceof DailyLimitError) publishOperation('limit', error.message);
-      else publishOperation('error', error?.message || 'The operation could not be completed.');
+      if (error instanceof DailyLimitError) broadcastMessengerOperation('limit', error.message);
+      else broadcastMessengerOperation('error', error?.message || 'The operation could not be completed.');
     } finally {
       state.running = false;
       state.operation = null;
       state.stopRequested = false;
-      publishPageState();
+      broadcastMessengerPage();
     }
   }
 
-  function operationLabel(operation) {
+  function presentTenseOperation(operation) {
     return ({ delete: 'Deleting', archive: 'Archiving', unarchive: 'Restoring' })[operation];
   }
 
-  function pastLabel(operation) {
+  function pastTenseOperation(operation) {
     return ({ delete: 'deleted', archive: 'archived', unarchive: 'restored' })[operation];
   }
 
   document.addEventListener('visibilitychange', () => {
     state.paused = document.hidden;
-    if (state.running) publishOperation(state.paused ? 'paused' : 'running',
+    if (state.running) broadcastMessengerOperation(state.paused ? 'paused' : 'running',
       state.paused ? 'Paused while this tab is in the background.' : `Resuming ${state.operation}…`);
   });
 
   chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-    if (message.type === 'GET_PAGE_STATE') {
-      sendResponse(pageState());
+    const commandType = ({
+      GET_PAGE_STATE: 'cms.facebook.page.read',
+      START_OPERATION: 'cms.facebook.operation.start',
+      STOP_OPERATION: 'cms.facebook.operation.stop'
+    })[message.type] || message.type;
+    if (commandType === 'cms.facebook.page.read') {
+      sendResponse(snapshotMessengerPage());
       return false;
     }
-    if (message.type === 'START_OPERATION') {
+    if (commandType === 'cms.facebook.operation.start') {
       if (state.running) {
         sendResponse({ ok: false, error: 'An operation is already running in this tab.' });
       } else if (!['delete', 'archive', 'unarchive'].includes(message.operation)) {
         sendResponse({ ok: false, error: 'Unknown operation.' });
       } else {
         state.speed = ['safe', 'normal', 'fast'].includes(message.speed) ? message.speed : 'normal';
-        run(message.operation);
+        executeConversationBatch(message.operation);
         sendResponse({ ok: true });
       }
       return false;
     }
-    if (message.type === 'STOP_OPERATION') {
+    if (commandType === 'cms.facebook.operation.stop') {
       state.stopRequested = true;
       state.paused = false;
       sendResponse({ ok: true });
@@ -453,18 +472,18 @@
       if (location.href !== state.lastUrl || archived !== state.lastArchived) {
         state.lastUrl = location.href;
         state.lastArchived = archived;
-        publishPageState();
+        broadcastMessengerPage();
       }
     });
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
-  window.addEventListener('popstate', publishPageState);
-  window.addEventListener('hashchange', publishPageState);
+  window.addEventListener('popstate', broadcastMessengerPage);
+  window.addEventListener('hashchange', broadcastMessengerPage);
   setInterval(() => {
     if (location.href !== state.lastUrl) {
       state.lastUrl = location.href;
-      publishPageState();
+      broadcastMessengerPage();
     }
   }, 500);
-  publishPageState();
+  broadcastMessengerPage();
 })();

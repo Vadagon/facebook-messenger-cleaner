@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – 刪除所有 Facebook 訊息" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "批次刪除 Facebook Messenger 對話與不需要的訊息，更快清理收件匣。" }
+  "fbDailyLimitDescription": {
+    "message": "免費方案每天包含 20 次刪除、封存或還原操作。升級後即可無限制清理。"
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook 每天提供 20 次免費對話操作。"
+  },
+  "fbMilestoneMessage": {
+    "message": "您已刪除 $1 個對話！"
+  },
+  "milestoneTitle": {
+    "message": "做得好！"
+  },
+  "milestoneReviewAsk": {
+    "message": "喜歡 Messenger Cleaner 嗎？簡短評論能幫助其他人找到它。"
+  },
+  "footerReview": {
+    "message": "喜歡 Messenger Cleaner 嗎？留下評論"
+  },
+  "fbPromoQuestion": {
+    "message": "也想整理好友名單嗎？"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – 刪除所有 Facebook 訊息"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "批次刪除 Facebook Messenger 對話與不需要的訊息，更快清理收件匣。"
+  },
+  "panelTitle": {
+    "message": "Messenger清潔工具"
+  },
+  "checkingTab": {
+    "message": "正在檢查目前的分頁…"
+  },
+  "refresh": {
+    "message": "刷新"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "切換至Messenger收件匣，即可開始清潔對話。"
+  },
+  "openMessengerButton": {
+    "message": "打開Messenger"
+  },
+  "ready": {
+    "message": "準備就緒"
+  },
+  "chooseAction": {
+    "message": "在下方選擇一個動作"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "inboxTools": {
+    "message": "收件箱工具"
+  },
+  "bulkActions": {
+    "message": "批量操作"
+  },
+  "speed": {
+    "message": "速度"
+  },
+  "speedSafe": {
+    "message": "安全"
+  },
+  "speedNormal": {
+    "message": "普通"
+  },
+  "speedFast": {
+    "message": "快速"
+  },
+  "deleteAll": {
+    "message": "刪除所有對話"
+  },
+  "deleteAllDescription": {
+    "message": "永久移除所有可見對話"
+  },
+  "archiveAll": {
+    "message": "封存所有聊天"
+  },
+  "archiveAllDescription": {
+    "message": "將收件匣對話移至封存"
+  },
+  "restoreAll": {
+    "message": "還原已封存的聊天"
+  },
+  "restoreAllDescription": {
+    "message": "開啟已封存的對話以還原對話"
+  },
+  "keepTabVisible": {
+    "message": "保持「Messenger」標籤頁可見。"
+  },
+  "pauseNotice": {
+    "message": "當你離開時，清潔服務會安全地暫停，當你返回時，清潔服務會恢復。"
+  },
+  "localPrivacy": {
+    "message": "在瀏覽器中本機執行"
+  },
+  "noData": {
+    "message": "未收集消息數據"
+  },
+  "confirmDeleteTitle": {
+    "message": "刪除所有對話？"
+  },
+  "confirmDeleteDescription": {
+    "message": "此操作無法復原。Messenger可能會永久刪除對話及其訊息紀錄。"
+  },
+  "confirmDeleteCheckbox": {
+    "message": "我了解此操作是永久性的"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "deleteNow": {
+    "message": "立即刪除"
+  },
+  "connectedToMessenger": {
+    "message": "已連線至Messenger"
+  },
+  "loadingMessenger": {
+    "message": "正在載入Messenger…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger未啟用"
+  },
+  "noActiveTab": {
+    "message": "活動中的標籤"
+  },
+  "openArchivedTooltip": {
+    "message": "開啟已封存的對話以還原對話"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "無法在已封存的聊天中進行封存"
+  },
+  "working": {
+    "message": "開始課程/選課不能使用"
+  },
+  "paused": {
+    "message": "已暫停"
+  },
+  "complete": {
+    "message": "已完成"
+  },
+  "stopped": {
+    "message": "已停止"
+  },
+  "error": {
+    "message": "錯誤"
+  },
+  "status": {
+    "message": "Status"
+  },
+  "startFailed": {
+    "message": "無法啟動操作。"
+  },
+  "starting": {
+    "message": "開始中…"
+  },
+  "freeBadge": {
+    "message": "免費"
+  },
+  "unlimitedBadge": {
+    "message": "無限制"
+  },
+  "dailyFreeUsage": {
+    "message": "每日免費使用"
+  },
+  "getUnlimited": {
+    "message": "取得無限制版本"
+  },
+  "quotaExplanation": {
+    "message": "刪除和封存每天最多共用10個。"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "freePlanLimit": {
+    "message": "免費方案上限"
+  },
+  "dailyLimitTitle": {
+    "message": "已使用您的10個免費操作"
+  },
+  "dailyLimitDescription": {
+    "message": "免費方案包括每天10次刪除或封存。升級以享受不限次數的清潔服務。"
+  },
+  "upgradeTitle": {
+    "message": "解鎖不限次數的清潔服務"
+  },
+  "upgradeDescription": {
+    "message": "取消每日限額，隨時清理社交帳戶。"
+  },
+  "unlimitedBenefit": {
+    "message": "無限制刪除和封存"
+  },
+  "allExtensionsBenefit": {
+    "message": "存取CleanMySocial套件"
+  },
+  "lifetimeBenefit": {
+    "message": "一次性購買"
+  },
+  "getUnlimitedAccess": {
+    "message": "獲得無限制存取權限= «»"
+  },
+  "alreadyPurchased": {
+    "message": "已經購買了嗎 ?"
+  },
+  "licensePlaceholder": {
+    "message": "授權碼"
+  },
+  "unlock": {
+    "message": "解鎖"
+  },
+  "checkingLicense": {
+    "message": "正在檢查授權…"
+  },
+  "licenseActivated": {
+    "message": "已啟用無限存取。"
+  },
+  "licenseInvalid": {
+    "message": "授權碼啟用。"
+  },
+  "batchComplete": {
+    "message": "批次完成"
+  },
+  "reviewTitle": {
+    "message": "喜歡Messenger清潔工具嗎？"
+  },
+  "reviewDescription": {
+    "message": "快速查看Chrome線上應用程式商店，協助更多人發現擴充功能。"
+  },
+  "maybeLater": {
+    "message": "稍後"
+  },
+  "leaveReview": {
+    "message": "留下評論"
+  },
+  "panelSubtitle": {
+    "message": "批量清理您的Facebook聊天"
+  },
+  "connectMessenger": {
+    "message": "打開Messenger"
+  },
+  "connectDescription": {
+    "message": "在此面板旁邊的分頁中開啟Messenger收件匣。"
+  },
+  "waiting": {
+    "message": "已等候"
+  },
+  "connected": {
+    "message": "已連接"
+  },
+  "loading": {
+    "message": "匯入中"
+  },
+  "chooseCleanupAction": {
+    "message": "請選擇."
+  },
+  "actionDescription": {
+    "message": "選擇Messenger Cleaner應如何處理您的對話。"
+  },
+  "processTitle": {
+    "message": "處理對話"
+  },
+  "inboxView": {
+    "message": "收件匣"
+  },
+  "archivedView": {
+    "message": "歸檔"
+  }
 }

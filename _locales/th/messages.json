@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – ลบข้อความ Facebook ทั้งหมด" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "ลบการสนทนา Facebook Messenger จำนวนมากและทำความสะอาดกล่องข้อความได้เร็วขึ้น" }
+  "fbDailyLimitDescription": {
+    "message": "แผนฟรีมีการลบ เก็บถาวร หรือกู้คืน 20 ครั้งต่อวัน อัปเกรดเพื่อใช้งานแบบไม่จำกัด"
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook มีการดำเนินการกับการสนทนาฟรี 20 ครั้งต่อวัน"
+  },
+  "fbMilestoneMessage": {
+    "message": "คุณลบการสนทนาไปแล้ว $1 รายการ!"
+  },
+  "milestoneTitle": {
+    "message": "เยี่ยมมาก!"
+  },
+  "milestoneReviewAsk": {
+    "message": "ชอบ Messenger Cleaner ไหม? รีวิวสั้น ๆ จะช่วยให้ผู้อื่นค้นพบส่วนขยายนี้"
+  },
+  "footerReview": {
+    "message": "ชอบ Messenger Cleaner ไหม? เขียนรีวิว"
+  },
+  "fbPromoQuestion": {
+    "message": "ต้องการจัดระเบียบรายชื่อเพื่อนด้วยไหม?"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – ลบข้อความ Facebook ทั้งหมด"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "ลบการสนทนา Facebook Messenger จำนวนมากและทำความสะอาดกล่องข้อความได้เร็วขึ้น"
+  },
+  "panelTitle": {
+    "message": "พนักงานทำความสะอาด Messenger"
+  },
+  "checkingTab": {
+    "message": "กำลังตรวจสอบแท็บปัจจุบัน…"
+  },
+  "refresh": {
+    "message": "รีเฟรช"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "เปลี่ยนเป็นกล่องข้อความในเมสเซนเจอร์เพื่อเริ่มทำความสะอาดการสนทนา"
+  },
+  "openMessengerButton": {
+    "message": "เปิด Messenger"
+  },
+  "ready": {
+    "message": "พร้อม"
+  },
+  "chooseAction": {
+    "message": "เลือกการดำเนินการด้านล่าง"
+  },
+  "stop": {
+    "message": "หยุด"
+  },
+  "inboxTools": {
+    "message": "เครื่องมือกล่องข้อความ"
+  },
+  "bulkActions": {
+    "message": "การกระทำเป็นกลุ่ม"
+  },
+  "speed": {
+    "message": "ความเร็ว"
+  },
+  "speedSafe": {
+    "message": "ปลอดภัย"
+  },
+  "speedNormal": {
+    "message": "ปกติ"
+  },
+  "speedFast": {
+    "message": "รวดเร็ว"
+  },
+  "deleteAll": {
+    "message": "ลบแชททั้งหมด"
+  },
+  "deleteAllDescription": {
+    "message": "ลบทุกการสนทนาที่มองเห็นได้อย่างถาวร"
+  },
+  "archiveAll": {
+    "message": "เก็บถาวรการแชททั้งหมด"
+  },
+  "archiveAllDescription": {
+    "message": "ย้ายการสนทนาในกล่องข้อความลงในที่เก็บถาวร"
+  },
+  "restoreAll": {
+    "message": "คืนค่าการแชทที่เก็บถาวร"
+  },
+  "restoreAllDescription": {
+    "message": "เปิดการแชทที่เก็บถาวรเพื่อคืนค่าการสนทนา"
+  },
+  "keepTabVisible": {
+    "message": "ทำให้แท็บเมสเซนเจอร์มองเห็นได้"
+  },
+  "pauseNotice": {
+    "message": "การทำความสะอาดจะหยุดชั่วคราวอย่างปลอดภัยเมื่อคุณเปลี่ยนเครื่องและดำเนินการต่อเมื่อคุณกลับมา"
+  },
+  "localPrivacy": {
+    "message": "ทำงานภายในเบราว์เซอร์ของคุณ"
+  },
+  "noData": {
+    "message": "ไม่มีการรวบรวมข้อมูลข้อความ"
+  },
+  "confirmDeleteTitle": {
+    "message": "ลบทุกการสนทนาใช่ไหม?"
+  },
+  "confirmDeleteDescription": {
+    "message": "การดำเนินการนี้ไม่สามารถยกเลิกได้ Messenger อาจลบการสนทนาและประวัติข้อความออกอย่างถาวร"
+  },
+  "confirmDeleteCheckbox": {
+    "message": "ข้าพเจ้าเข้าใจว่าการดำเนินการนี้ถาวร"
+  },
+  "cancel": {
+    "message": "ยกเลิก"
+  },
+  "deleteNow": {
+    "message": "ลบเลย"
+  },
+  "connectedToMessenger": {
+    "message": "เชื่อมต่อกับ Messenger แล้ว"
+  },
+  "loadingMessenger": {
+    "message": "กำลังโหลด Messenger…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger ไม่ได้ใช้งานอยู่"
+  },
+  "noActiveTab": {
+    "message": "ไม่มีแท็บที่ใช้งานอยู่"
+  },
+  "openArchivedTooltip": {
+    "message": "เปิดการแชทที่เก็บถาวรเพื่อคืนค่าการสนทนา"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "การเก็บถาวรไม่พร้อมใช้งานในแชทที่เก็บถาวร"
+  },
+  "working": {
+    "message": "กำลังสแกน"
+  },
+  "paused": {
+    "message": "หยุดชั่วคราว"
+  },
+  "complete": {
+    "message": "เสร็จสมบูรณ์"
+  },
+  "stopped": {
+    "message": "หยุดแล้ว"
+  },
+  "error": {
+    "message": "ข้อผิดพลาด"
+  },
+  "status": {
+    "message": "สถานะ"
+  },
+  "startFailed": {
+    "message": "ไม่สามารถเริ่มการดำเนินการได้"
+  },
+  "starting": {
+    "message": "การเริ่มต้น&#x0D;"
+  },
+  "freeBadge": {
+    "message": "ฟรี!"
+  },
+  "unlimitedBadge": {
+    "message": "ไม่จำกัด"
+  },
+  "dailyFreeUsage": {
+    "message": "ใช้งานฟรีทุกวัน"
+  },
+  "getUnlimited": {
+    "message": "รับไม่จำกัด"
+  },
+  "quotaExplanation": {
+    "message": "ลบและเก็บถาวรแชร์ได้สูงสุด 10 ต่อวัน"
+  },
+  "close": {
+    "message": "ปิด"
+  },
+  "freePlanLimit": {
+    "message": "จำกัดแพ็กเกจฟรี"
+  },
+  "dailyLimitTitle": {
+    "message": "ใช้การดำเนินการฟรี 10 รายการของคุณแล้ว"
+  },
+  "dailyLimitDescription": {
+    "message": "แพ็กเกจฟรีมีการลบหรือเก็บถาวร 10 ครั้งในแต่ละวันอัพเกรดเพื่อทำความสะอาดได้ไม่จำกัด"
+  },
+  "upgradeTitle": {
+    "message": "ปลดล็อกการทำความสะอาดแบบไม่จำกัด"
+  },
+  "upgradeDescription": {
+    "message": "ลบขีดจำกัดรายวันและล้างบัญชีโซเชียลของคุณเมื่อใดก็ตามที่คุณต้องการ"
+  },
+  "unlimitedBenefit": {
+    "message": "ลบและเก็บถาวรได้ไม่จำกัด"
+  },
+  "allExtensionsBenefit": {
+    "message": "การเข้าถึงชุด CleanMySocial"
+  },
+  "lifetimeBenefit": {
+    "message": "ซื้อครั้งเดียว"
+  },
+  "getUnlimitedAccess": {
+    "message": "เข้าถึงได้ไม่จำกัด"
+  },
+  "alreadyPurchased": {
+    "message": "ซืัอแล้วใช่หรือไม่"
+  },
+  "licensePlaceholder": {
+    "message": "คีย์ใบอนุญาต"
+  },
+  "unlock": {
+    "message": "ปลดล็อค"
+  },
+  "checkingLicense": {
+    "message": "กำลังตรวจสอบใบอนุญาต…"
+  },
+  "licenseActivated": {
+    "message": "เปิดใช้งานการเข้าถึงแบบไม่จำกัด"
+  },
+  "licenseInvalid": {
+    "message": "รหัสใบอนุญาตนั้นไม่ทำงาน"
+  },
+  "batchComplete": {
+    "message": "แบทช์เสร็จสมบูรณ์"
+  },
+  "reviewTitle": {
+    "message": "ชอบใช้ Messenger Cleaner ไหม?"
+  },
+  "reviewDescription": {
+    "message": "การรีวิว Chrome เว็บสโตร์อย่างรวดเร็วจะช่วยให้ผู้คนค้นพบส่วนขยายได้มากขึ้น"
+  },
+  "maybeLater": {
+    "message": "ภายหลัง"
+  },
+  "leaveReview": {
+    "message": "เขียนรีวิว"
+  },
+  "panelSubtitle": {
+    "message": "ทำความสะอาดแชท Facebook ของคุณเป็นกลุ่ม"
+  },
+  "connectMessenger": {
+    "message": "เปิด Messenger"
+  },
+  "connectDescription": {
+    "message": "เปิดกล่องจดหมายของ Messenger ในแท็บข้างแผงนี้"
+  },
+  "waiting": {
+    "message": "Waiting (การรอ)"
+  },
+  "connected": {
+    "message": "เชื่อมต่อ"
+  },
+  "loading": {
+    "message": "กำลังโหลด"
+  },
+  "chooseCleanupAction": {
+    "message": "เลือกการกระทํา"
+  },
+  "actionDescription": {
+    "message": "เลือกว่า Messenger Cleaner ควรทำอย่างไรกับการสนทนาของคุณ"
+  },
+  "processTitle": {
+    "message": "ประมวลผลการสนทนา"
+  },
+  "inboxView": {
+    "message": "กล่องข้อความ"
+  },
+  "archivedView": {
+    "message": "เก็บถาวรแล้ว"
+  }
 }

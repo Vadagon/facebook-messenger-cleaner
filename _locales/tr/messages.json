@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Tüm Facebook Mesajlarını Sil" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Facebook Messenger konuşmalarını toplu silin ve gelen kutunuzu daha hızlı temizleyin." }
+  "fbDailyLimitDescription": {
+    "message": "Ücretsiz plan, her gün 20 temizleme eylemini içerir. Sınırsız temizlik için yükseltme yapın."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook günde 20 ücretsiz konuşma işlemi sunar."
+  },
+  "fbMilestoneMessage": {
+    "message": "$1 konuşmayı sildiniz!"
+  },
+  "milestoneTitle": {
+    "message": "Harika iş!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Messenger Cleaner'dan memnun musunuz? Hızlı bir inceleme, başkalarının onu bulmasına yardımcı olur."
+  },
+  "footerReview": {
+    "message": "Messenger Cleaner'dan memnun musunuz? Yorum bırakın"
+  },
+  "fbPromoQuestion": {
+    "message": "Arkadaş listenizi de temizlemeniz mi gerekiyor?"
+  },
+  "fbPromoName": {
+    "message": "Facebook için Toplu Arkadaş Sökücü"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Tüm Facebook Mesajlarını Sil"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Facebook Messenger konuşmalarını toplu silin ve gelen kutunuzu daha hızlı temizleyin."
+  },
+  "panelTitle": {
+    "message": "Messenger Temizleyici"
+  },
+  "checkingTab": {
+    "message": "Geçerli sekme kontrol ediliyor…"
+  },
+  "refresh": {
+    "message": "Yenile"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger'ı aç"
+  },
+  "openMessengerDescription": {
+    "message": "Konuşmaları temizlemeye başlamak için Messenger gelen kutusuna geçin."
+  },
+  "openMessengerButton": {
+    "message": "Messenger'ı aç"
+  },
+  "ready": {
+    "message": "Hazır"
+  },
+  "chooseAction": {
+    "message": "Aşağıdan bir eylem seçin"
+  },
+  "stop": {
+    "message": "Durdur"
+  },
+  "inboxTools": {
+    "message": "GELEN KUTUSU ARAÇLARI"
+  },
+  "bulkActions": {
+    "message": "Toplu işlemler"
+  },
+  "speed": {
+    "message": "Hız"
+  },
+  "speedSafe": {
+    "message": "Güvenli"
+  },
+  "speedNormal": {
+    "message": "normal"
+  },
+  "speedFast": {
+    "message": "Hızlı"
+  },
+  "deleteAll": {
+    "message": "Tüm sohbetleri sil"
+  },
+  "deleteAllDescription": {
+    "message": "Görünür her konuşmayı kalıcı olarak kaldırın"
+  },
+  "archiveAll": {
+    "message": "Tüm sohbetleri arşivle"
+  },
+  "archiveAllDescription": {
+    "message": "Gelen kutusu konuşmalarını arşive taşıyın"
+  },
+  "restoreAll": {
+    "message": "Arşivlenen sohbetleri geri yükle"
+  },
+  "restoreAllDescription": {
+    "message": "Konuşmaları geri yüklemek için Arşivlenmiş sohbetleri açın"
+  },
+  "keepTabVisible": {
+    "message": "Messenger sekmesini görünür tutun."
+  },
+  "pauseNotice": {
+    "message": "Temizlik işlemi, siz uzaklaştığınızda güvenli bir şekilde duraklatılır ve geri döndüğünüzde kaldığı yerden devam eder."
+  },
+  "localPrivacy": {
+    "message": "Tarayıcınızda yerel olarak çalışır"
+  },
+  "noData": {
+    "message": "Hiçbir mesaj verisi toplanmadı"
+  },
+  "confirmDeleteTitle": {
+    "message": "Her görüşme silinsin mi?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Bu geri alınamaz. Messenger, konuşmaları ve mesaj geçmişini kalıcı olarak kaldırabilir."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Bu eylemin kalıcı olduğunu anlıyorum"
+  },
+  "cancel": {
+    "message": "İptal"
+  },
+  "deleteNow": {
+    "message": "Şimdi sil"
+  },
+  "connectedToMessenger": {
+    "message": "Messenger'a bağlanıldı"
+  },
+  "loadingMessenger": {
+    "message": "Messenger yükleniyor…"
+  },
+  "notOnMessenger": {
+    "message": "Messenger aktif değil"
+  },
+  "noActiveTab": {
+    "message": "Etkin sekme yok"
+  },
+  "openArchivedTooltip": {
+    "message": "Konuşmaları geri yüklemek için Arşivlenmiş sohbetleri açın"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Arşivleme, Arşivlenmiş sohbetlerde kullanılamaz"
+  },
+  "working": {
+    "message": "Çalışma"
+  },
+  "paused": {
+    "message": "Duraklatıldı"
+  },
+  "complete": {
+    "message": "Tamamlandı"
+  },
+  "stopped": {
+    "message": "Durduruldu"
+  },
+  "error": {
+    "message": "Hata"
+  },
+  "status": {
+    "message": "Durum"
+  },
+  "startFailed": {
+    "message": "İşlem başlatılamadı."
+  },
+  "starting": {
+    "message": "Başlıyor…"
+  },
+  "freeBadge": {
+    "message": "ÜCRETSİZ"
+  },
+  "unlimitedBadge": {
+    "message": "SINIRSIZ"
+  },
+  "dailyFreeUsage": {
+    "message": "Günlük ücretsiz kullanım"
+  },
+  "getUnlimited": {
+    "message": "SINIRSIZ OLSUN"
+  },
+  "quotaExplanation": {
+    "message": "Tüm Facebook ve Instagram temizleme işlemleri günlük 10 limitle paylaşılmaktadır."
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "freePlanLimit": {
+    "message": "ÜCRETSİZ PLAN SINIRI"
+  },
+  "dailyLimitTitle": {
+    "message": "10 ücretsiz eyleminiz kullanıldı"
+  },
+  "dailyLimitDescription": {
+    "message": "Ücretsiz plan, her gün 10 temizleme eylemini içerir. Sınırsız temizlik için yükseltme yapın."
+  },
+  "upgradeTitle": {
+    "message": "Sınırsız temizliğin kilidini açın"
+  },
+  "upgradeDescription": {
+    "message": "Günlük limiti kaldırın ve sosyal hesaplarınızı dilediğiniz zaman temizleyin."
+  },
+  "unlimitedBenefit": {
+    "message": "Sınırsız temizleme eylemi"
+  },
+  "allExtensionsBenefit": {
+    "message": "CleanMySocial paketine erişim"
+  },
+  "lifetimeBenefit": {
+    "message": "Tek seferlik satın alma"
+  },
+  "getUnlimitedAccess": {
+    "message": "Sınırsız erişim elde edin"
+  },
+  "alreadyPurchased": {
+    "message": "Zaten satın alındınız mı?"
+  },
+  "licensePlaceholder": {
+    "message": "Lisans anahtarı"
+  },
+  "unlock": {
+    "message": "Kilidi aç"
+  },
+  "checkingLicense": {
+    "message": "Lisans kontrol ediliyor…"
+  },
+  "licenseActivated": {
+    "message": "Sınırsız erişim etkinleştirildi."
+  },
+  "licenseInvalid": {
+    "message": "Bu lisans anahtarı etkin değil."
+  },
+  "batchComplete": {
+    "message": "GRUP TAMAMLANDI"
+  },
+  "reviewTitle": {
+    "message": "Messenger Cleaner'ı beğeniyor musunuz?"
+  },
+  "reviewDescription": {
+    "message": "Hızlı bir Chrome Web Mağazası incelemesi, daha fazla kişinin uzantıyı keşfetmesine yardımcı olur."
+  },
+  "maybeLater": {
+    "message": "Belki daha sonra"
+  },
+  "leaveReview": {
+    "message": "Yorum bırakın"
+  },
+  "panelSubtitle": {
+    "message": "Facebook sohbetlerinizi toplu olarak temizleyin"
+  },
+  "connectMessenger": {
+    "message": "Messenger'ı aç"
+  },
+  "connectDescription": {
+    "message": "Bu panelin yanındaki sekmede Messenger gelen kutunuzu açın."
+  },
+  "waiting": {
+    "message": "Bekliyor"
+  },
+  "connected": {
+    "message": "Bağlı"
+  },
+  "loading": {
+    "message": "Yükleniyor"
+  },
+  "chooseCleanupAction": {
+    "message": "Bir eylem seçin"
+  },
+  "actionDescription": {
+    "message": "Messenger Cleaner'ın konuşmalarınızda ne yapması gerektiğini seçin."
+  },
+  "processTitle": {
+    "message": "Konuşmaları işleyin"
+  },
+  "inboxView": {
+    "message": "Gelen kutusu"
+  },
+  "archivedView": {
+    "message": "Arşivlendi"
+  }
 }

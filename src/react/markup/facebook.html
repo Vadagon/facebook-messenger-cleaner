@@ -1,14 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Messenger Cleaner</title>
-  <link rel="stylesheet" href="sidepanel.css">
-</head>
-<body>
-  <header class="topbar">
-    <img class="brand-mark" src="icons/icon48.png" width="40" height="40" alt="">
+<header class="topbar">
+    <img class="brand-mark" src="../../icons/icon48.png" width="40" height="40" alt="">
     <div class="brand-copy">
       <h1 data-i18n="panelTitle">Messenger Cleaner</h1>
       <p data-i18n="panelSubtitle">Bulk clean your Facebook chats</p>
@@ -99,11 +90,11 @@
           <section id="quotaCard" class="quota-progress" aria-live="polite" hidden>
             <div class="progress-label">
               <span data-i18n="dailyFreeUsage">Daily free usage</span>
-              <strong id="quotaCount">0/10</strong>
+              <strong id="quotaCount">0/20</strong>
             </div>
             <div class="track"><i id="quotaFill"></i></div>
             <div class="quota-footer">
-              <span data-i18n="quotaExplanation">Deletes and archives share a limit of 10 per day.</span>
+              <span data-i18n="fbQuotaExplanation">Facebook includes 20 free conversation actions per day.</span>
               <button id="upgradeButton" type="button" data-i18n="getUnlimited">Get unlimited</button>
             </div>
           </section>
@@ -119,6 +110,11 @@
     <footer>
       <p><span aria-hidden="true">◈</span> <span data-i18n="localPrivacy">Runs locally in your browser</span> · <span data-i18n="noData">No message data collected</span></p>
       <span id="extensionVersion">v—</span>
+      <button id="fbReviewEntry" class="footer-review" type="button" data-i18n="footerReview">Enjoying DM Cleaner? Leave a review</button>
+      <button id="fbCompanionOffer" class="footer-promotion" type="button" hidden>
+        <img src="../../assets/promotions/friends-remover.png" alt="">
+        <span><small data-i18n="fbPromoQuestion">Need to clean up your friends list too?</small><strong data-i18n="fbPromoName">Mass Friends Remover for Facebook</strong></span>
+      </button>
     </footer>
   </main>
 
@@ -135,15 +131,28 @@
     </form>
   </dialog>
 
+  <dialog id="milestoneDialog">
+    <form method="dialog" class="dialog-content">
+      <div class="dialog-icon review">★</div>
+      <h2 id="milestoneHeading" data-i18n="milestoneTitle">Great job!</h2>
+      <p id="milestoneCopy">You’ve deleted 10 conversations!</p>
+      <p data-i18n="milestoneReviewAsk">Enjoying DM Cleaner? A quick review helps others find it.</p>
+      <div class="dialog-actions">
+        <button id="milestoneDismiss" value="dismiss" class="secondary-button" data-i18n="maybeLater">Maybe later</button>
+        <button id="milestoneReview" value="review" class="primary-button" data-i18n="leaveReview">Leave a review</button>
+      </div>
+    </form>
+  </dialog>
+
   <dialog id="upgradeDialog">
     <form method="dialog" class="dialog-content">
       <button class="dialog-close" value="close" data-i18n-aria="close" aria-label="Close">×</button>
       <div class="dialog-icon upgrade">∞</div>
       <p class="dialog-eyebrow" data-i18n="freePlanLimit">FREE PLAN LIMIT</p>
-      <h2 id="upgradeTitle" data-i18n="dailyLimitTitle">Your 10 free actions are used</h2>
-      <p id="upgradeDescription" data-i18n="dailyLimitDescription">The free plan includes 10 deletes or archives each day. Upgrade for unlimited cleaning.</p>
+      <h2 id="upgradeTitle">Your 20 free actions are used</h2>
+      <p id="upgradeDescription">The free plan includes 20 Facebook conversation actions each day. Upgrade for unlimited cleaning.</p>
       <ul class="benefits">
-        <li data-i18n="unlimitedBenefit">Unlimited deletes and archives</li>
+        <li data-i18n="unlimitedBenefit">Unlimited cleanup actions</li>
         <li data-i18n="allExtensionsBenefit">Access to the CleanMySocial bundle</li>
         <li data-i18n="lifetimeBenefit">One-time purchase</li>
       </ul>
@@ -156,20 +165,3 @@
       <p id="licenseMessage" class="license-message" aria-live="polite"></p>
     </form>
   </dialog>
-
-  <dialog id="reviewDialog">
-    <form method="dialog" class="dialog-content">
-      <div class="dialog-icon review">★</div>
-      <p class="dialog-eyebrow" data-i18n="batchComplete">BATCH COMPLETE</p>
-      <h2 data-i18n="reviewTitle">Enjoying Messenger Cleaner?</h2>
-      <p data-i18n="reviewDescription">A quick Chrome Web Store review helps more people discover the extension.</p>
-      <div class="dialog-actions">
-        <button value="later" class="secondary-button" data-i18n="maybeLater">Maybe later</button>
-        <button id="reviewButton" type="button" class="primary-button" data-i18n="leaveReview">Leave a review</button>
-      </div>
-    </form>
-  </dialog>
-
-  <script src="sidepanel.js"></script>
-</body>
-</html>

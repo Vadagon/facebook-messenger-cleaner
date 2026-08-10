@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Facebook 메시지 모두 삭제" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Facebook Messenger 대화를 일괄 삭제하고 받은 편지함을 빠르게 정리하세요." }
+  "fbDailyLimitDescription": {
+    "message": "무료 플랜에는 매일 20가지 정리 작업이 포함됩니다. 무제한 청소를 위해 업그레이드하세요."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook은 하루 20개의 대화 작업을 무료로 제공합니다."
+  },
+  "fbMilestoneMessage": {
+    "message": "$1개의 대화를 삭제했습니다!"
+  },
+  "milestoneTitle": {
+    "message": "정말 잘했어요!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Messenger Cleaner를 즐기고 계시나요? 빠른 검토는 다른 사람들이 찾는 데 도움이 됩니다."
+  },
+  "footerReview": {
+    "message": "Messenger Cleaner를 즐기고 계시나요? 리뷰를 남겨주세요"
+  },
+  "fbPromoQuestion": {
+    "message": "친구 목록도 정리해야 합니까?"
+  },
+  "fbPromoName": {
+    "message": "Facebook용 대량 친구 제거 프로그램"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Facebook 메시지 모두 삭제"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Facebook Messenger 대화를 일괄 삭제하고 받은 편지함을 빠르게 정리하세요."
+  },
+  "panelTitle": {
+    "message": "메신저 클리너"
+  },
+  "checkingTab": {
+    "message": "현재 탭 확인 중…"
+  },
+  "refresh": {
+    "message": "새로고침"
+  },
+  "openMessengerTitle": {
+    "message": "페이스북 메신저 열기"
+  },
+  "openMessengerDescription": {
+    "message": "대화 정리를 시작하려면 메신저 받은 편지함으로 전환하세요."
+  },
+  "openMessengerButton": {
+    "message": "메신저 열기"
+  },
+  "ready": {
+    "message": "준비"
+  },
+  "chooseAction": {
+    "message": "아래에서 작업을 선택하세요."
+  },
+  "stop": {
+    "message": "중지"
+  },
+  "inboxTools": {
+    "message": "받은 편지함 도구"
+  },
+  "bulkActions": {
+    "message": "대량 작업"
+  },
+  "speed": {
+    "message": "속도"
+  },
+  "speedSafe": {
+    "message": "안전함"
+  },
+  "speedNormal": {
+    "message": "보통"
+  },
+  "speedFast": {
+    "message": "빠르게"
+  },
+  "deleteAll": {
+    "message": "모든 채팅 삭제"
+  },
+  "deleteAllDescription": {
+    "message": "보이는 모든 대화를 영구적으로 제거합니다."
+  },
+  "archiveAll": {
+    "message": "모든 채팅 보관"
+  },
+  "archiveAllDescription": {
+    "message": "받은편지함 대화를 보관함으로 이동"
+  },
+  "restoreAll": {
+    "message": "보관된 채팅 복원"
+  },
+  "restoreAllDescription": {
+    "message": "보관된 채팅을 열어 대화를 복원하세요."
+  },
+  "keepTabVisible": {
+    "message": "메신저 탭을 계속 표시하세요."
+  },
+  "pauseNotice": {
+    "message": "다른 곳으로 전환하면 청소가 안전하게 일시 중지되고, 돌아오면 다시 시작됩니다."
+  },
+  "localPrivacy": {
+    "message": "브라우저에서 로컬로 실행됩니다."
+  },
+  "noData": {
+    "message": "메시지 데이터가 수집되지 않았습니다."
+  },
+  "confirmDeleteTitle": {
+    "message": "모든 대화를 삭제하시겠습니까?"
+  },
+  "confirmDeleteDescription": {
+    "message": "이 작업은 취소할 수 없습니다. 메신저는 대화와 메시지 기록을 영구적으로 삭제할 수 있습니다."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "나는 이 조치가 영구적이라는 것을 이해합니다."
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "deleteNow": {
+    "message": "지금 삭제"
+  },
+  "connectedToMessenger": {
+    "message": "메신저에 연결됨"
+  },
+  "loadingMessenger": {
+    "message": "메신저 로드 중…"
+  },
+  "notOnMessenger": {
+    "message": "메신저가 활성화되지 않았습니다"
+  },
+  "noActiveTab": {
+    "message": "활성 탭 없음"
+  },
+  "openArchivedTooltip": {
+    "message": "보관된 채팅을 열어 대화를 복원하세요."
+  },
+  "archiveUnavailableTooltip": {
+    "message": "보관된 채팅에서는 보관할 수 없습니다."
+  },
+  "working": {
+    "message": "일 중"
+  },
+  "paused": {
+    "message": "일시중지됨"
+  },
+  "complete": {
+    "message": "완료"
+  },
+  "stopped": {
+    "message": "중지됨"
+  },
+  "error": {
+    "message": "오류"
+  },
+  "status": {
+    "message": "상태"
+  },
+  "startFailed": {
+    "message": "작업을 시작할 수 없습니다."
+  },
+  "starting": {
+    "message": "시작 중…"
+  },
+  "freeBadge": {
+    "message": "무료"
+  },
+  "unlimitedBadge": {
+    "message": "무제한"
+  },
+  "dailyFreeUsage": {
+    "message": "일일 무료 사용량"
+  },
+  "getUnlimited": {
+    "message": "무제한 이용"
+  },
+  "quotaExplanation": {
+    "message": "모든 Facebook 및 Instagram 정리 작업은 하루에 10회로 제한됩니다."
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "freePlanLimit": {
+    "message": "무료 플랜 한도"
+  },
+  "dailyLimitTitle": {
+    "message": "10개의 무료 작업이 사용되었습니다."
+  },
+  "dailyLimitDescription": {
+    "message": "무료 플랜에는 매일 10가지 정리 작업이 포함됩니다. 무제한 청소를 위해 업그레이드하세요."
+  },
+  "upgradeTitle": {
+    "message": "무제한 청소 잠금 해제"
+  },
+  "upgradeDescription": {
+    "message": "원할 때마다 일일 한도를 제거하고 소셜 계정을 정리하세요."
+  },
+  "unlimitedBenefit": {
+    "message": "무제한 정리 작업"
+  },
+  "allExtensionsBenefit": {
+    "message": "CleanMySocial 번들에 액세스"
+  },
+  "lifetimeBenefit": {
+    "message": "일회성 구매"
+  },
+  "getUnlimitedAccess": {
+    "message": "무제한 액세스"
+  },
+  "alreadyPurchased": {
+    "message": "이미 구매하셨나요?"
+  },
+  "licensePlaceholder": {
+    "message": "라이센스 키"
+  },
+  "unlock": {
+    "message": "잠금 해제"
+  },
+  "checkingLicense": {
+    "message": "라이선스 확인 중…"
+  },
+  "licenseActivated": {
+    "message": "무제한 액세스가 활성화되었습니다."
+  },
+  "licenseInvalid": {
+    "message": "해당 라이센스 키는 활성 상태가 아닙니다."
+  },
+  "batchComplete": {
+    "message": "배치 완료"
+  },
+  "reviewTitle": {
+    "message": "메신저 클리너를 즐기고 계시나요?"
+  },
+  "reviewDescription": {
+    "message": "빠른 Chrome 웹 스토어 검토는 더 많은 사람들이 확장 프로그램을 찾는 데 도움이 됩니다."
+  },
+  "maybeLater": {
+    "message": "어쩌면 나중에"
+  },
+  "leaveReview": {
+    "message": "리뷰를 남겨주세요"
+  },
+  "panelSubtitle": {
+    "message": "Facebook 채팅을 대량으로 정리하세요"
+  },
+  "connectMessenger": {
+    "message": "메신저 열기"
+  },
+  "connectDescription": {
+    "message": "이 패널 옆에 있는 탭에서 메신저 받은 편지함을 엽니다."
+  },
+  "waiting": {
+    "message": "대기 중"
+  },
+  "connected": {
+    "message": "연결됨"
+  },
+  "loading": {
+    "message": "로드 중"
+  },
+  "chooseCleanupAction": {
+    "message": "작업을 선택하세요"
+  },
+  "actionDescription": {
+    "message": "메신저 클리너가 대화에서 수행할 작업을 선택하세요."
+  },
+  "processTitle": {
+    "message": "대화 처리"
+  },
+  "inboxView": {
+    "message": "받은편지함"
+  },
+  "archivedView": {
+    "message": "보관됨"
+  }
 }

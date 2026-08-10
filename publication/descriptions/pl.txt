@@ -15,7 +15,7 @@ Messenger Cleaner to rozszerzenie Chrome do masowego usuwania rozmów Facebook M
 Wszystkie działania odbywają się lokalnie w przeglądarce i bieżącej sesji Facebooka. Rozszerzenie nie zbiera treści wiadomości, haseł, plików cookie, list znajomych ani danych rozmów. Nie zawiera reklam ani śledzenia zachowania.
 
 🎁 CODZIENNE DARMOWE CZYSZCZENIE
-Wykonaj do 10 udanych usunięć lub archiwizacji dziennie. Przywracanie zarchiwizowanych czatów jest bezpłatne. Przy większym porządkowaniu możesz uzyskać dostęp bez limitu.
+Wykonaj do 20 udanych usunięć, archiwizacji lub przywróceń dziennie. Przy większym porządkowaniu możesz uzyskać dostęp bez limitu.
 
 ⚠️ WAŻNE
 Usunięcie rozmowy może być trwałe. Przed usunięciem wymagane jest wyraźne potwierdzenie. Podczas pracy pozostaw kartę Messenger widoczną.

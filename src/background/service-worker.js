@@ -1,32 +1,55 @@
 const MESSENGER_URL = 'https://www.facebook.com/messages/';
 const PURCHASE_URL = 'https://cleanmysocial.verblike.com/';
-const REVIEW_URL = 'https://chromewebstore.google.com/detail/imobgpikmofiapbnijmebknbkmkncdkl/reviews';
+const REVIEW_EXTENSION_ID = 'imobgpikmofiapbnijmebknbkmkncdkl';
+const FRIENDS_REMOVER_EXTENSION_ID = 'fegkbiinmaoipoonnlhekdoefgebmdnj';
 // Identify this extension specifically, so the server can tell which tool is
 // asking. Asking as 'cleanmysocial' means any purchase unlocks everything.
 const LICENSE_API = 'https://cleanmysocial.verblike.com/api/license?extension=facebook-messenger-cleaner&key=';
-const LICENSE_KEY_STORAGE = 'verblike_license_key';
-const DAILY_USAGE_STORAGE = 'messenger_cleaner_daily_usage';
-const LICENSE_CACHE_STORAGE = 'messenger_cleaner_license_cache';
-const DAILY_LIMIT = 10;
+const LICENSE_KEY_STORAGE = 'cms.entitlement.identity';
+const DAILY_USAGE_STORAGE = 'cms.entitlement.dailyMeter';
+const LICENSE_CACHE_STORAGE = 'cms.entitlement.verificationCache';
+const LEGACY_LICENSE_KEY_STORAGE = 'verblike_license_key';
+const LEGACY_DAILY_USAGE_STORAGE = 'messenger_cleaner_daily_usage';
+const LEGACY_LICENSE_CACHE_STORAGE = 'messenger_cleaner_license_cache';
+const FACEBOOK_PREFS_STORAGE = 'cms.facebook.preferences';
+const DAILY_LIMIT = 20;
 const LICENSE_CACHE_TTL = 5 * 60 * 1000;
 let usageQueue = Promise.resolve();
+const meteredReservations = new Map();
+
+const LEGACY_COMMANDS = {
+  GET_ACTIVE_TAB: 'cms.context.active.read',
+  OPEN_MESSENGER: 'cms.navigation.messenger.open',
+  GET_ACCESS_STATE: 'cms.entitlement.state.read',
+  CHECK_LICENSE: 'cms.entitlement.license.verify',
+  RECORD_METERED_ACTION: 'cms.entitlement.usage.reserve',
+  OPEN_PURCHASE: 'cms.commerce.checkout.open',
+  OPEN_REVIEW: 'cms.feedback.review.open',
+  PAGE_STATE: 'cms.facebook.page.state',
+  OPERATION_STATE: 'cms.facebook.operation.state'
+};
+
+function normalizeCommand(message) {
+  const type = LEGACY_COMMANDS[message?.type] || message?.type;
+  return type === message?.type ? message : { ...message, type };
+}
 
 chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
-chrome.sidePanel.setOptions({ path: 'sidepanel.html', enabled: true }).catch(() => {});
+chrome.sidePanel.setOptions({ path: 'src/panel/facebook.html', enabled: true }).catch(() => {});
 
 chrome.runtime.onInstalled.addListener(async () => {
   await chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true });
-  await chrome.sidePanel.setOptions({ path: 'sidepanel.html', enabled: true });
-  const existing = await chrome.storage.local.get('settings');
-  if (!existing.settings) {
-    await chrome.storage.local.set({ settings: { speed: 'normal' } });
+  await chrome.sidePanel.setOptions({ path: 'src/panel/facebook.html', enabled: true });
+  const existing = await chrome.storage.local.get(FACEBOOK_PREFS_STORAGE);
+  if (!existing[FACEBOOK_PREFS_STORAGE]) {
+    await chrome.storage.local.set({ [FACEBOOK_PREFS_STORAGE]: { speed: 'normal' } });
   }
   await getLicenseKey();
 });
 
 chrome.runtime.onStartup.addListener(async () => {
   await chrome.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});
-  await chrome.sidePanel.setOptions({ path: 'sidepanel.html', enabled: true }).catch(() => {});
+  await chrome.sidePanel.setOptions({ path: 'src/panel/facebook.html', enabled: true }).catch(() => {});
 });
 
 // Chrome 142+ reports side-panel closes. Clear any tab-specific instances
@@ -66,8 +89,13 @@ function createLicenseKey() {
 }
 
 async function getLicenseKey() {
-  const stored = await chrome.storage.sync.get(LICENSE_KEY_STORAGE);
+  const stored = await chrome.storage.sync.get([LICENSE_KEY_STORAGE, LEGACY_LICENSE_KEY_STORAGE]);
   if (stored[LICENSE_KEY_STORAGE]) return stored[LICENSE_KEY_STORAGE];
+  if (stored[LEGACY_LICENSE_KEY_STORAGE]) {
+    await chrome.storage.sync.set({ [LICENSE_KEY_STORAGE]: stored[LEGACY_LICENSE_KEY_STORAGE] });
+    await chrome.storage.sync.remove(LEGACY_LICENSE_KEY_STORAGE);
+    return stored[LEGACY_LICENSE_KEY_STORAGE];
+  }
   const key = createLicenseKey();
   await chrome.storage.sync.set({ [LICENSE_KEY_STORAGE]: key });
   return key;
@@ -77,7 +105,8 @@ async function setLicenseKey(key) {
   const cleaned = String(key || '').trim();
   if (!cleaned) return getLicenseKey();
   await chrome.storage.sync.set({ [LICENSE_KEY_STORAGE]: cleaned });
-  await chrome.storage.local.remove(LICENSE_CACHE_STORAGE);
+  await chrome.storage.sync.remove(LEGACY_LICENSE_KEY_STORAGE);
+  await chrome.storage.local.remove([LICENSE_CACHE_STORAGE, LEGACY_LICENSE_CACHE_STORAGE]);
   return cleaned;
 }
 
@@ -91,20 +120,29 @@ function localDateKey() {
 
 async function getDailyUsage() {
   const today = localDateKey();
-  const stored = await chrome.storage.local.get(DAILY_USAGE_STORAGE);
-  const usage = stored[DAILY_USAGE_STORAGE];
+  const stored = await chrome.storage.local.get([DAILY_USAGE_STORAGE, LEGACY_DAILY_USAGE_STORAGE]);
+  const usage = stored[DAILY_USAGE_STORAGE] || stored[LEGACY_DAILY_USAGE_STORAGE];
   if (usage?.date === today && Number.isFinite(usage.count)) {
+    if (!stored[DAILY_USAGE_STORAGE]) {
+      await chrome.storage.local.set({ [DAILY_USAGE_STORAGE]: usage });
+      await chrome.storage.local.remove(LEGACY_DAILY_USAGE_STORAGE);
+    }
     return { date: today, count: Math.max(0, Math.min(DAILY_LIMIT, usage.count)) };
   }
   const fresh = { date: today, count: 0 };
   await chrome.storage.local.set({ [DAILY_USAGE_STORAGE]: fresh });
+  await chrome.storage.local.remove(LEGACY_DAILY_USAGE_STORAGE);
   return fresh;
 }
 
 async function checkLicense({ force = false, key: suppliedKey } = {}) {
   const key = suppliedKey ? await setLicenseKey(suppliedKey) : await getLicenseKey();
-  const stored = await chrome.storage.local.get(LICENSE_CACHE_STORAGE);
-  const cache = stored[LICENSE_CACHE_STORAGE];
+  const stored = await chrome.storage.local.get([LICENSE_CACHE_STORAGE, LEGACY_LICENSE_CACHE_STORAGE]);
+  const cache = stored[LICENSE_CACHE_STORAGE] || stored[LEGACY_LICENSE_CACHE_STORAGE];
+  if (!stored[LICENSE_CACHE_STORAGE] && cache) {
+    await chrome.storage.local.set({ [LICENSE_CACHE_STORAGE]: cache });
+    await chrome.storage.local.remove(LEGACY_LICENSE_CACHE_STORAGE);
+  }
   if (!force && cache?.key === key && Date.now() - cache.checkedAt < LICENSE_CACHE_TTL) {
     return { active: Boolean(cache.active), key };
   }
@@ -127,6 +165,7 @@ async function getAccessState(options = {}) {
   const [license, usage] = await Promise.all([checkLicense(options), getDailyUsage()]);
   return {
     unlimited: license.active,
+    platform: 'facebook',
     licenseKey: license.key,
     used: usage.count,
     limit: DAILY_LIMIT,
@@ -137,17 +176,19 @@ async function getAccessState(options = {}) {
 }
 
 function broadcastAccessState(state) {
-  chrome.runtime.sendMessage({ type: 'ACCESS_STATE_CHANGED', access: state }).catch(() => {});
+  chrome.runtime.sendMessage({ type: 'cms.entitlement.state.changed', access: { ...state, platform: 'facebook' } }).catch(() => {});
 }
 
-function recordMeteredAction() {
+function reserveUsageSlot() {
   const task = usageQueue.then(async () => {
     const access = await getAccessState();
-    if (access.unlimited) return { allowed: true, access };
+    if (access.unlimited) return { allowed: true, access, reservationId: null };
     if (access.used >= DAILY_LIMIT) return { allowed: false, access };
 
     const nextUsage = { date: localDateKey(), count: access.used + 1 };
     await chrome.storage.local.set({ [DAILY_USAGE_STORAGE]: nextUsage });
+    const reservationId = crypto.randomUUID?.() || `fb-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    meteredReservations.set(reservationId, { date: nextUsage.date });
     const nextAccess = {
       ...access,
       used: nextUsage.count,
@@ -155,7 +196,24 @@ function recordMeteredAction() {
       date: nextUsage.date
     };
     broadcastAccessState(nextAccess);
-    return { allowed: true, access: nextAccess };
+    return { allowed: true, access: nextAccess, reservationId };
+  });
+  usageQueue = task.catch(() => {});
+  return task;
+}
+
+function releaseUsageSlot(reservationId) {
+  if (!reservationId) return Promise.resolve({ released: false });
+  const task = usageQueue.then(async () => {
+    const reservation = meteredReservations.get(reservationId);
+    if (!reservation) return { released: false };
+    meteredReservations.delete(reservationId);
+    const usage = await getDailyUsage();
+    if (usage.date !== reservation.date) return { released: false };
+    await chrome.storage.local.set({ [DAILY_USAGE_STORAGE]: { ...usage, count: Math.max(0, usage.count - 1) } });
+    const access = await getAccessState();
+    broadcastAccessState(access);
+    return { released: true, access };
   });
   usageQueue = task.catch(() => {});
   return task;
@@ -164,7 +222,7 @@ function recordMeteredAction() {
 function publishTabState(tab, reason) {
   if (!tab?.id) return;
   chrome.runtime.sendMessage({
-    type: 'ACTIVE_TAB_CHANGED',
+    type: 'cms.context.active.changed',
     reason,
     tab: {
       id: tab.id,
@@ -173,6 +231,7 @@ function publishTabState(tab, reason) {
       title: tab.title || '',
       url: tab.url || '',
       status: tab.status || '',
+      platform: 'facebook',
       supported: isMessengerUrl(tab.url)
     }
   }).catch(() => {});
@@ -215,7 +274,8 @@ chrome.webNavigation.onCommitted.addListener(details => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.type === 'GET_ACTIVE_TAB') {
+  const command = normalizeCommand(message);
+  if (command.type === 'cms.context.active.read') {
     chrome.tabs.query({ active: true, lastFocusedWindow: true })
       .then(([tab]) => sendResponse({
         tab: tab ? {
@@ -225,6 +285,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           title: tab.title || '',
           url: tab.url || '',
           status: tab.status || '',
+          platform: 'facebook',
           supported: isMessengerUrl(tab.url)
         } : null
       }))
@@ -232,22 +293,22 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 
-  if (message.type === 'OPEN_MESSENGER') {
+  if (command.type === 'cms.navigation.messenger.open') {
     chrome.tabs.create({ url: MESSENGER_URL })
       .then(tab => sendResponse({ ok: true, tabId: tab.id }))
       .catch(error => sendResponse({ ok: false, error: error.message }));
     return true;
   }
 
-  if (message.type === 'GET_ACCESS_STATE') {
+  if (command.type === 'cms.entitlement.state.read') {
     getAccessState()
       .then(access => sendResponse({ ok: true, access }))
       .catch(error => sendResponse({ ok: false, error: error.message }));
     return true;
   }
 
-  if (message.type === 'CHECK_LICENSE') {
-    getAccessState({ force: true, key: message.licenseKey })
+  if (command.type === 'cms.entitlement.license.verify') {
+    getAccessState({ force: true, key: command.licenseKey })
       .then(access => {
         broadcastAccessState(access);
         sendResponse({ ok: true, access });
@@ -256,14 +317,21 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 
-  if (message.type === 'RECORD_METERED_ACTION') {
-    recordMeteredAction()
+  if (command.type === 'cms.entitlement.usage.reserve') {
+    reserveUsageSlot()
       .then(result => sendResponse({ ok: true, ...result }))
       .catch(error => sendResponse({ ok: false, error: error.message }));
     return true;
   }
 
-  if (message.type === 'OPEN_PURCHASE') {
+  if (command.type === 'cms.entitlement.usage.release') {
+    releaseUsageSlot(command.reservationId)
+      .then(result => sendResponse({ ok: true, ...result }))
+      .catch(error => sendResponse({ ok: false, error: error.message }));
+    return true;
+  }
+
+  if (command.type === 'cms.commerce.checkout.open') {
     getLicenseKey().then(key => {
       const url = new URL(PURCHASE_URL);
       url.searchParams.set('lk', key);
@@ -273,15 +341,22 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 
-  if (message.type === 'OPEN_REVIEW') {
-    chrome.tabs.create({ url: REVIEW_URL })
+  if (command.type === 'cms.feedback.review.open') {
+    chrome.tabs.create({ url: `https://chromewebstore.google.com/detail/${REVIEW_EXTENSION_ID}/reviews` })
       .then(tab => sendResponse({ ok: true, tabId: tab.id }))
       .catch(error => sendResponse({ ok: false, error: error.message }));
     return true;
   }
 
-  if ((message.type === 'PAGE_STATE' || message.type === 'OPERATION_STATE') && sender.tab?.id) {
-    const payload = { ...message, tabId: sender.tab.id };
+  if (command.type === 'cms.companion.open') {
+    chrome.tabs.create({ url: `https://chromewebstore.google.com/detail/${FRIENDS_REMOVER_EXTENSION_ID}` })
+      .then(tab => sendResponse({ ok: true, tabId: tab.id }))
+      .catch(error => sendResponse({ ok: false, error: error.message }));
+    return true;
+  }
+
+  if ((command.type === 'cms.facebook.page.state' || command.type === 'cms.facebook.operation.state') && sender.tab?.id) {
+    const payload = { ...command, tabId: sender.tab.id };
     chrome.runtime.sendMessage(payload).catch(() => {});
   }
 

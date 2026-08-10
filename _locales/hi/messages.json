@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – सभी Facebook संदेश हटाएँ" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Facebook Messenger वार्तालापों को एक साथ हटाएँ और अपना इनबॉक्स जल्दी साफ करें।" }
+  "fbDailyLimitDescription": {
+    "message": "निःशुल्क योजना में प्रत्येक दिन कोई भी 20 सफ़ाई गतिविधियाँ शामिल हैं। असीमित सफ़ाई के लिए अपग्रेड करें।"
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook में प्रतिदिन 20 मुफ़्त बातचीत कार्रवाइयाँ शामिल हैं।"
+  },
+  "fbMilestoneMessage": {
+    "message": "आपने $1 बातचीत डिलीट की हैं!"
+  },
+  "milestoneTitle": {
+    "message": "बढ़िया काम!"
+  },
+  "milestoneReviewAsk": {
+    "message": "डीएम क्लीनर का आनंद ले रहे हैं? एक त्वरित समीक्षा दूसरों को इसे ढूंढने में मदद करती है।"
+  },
+  "footerReview": {
+    "message": "डीएम क्लीनर का आनंद ले रहे हैं? एक समीक्षा छोड़ें"
+  },
+  "fbPromoQuestion": {
+    "message": "क्या आपको अपनी मित्र सूची भी साफ़ करने की आवश्यकता है?"
+  },
+  "fbPromoName": {
+    "message": "फेसबुक के लिए मास फ्रेंड्स रिमूवर"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – सभी Facebook संदेश हटाएँ"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Facebook Messenger वार्तालापों को एक साथ हटाएँ और अपना इनबॉक्स जल्दी साफ करें।"
+  },
+  "panelTitle": {
+    "message": "मैसेंजर क्लीनर"
+  },
+  "checkingTab": {
+    "message": "वर्तमान टैब की जाँच हो रही है..."
+  },
+  "refresh": {
+    "message": "ताज़ा करें"
+  },
+  "openMessengerTitle": {
+    "message": "फेसबुक मैसेंजर खोलें"
+  },
+  "openMessengerDescription": {
+    "message": "बातचीत साफ़ करना शुरू करने के लिए मैसेंजर इनबॉक्स पर स्विच करें।"
+  },
+  "openMessengerButton": {
+    "message": "मैसेंजर खोलें"
+  },
+  "ready": {
+    "message": "तैयार"
+  },
+  "chooseAction": {
+    "message": "नीचे कोई क्रिया चुनें"
+  },
+  "stop": {
+    "message": "रुकें"
+  },
+  "inboxTools": {
+    "message": "इनबॉक्स उपकरण"
+  },
+  "bulkActions": {
+    "message": "थोक क्रियाएं"
+  },
+  "speed": {
+    "message": "गति"
+  },
+  "speedSafe": {
+    "message": "सुरक्षित"
+  },
+  "speedNormal": {
+    "message": "सामान्य"
+  },
+  "speedFast": {
+    "message": "तेज"
+  },
+  "deleteAll": {
+    "message": "सभी चैट हटाएं"
+  },
+  "deleteAllDescription": {
+    "message": "प्रत्येक दृश्यमान वार्तालाप को स्थायी रूप से हटा दें"
+  },
+  "archiveAll": {
+    "message": "सभी चैट संग्रहीत करें"
+  },
+  "archiveAllDescription": {
+    "message": "इनबॉक्स वार्तालापों को संग्रह में ले जाएँ"
+  },
+  "restoreAll": {
+    "message": "संग्रहीत चैट पुनर्स्थापित करें"
+  },
+  "restoreAllDescription": {
+    "message": "बातचीत को पुनर्स्थापित करने के लिए संग्रहीत चैट खोलें"
+  },
+  "keepTabVisible": {
+    "message": "मैसेंजर टैब को दृश्यमान रखें।"
+  },
+  "pauseNotice": {
+    "message": "जब आप दूर चले जाते हैं तो सफ़ाई सुरक्षित रूप से रुक जाती है और आपके लौटने पर फिर से शुरू हो जाती है।"
+  },
+  "localPrivacy": {
+    "message": "आपके ब्राउज़र में स्थानीय रूप से चलता है"
+  },
+  "noData": {
+    "message": "कोई संदेश डेटा एकत्र नहीं किया गया"
+  },
+  "confirmDeleteTitle": {
+    "message": "प्रत्येक वार्तालाप हटाएँ?"
+  },
+  "confirmDeleteDescription": {
+    "message": "इसे पूर्ववत नहीं किया जा सकता. मैसेंजर बातचीत और उनके संदेश इतिहास को स्थायी रूप से हटा सकता है।"
+  },
+  "confirmDeleteCheckbox": {
+    "message": "मैं समझता हूं कि यह कार्रवाई स्थायी है"
+  },
+  "cancel": {
+    "message": "रद्द करें"
+  },
+  "deleteNow": {
+    "message": "अभी हटाएं"
+  },
+  "connectedToMessenger": {
+    "message": "मैसेंजर से कनेक्ट किया गया"
+  },
+  "loadingMessenger": {
+    "message": "मैसेंजर लोड हो रहा है..."
+  },
+  "notOnMessenger": {
+    "message": "मैसेंजर सक्रिय नहीं है"
+  },
+  "noActiveTab": {
+    "message": "कोई सक्रिय टैब नहीं"
+  },
+  "openArchivedTooltip": {
+    "message": "बातचीत को पुनर्स्थापित करने के लिए संग्रहीत चैट खोलें"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "आर्काइव्ड चैट पर आर्काइविंग उपलब्ध नहीं है"
+  },
+  "working": {
+    "message": "कार्य करना"
+  },
+  "paused": {
+    "message": "रुका हुआ"
+  },
+  "complete": {
+    "message": "पूर्ण"
+  },
+  "stopped": {
+    "message": "रुक गया"
+  },
+  "error": {
+    "message": "त्रुटि"
+  },
+  "status": {
+    "message": "स्थिति"
+  },
+  "startFailed": {
+    "message": "कार्रवाई प्रारंभ नहीं हो सकी."
+  },
+  "starting": {
+    "message": "शुरू हो रहा है..."
+  },
+  "freeBadge": {
+    "message": "मुफ़्त"
+  },
+  "unlimitedBadge": {
+    "message": "असीमित"
+  },
+  "dailyFreeUsage": {
+    "message": "दैनिक निःशुल्क उपयोग"
+  },
+  "getUnlimited": {
+    "message": "असीमित प्राप्त करें"
+  },
+  "quotaExplanation": {
+    "message": "सभी Facebook और Instagram सफ़ाई कार्रवाइयों की सीमा प्रति दिन 10 है।"
+  },
+  "close": {
+    "message": "बंद करें"
+  },
+  "freePlanLimit": {
+    "message": "निःशुल्क योजना सीमा"
+  },
+  "dailyLimitTitle": {
+    "message": "आपकी 10 निःशुल्क कार्रवाइयाँ उपयोग की जाती हैं"
+  },
+  "dailyLimitDescription": {
+    "message": "निःशुल्क योजना में प्रत्येक दिन कोई भी 10 सफ़ाई गतिविधियाँ शामिल हैं। असीमित सफ़ाई के लिए अपग्रेड करें।"
+  },
+  "upgradeTitle": {
+    "message": "असीमित सफाई अनलॉक करें"
+  },
+  "upgradeDescription": {
+    "message": "जब भी आप चाहें दैनिक सीमा हटा दें और अपने सामाजिक खाते साफ़ करें।"
+  },
+  "unlimitedBenefit": {
+    "message": "असीमित सफ़ाई क्रियाएँ"
+  },
+  "allExtensionsBenefit": {
+    "message": "CleanMySocial बंडल तक पहुंच"
+  },
+  "lifetimeBenefit": {
+    "message": "एकमुश्त खरीदारी"
+  },
+  "getUnlimitedAccess": {
+    "message": "असीमित पहुंच प्राप्त करें"
+  },
+  "alreadyPurchased": {
+    "message": "पहले से ही खरीदा गया?"
+  },
+  "licensePlaceholder": {
+    "message": "लाइसेंस कुंजी"
+  },
+  "unlock": {
+    "message": "अनलॉक"
+  },
+  "checkingLicense": {
+    "message": "लाइसेंस की जाँच हो रही है…"
+  },
+  "licenseActivated": {
+    "message": "असीमित पहुंच सक्रिय।"
+  },
+  "licenseInvalid": {
+    "message": "वह लाइसेंस कुंजी सक्रिय नहीं है."
+  },
+  "batchComplete": {
+    "message": "बैच पूरा"
+  },
+  "reviewTitle": {
+    "message": "मैसेंजर क्लीनर का आनंद ले रहे हैं?"
+  },
+  "reviewDescription": {
+    "message": "एक त्वरित Chrome वेब स्टोर समीक्षा अधिक लोगों को एक्सटेंशन खोजने में मदद करती है।"
+  },
+  "maybeLater": {
+    "message": "शायद बाद में"
+  },
+  "leaveReview": {
+    "message": "एक समीक्षा छोड़ें"
+  },
+  "panelSubtitle": {
+    "message": "अपने फेसबुक चैट को एक साथ साफ़ करें"
+  },
+  "connectMessenger": {
+    "message": "मैसेंजर खोलें"
+  },
+  "connectDescription": {
+    "message": "इस पैनल के बगल वाले टैब में अपना मैसेंजर इनबॉक्स खोलें।"
+  },
+  "waiting": {
+    "message": "इंतज़ार कर रहा हूँ"
+  },
+  "connected": {
+    "message": "जुड़ा हुआ"
+  },
+  "loading": {
+    "message": "लोड हो रहा है"
+  },
+  "chooseCleanupAction": {
+    "message": "कोई क्रिया चुनें"
+  },
+  "actionDescription": {
+    "message": "चुनें कि मैसेंजर क्लीनर को आपकी बातचीत के साथ क्या करना चाहिए।"
+  },
+  "processTitle": {
+    "message": "बातचीत की प्रक्रिया करें"
+  },
+  "inboxView": {
+    "message": "इनबॉक्स"
+  },
+  "archivedView": {
+    "message": "संग्रहीत"
+  }
 }

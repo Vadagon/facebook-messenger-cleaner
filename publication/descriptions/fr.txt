@@ -15,7 +15,7 @@ Messenger Cleaner est une extension Chrome conçue pour supprimer des conversati
 Le traitement s’effectue localement dans votre navigateur et votre session Facebook existante. L’extension ne collecte ni contenu de messages, ni mots de passe, ni cookies, ni listes d’amis, ni données de conversation. Aucun suivi publicitaire ou comportemental n’est intégré.
 
 🎁 UTILISATION GRATUITE QUOTIDIENNE
-Effectuez jusqu’à 10 suppressions ou archivages réussis par jour. La restauration des discussions archivées est gratuite. Passez à l’accès illimité pour les nettoyages importants.
+Effectuez jusqu’à 20 suppressions, archivages ou restaurations par jour. Passez à l’accès illimité pour les nettoyages importants.
 
 ⚠️ IMPORTANT
 La suppression d’une conversation peut être définitive. Une confirmation explicite est toujours demandée avant la suppression. Gardez l’onglet Messenger visible pendant l’opération.

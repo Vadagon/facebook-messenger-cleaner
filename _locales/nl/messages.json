@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – Alle Facebook-berichten verwijderen" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "Verwijder Facebook Messenger-gesprekken in bulk en ruim je inbox sneller op." }
+  "fbDailyLimitDescription": {
+    "message": "Het gratis abonnement bevat dagelijks 20 verwijder-, archiveer- of herstelacties. Upgrade voor onbeperkt opruimen."
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook bevat 20 gratis gespreksacties per dag."
+  },
+  "fbMilestoneMessage": {
+    "message": "Je hebt $1 gesprekken verwijderd!"
+  },
+  "milestoneTitle": {
+    "message": "Goed gedaan!"
+  },
+  "milestoneReviewAsk": {
+    "message": "Tevreden met Messenger Cleaner? Een korte review helpt anderen de extensie te vinden."
+  },
+  "footerReview": {
+    "message": "Tevreden met Messenger Cleaner? Laat een review achter"
+  },
+  "fbPromoQuestion": {
+    "message": "Wil je ook je vriendenlijst opschonen?"
+  },
+  "fbPromoName": {
+    "message": "Mass Friends Remover for Facebook"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – Alle Facebook-berichten verwijderen"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "Verwijder Facebook Messenger-gesprekken in bulk en ruim je inbox sneller op."
+  },
+  "panelTitle": {
+    "message": "Messenger Cleaner"
+  },
+  "checkingTab": {
+    "message": "Huidig tabblad controleren..."
+  },
+  "refresh": {
+    "message": "Verversen"
+  },
+  "openMessengerTitle": {
+    "message": "Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "Schakel over naar een Messenger-inbox om gesprekken op te schonen."
+  },
+  "openMessengerButton": {
+    "message": "Open berichten"
+  },
+  "ready": {
+    "message": "Klaar"
+  },
+  "chooseAction": {
+    "message": "Kies hieronder een actie"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "inboxTools": {
+    "message": "INBOX-TOOLS"
+  },
+  "bulkActions": {
+    "message": "Bulkacties"
+  },
+  "speed": {
+    "message": "Snelheid"
+  },
+  "speedSafe": {
+    "message": "veilig "
+  },
+  "speedNormal": {
+    "message": "Normaal"
+  },
+  "speedFast": {
+    "message": "Snel"
+  },
+  "deleteAll": {
+    "message": "Alle chats verwijderen"
+  },
+  "deleteAllDescription": {
+    "message": "Verwijder permanent elk zichtbaar gesprek"
+  },
+  "archiveAll": {
+    "message": "Alle chats archiveren"
+  },
+  "archiveAllDescription": {
+    "message": "Verplaats inboxgesprekken naar het archief"
+  },
+  "restoreAll": {
+    "message": "Gearchiveerde chats herstellen"
+  },
+  "restoreAllDescription": {
+    "message": "Gearchiveerde chats openen om gesprekken te herstellen"
+  },
+  "keepTabVisible": {
+    "message": "Houd het tabblad Messenger zichtbaar."
+  },
+  "pauseNotice": {
+    "message": "Het schoonmaken pauzeert veilig wanneer je weggaat en wordt hervat wanneer je terugkeert."
+  },
+  "localPrivacy": {
+    "message": "Wordt lokaal uitgevoerd in uw browser"
+  },
+  "noData": {
+    "message": "Geen berichtgegevens verzameld"
+  },
+  "confirmDeleteTitle": {
+    "message": "Elk gesprek verwijderen?"
+  },
+  "confirmDeleteDescription": {
+    "message": "Dit kan niet ongedaan worden gemaakt. Messenger kan de gesprekken en hun berichtgeschiedenis permanent verwijderen."
+  },
+  "confirmDeleteCheckbox": {
+    "message": "Ik begrijp dat deze actie permanent is"
+  },
+  "cancel": {
+    "message": "Annuleren"
+  },
+  "deleteNow": {
+    "message": "Nu verwijderen"
+  },
+  "connectedToMessenger": {
+    "message": "Verbonden met Messenger"
+  },
+  "loadingMessenger": {
+    "message": "Messenger laden..."
+  },
+  "notOnMessenger": {
+    "message": "Messenger is niet actief"
+  },
+  "noActiveTab": {
+    "message": "Actieve tab"
+  },
+  "openArchivedTooltip": {
+    "message": "Gearchiveerde chats openen om gesprekken te herstellen"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "Archiveren is niet beschikbaar in gearchiveerde chats"
+  },
+  "working": {
+    "message": "Samen-"
+  },
+  "paused": {
+    "message": "Tijdelijk gestopt"
+  },
+  "complete": {
+    "message": "Voltooid"
+  },
+  "stopped": {
+    "message": "Gestopt"
+  },
+  "error": {
+    "message": "Fout"
+  },
+  "status": {
+    "message": "Status"
+  },
+  "startFailed": {
+    "message": "Kon de bewerking niet starten."
+  },
+  "starting": {
+    "message": "Starten…"
+  },
+  "freeBadge": {
+    "message": "GRATIS"
+  },
+  "unlimitedBadge": {
+    "message": "ONBEPERKT"
+  },
+  "dailyFreeUsage": {
+    "message": "Dagelijks gratis gebruik"
+  },
+  "getUnlimited": {
+    "message": "KRIJG ONBEPERKT"
+  },
+  "quotaExplanation": {
+    "message": "Verwijderingen en archieven delen een limiet van 10 per dag."
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "freePlanLimit": {
+    "message": "GRATIS ABONNEMENTLIMIET"
+  },
+  "dailyLimitTitle": {
+    "message": "Je 10 gratis acties worden gebruikt"
+  },
+  "dailyLimitDescription": {
+    "message": "Het gratis abonnement bevat elke dag 10 verwijderingen of archieven. Upgrade voor onbeperkt schoonmaken."
+  },
+  "upgradeTitle": {
+    "message": "Onbeperkt schoonmaken ontgrendelen"
+  },
+  "upgradeDescription": {
+    "message": "Verwijder de dagelijkse limiet en maak je sociale accounts schoon wanneer je maar wilt."
+  },
+  "unlimitedBenefit": {
+    "message": "Onbeperkt verwijderen en archiveren"
+  },
+  "allExtensionsBenefit": {
+    "message": "Toegang tot de CleanMySocial-bundel"
+  },
+  "lifetimeBenefit": {
+    "message": "Eenmalige aankoop"
+  },
+  "getUnlimitedAccess": {
+    "message": "Onbeperkte toegang"
+  },
+  "alreadyPurchased": {
+    "message": "Al gekocht?"
+  },
+  "licensePlaceholder": {
+    "message": "Licentiesleutel"
+  },
+  "unlock": {
+    "message": "Ontgrendelen"
+  },
+  "checkingLicense": {
+    "message": "Licentie controleren"
+  },
+  "licenseActivated": {
+    "message": "Onbeperkte toegang geactiveerd."
+  },
+  "licenseInvalid": {
+    "message": "licentiesleutel is niet actief."
+  },
+  "batchComplete": {
+    "message": "CHARGE VOLTOOID"
+  },
+  "reviewTitle": {
+    "message": "Geniet je van Messenger Cleaner?"
+  },
+  "reviewDescription": {
+    "message": "Een snelle Chrome Web Store-beoordeling helpt meer mensen de extensie te ontdekken."
+  },
+  "maybeLater": {
+    "message": "Misschien later"
+  },
+  "leaveReview": {
+    "message": "Beoordeling achterlaten"
+  },
+  "panelSubtitle": {
+    "message": "Maak je Facebook-chats in bulk schoon"
+  },
+  "connectMessenger": {
+    "message": "Open berichten"
+  },
+  "connectDescription": {
+    "message": "Open je Messenger-inbox in het tabblad naast dit paneel."
+  },
+  "waiting": {
+    "message": "Wachten.."
+  },
+  "connected": {
+    "message": "Verbonden"
+  },
+  "loading": {
+    "message": "Aan het laden"
+  },
+  "chooseCleanupAction": {
+    "message": "De handeling selecteren"
+  },
+  "actionDescription": {
+    "message": "Kies wat Messenger Cleaner met je gesprekken moet doen."
+  },
+  "processTitle": {
+    "message": "Procesgesprekken"
+  },
+  "inboxView": {
+    "message": "Inbox"
+  },
+  "archivedView": {
+    "message": "Is gearchiveerd"
+  }
 }

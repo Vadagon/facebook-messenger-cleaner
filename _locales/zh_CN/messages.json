@@ -1,5 +1,278 @@
 {
-  "extensionName": { "message": "Messenger Cleaner – 删除所有 Facebook 消息" },
-  "extensionShortName": { "message": "Messenger Cleaner" },
-  "extensionDescription": { "message": "批量删除 Facebook Messenger 对话和不需要的消息，更快清理收件箱。" }
+  "fbDailyLimitDescription": {
+    "message": "免费计划包括每天任意 20 次清理操作。升级后可无限次清洁。"
+  },
+  "fbQuotaExplanation": {
+    "message": "Facebook 每天提供 20 次免费会话操作。"
+  },
+  "fbMilestoneMessage": {
+    "message": "您已删除 $1 个会话！"
+  },
+  "milestoneTitle": {
+    "message": "干得好！"
+  },
+  "milestoneReviewAsk": {
+    "message": "喜欢 Messenger Cleaner 吗？快速查看可以帮助其他人找到它。"
+  },
+  "footerReview": {
+    "message": "喜欢 Messenger Cleaner 吗？发表评论"
+  },
+  "fbPromoQuestion": {
+    "message": "还需要清理您的好友列表吗？"
+  },
+  "fbPromoName": {
+    "message": "Facebook 的群发好友删除器"
+  },
+  "extensionName": {
+    "message": "Messenger Cleaner – 删除所有 Facebook 消息"
+  },
+  "extensionShortName": {
+    "message": "Messenger Cleaner"
+  },
+  "extensionDescription": {
+    "message": "批量删除 Facebook Messenger 对话和不需要的消息，更快清理收件箱。"
+  },
+  "panelTitle": {
+    "message": "信使清洁工"
+  },
+  "checkingTab": {
+    "message": "检查当前选项卡..."
+  },
+  "refresh": {
+    "message": "刷新"
+  },
+  "openMessengerTitle": {
+    "message": "打开 Facebook Messenger"
+  },
+  "openMessengerDescription": {
+    "message": "切换到 Messenger 收件箱以开始清理对话。"
+  },
+  "openMessengerButton": {
+    "message": "打开 Messenger"
+  },
+  "ready": {
+    "message": "准备好了"
+  },
+  "chooseAction": {
+    "message": "选择下面的一个操作"
+  },
+  "stop": {
+    "message": "停止"
+  },
+  "inboxTools": {
+    "message": "收件箱工具"
+  },
+  "bulkActions": {
+    "message": "批量操作"
+  },
+  "speed": {
+    "message": "速度"
+  },
+  "speedSafe": {
+    "message": "安全"
+  },
+  "speedNormal": {
+    "message": "正常"
+  },
+  "speedFast": {
+    "message": "快"
+  },
+  "deleteAll": {
+    "message": "删除所有聊天记录"
+  },
+  "deleteAllDescription": {
+    "message": "永久删除所有可见对话"
+  },
+  "archiveAll": {
+    "message": "存档所有聊天记录"
+  },
+  "archiveAllDescription": {
+    "message": "将收件箱对话移至存档"
+  },
+  "restoreAll": {
+    "message": "恢复存档的聊天记录"
+  },
+  "restoreAllDescription": {
+    "message": "打开存档的聊天记录以恢复对话"
+  },
+  "keepTabVisible": {
+    "message": "保持“Messenger”选项卡可见。"
+  },
+  "pauseNotice": {
+    "message": "当您离开时，清洁工作会安全暂停，并在您返回时继续进行。"
+  },
+  "localPrivacy": {
+    "message": "在您的浏览器中本地运行"
+  },
+  "noData": {
+    "message": "未收集消息数据"
+  },
+  "confirmDeleteTitle": {
+    "message": "删除所有对话？"
+  },
+  "confirmDeleteDescription": {
+    "message": "此操作无法撤消。 Messenger 可能会永久删除对话及其消息历史记录。"
+  },
+  "confirmDeleteCheckbox": {
+    "message": "我了解此操作是永久性的"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "deleteNow": {
+    "message": "立即删除"
+  },
+  "connectedToMessenger": {
+    "message": "已连接至 Messenger"
+  },
+  "loadingMessenger": {
+    "message": "正在加载 Messenger..."
+  },
+  "notOnMessenger": {
+    "message": "Messenger 未激活"
+  },
+  "noActiveTab": {
+    "message": "没有活动选项卡"
+  },
+  "openArchivedTooltip": {
+    "message": "打开存档的聊天记录以恢复对话"
+  },
+  "archiveUnavailableTooltip": {
+    "message": "存档聊天无法存档"
+  },
+  "working": {
+    "message": "工作"
+  },
+  "paused": {
+    "message": "已暂停"
+  },
+  "complete": {
+    "message": "完成"
+  },
+  "stopped": {
+    "message": "已停止"
+  },
+  "error": {
+    "message": "错误"
+  },
+  "status": {
+    "message": "状态"
+  },
+  "startFailed": {
+    "message": "无法启动操作。"
+  },
+  "starting": {
+    "message": "开始…"
+  },
+  "freeBadge": {
+    "message": "免费"
+  },
+  "unlimitedBadge": {
+    "message": "无限"
+  },
+  "dailyFreeUsage": {
+    "message": "每日免费使用"
+  },
+  "getUnlimited": {
+    "message": "获得无限"
+  },
+  "quotaExplanation": {
+    "message": "所有 Facebook 和 Instagram 清理操作每天的限额均为 10 次。"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "freePlanLimit": {
+    "message": "免费计划限制"
+  },
+  "dailyLimitTitle": {
+    "message": "您的 10 个免费操作已使用"
+  },
+  "dailyLimitDescription": {
+    "message": "免费计划包括每天任意 10 次清理操作。升级后可无限次清洁。"
+  },
+  "upgradeTitle": {
+    "message": "解锁无限清洁"
+  },
+  "upgradeDescription": {
+    "message": "删除每日限制并随时清理您的社交帐户。"
+  },
+  "unlimitedBenefit": {
+    "message": "无限的清理动作"
+  },
+  "allExtensionsBenefit": {
+    "message": "访问 CleanMySocial 捆绑包"
+  },
+  "lifetimeBenefit": {
+    "message": "一次性购买"
+  },
+  "getUnlimitedAccess": {
+    "message": "获得无限制的访问权限"
+  },
+  "alreadyPurchased": {
+    "message": "已经购买了？"
+  },
+  "licensePlaceholder": {
+    "message": "许可证密钥"
+  },
+  "unlock": {
+    "message": "解锁"
+  },
+  "checkingLicense": {
+    "message": "正在检查许可证..."
+  },
+  "licenseActivated": {
+    "message": "已激活无限制访问。"
+  },
+  "licenseInvalid": {
+    "message": "该许可证密钥未激活。"
+  },
+  "batchComplete": {
+    "message": "批次完成"
+  },
+  "reviewTitle": {
+    "message": "喜欢 Messenger Cleaner 吗？"
+  },
+  "reviewDescription": {
+    "message": "Chrome 网上应用店的快速评论可以帮助更多人发现该扩展程序。"
+  },
+  "maybeLater": {
+    "message": "也许稍后"
+  },
+  "leaveReview": {
+    "message": "发表评论"
+  },
+  "panelSubtitle": {
+    "message": "批量清理您的 Facebook 聊天记录"
+  },
+  "connectMessenger": {
+    "message": "打开 Messenger"
+  },
+  "connectDescription": {
+    "message": "在此面板旁边的选项卡中打开您的 Messenger 收件箱。"
+  },
+  "waiting": {
+    "message": "等待"
+  },
+  "connected": {
+    "message": "已连接"
+  },
+  "loading": {
+    "message": "加载中"
+  },
+  "chooseCleanupAction": {
+    "message": "选择一个动作"
+  },
+  "actionDescription": {
+    "message": "选择 Messenger Cleaner 应如何处理您的对话。"
+  },
+  "processTitle": {
+    "message": "处理对话"
+  },
+  "inboxView": {
+    "message": "收件箱"
+  },
+  "archivedView": {
+    "message": "已存档"
+  }
 }

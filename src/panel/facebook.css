@@ -1,3 +1,4 @@
+.react-panel-root{display:contents}
 :root {
   color-scheme: light;
   --ink: #192033;
@@ -33,17 +34,18 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .upgrade-badge.unlimited { color: var(--green); border-color: #b8dfce; background: var(--green-soft); cursor: default; }
 
 main { padding: 10px 8px 16px; }
-.card { margin-top: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 17px; background: #fff; box-shadow: 0 4px 16px rgba(23,36,65,.045); }
-.step-card { transition: border-color .2s, box-shadow .2s, background .2s; }
+.card { margin-top: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 15px; background: #fff; box-shadow: 0 8px 24px rgba(23,36,65,.04); }
+.step-card { position: relative; margin-left: 14px; border-left-width: 3px; transition: border-color .2s, box-shadow .2s, background .2s; }
 .step-card.step-disabled { color: #6f7786; background: #fafbfc; border-color: #e7eaf0; }
-.step-card.step-active { border-color: #a8c9f5; box-shadow: 0 0 0 2px rgba(24,119,242,.09), 0 7px 20px rgba(23,36,65,.055); }
-.step-card.step-done { background: #fff; }
+.step-card.step-active { border-color: #72aaf3; box-shadow: 0 8px 28px rgba(24,119,242,.10); }
+.step-card.step-done { border-left-color: #2f9b70; background: #fff; }
 .step-title { display: flex; align-items: center; gap: 10px; }
 .step-title h2 { min-width: 0; flex: 1; margin: 0; font-size: 16px; line-height: 1.25; letter-spacing: -.25px; }
-.step-number { width: 29px; height: 29px; flex: none; display: grid; place-items: center; border-radius: 9px; color: #fff; background: linear-gradient(135deg, var(--blue), #57a0ff); font-size: 13px; font-weight: 850; }
+.step-number { position: absolute; left: -18px; top: 12px; width: 31px; height: 31px; flex: none; display: grid; place-items: center; border: 3px solid var(--bg); border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--blue), #57a0ff); font-size: 12px; font-weight: 850; box-shadow: 0 3px 10px rgba(24,119,242,.18); }
+.step-title h2 { padding-left: 8px; }
 .step-disabled .step-number { color: #6f7786; background: #e5e8ee; }
 .step-done .step-number { background: linear-gradient(135deg, #187a55, #43ad80); }
-.step-badge { max-width: 42%; flex: none; padding: 5px 8px; border-radius: 8px; color: #185cae; background: #e8f2ff; text-align: center; font-size: 10px; font-weight: 800; line-height: 1.25; }
+.step-badge { max-width: 42%; flex: none; padding: 5px 8px; border-radius: 999px; color: #185cae; background: #e8f2ff; text-align: center; font-size: 10px; font-weight: 800; line-height: 1.25; }
 .step-badge.ok { color: var(--green); background: var(--green-soft); }
 .step-badge.waiting { color: #626b7a; background: #eef0f4; }
 .step-copy { margin: 11px 0 13px; color: var(--muted); font-size: 12px; line-height: 1.45; }
@@ -98,10 +100,16 @@ main { padding: 10px 8px 16px; }
 .notice { display: flex; gap: 9px; margin-top: 10px; padding: 10px 11px; color: #735315; background: #fffaf0; border: 1px solid #eed9ac; border-radius: 12px; }
 .notice > span { width: 18px; height: 18px; flex: none; display: grid; place-items: center; border-radius: 50%; color: #fff; background: #d49725; font-size: 11px; font-weight: 900; }
 .notice p { margin: 0; font-size: 9px; line-height: 1.45; }
-footer { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 8px 0; color: #7c8491; font-size: 9px; }
+footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px; padding: 13px 8px 0; color: #7c8491; font-size: 9px; }
 footer p { margin: 0; text-align: center; }
 footer p > span:first-child { color: var(--blue); }
 #extensionVersion { flex: none; font-weight: 750; }
+.footer-review { flex-basis: 100%; padding: 3px 7px; border: 0; color: var(--blue-dark); background: transparent; font-size: 10px; font-weight: 750; text-decoration: underline; }
+.footer-promotion { flex-basis: 100%; display: flex; align-items: center; gap: 9px; padding: 9px; border: 1px solid #dce5f2; border-radius: 12px; color: var(--ink); background: #fff; text-align: left; }
+.footer-promotion img { width: 34px; height: 34px; flex: none; border-radius: 9px; }
+.footer-promotion span { min-width: 0; display: flex; flex-direction: column; }
+.footer-promotion small { color: var(--muted); font-size: 9px; }
+.footer-promotion strong { color: var(--blue-dark); font-size: 11px; }
 
 .primary-button, .danger-button, .secondary-button { width: 100%; padding: 11px 13px; border: 0; border-radius: 10px; font-size: 12px; font-weight: 800; }
 .primary-button { color: #fff; background: linear-gradient(105deg, var(--blue-dark), var(--blue)); box-shadow: 0 7px 18px rgba(24,119,242,.22); }
