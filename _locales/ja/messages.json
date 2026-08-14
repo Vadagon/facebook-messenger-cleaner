@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"$1の会話をアーカイブしました！"},
+  "fbRestoreMilestoneMessage": {"message":"$1の会話を復元しました！"},
   "fbDailyLimitDescription": {
     "message": "無料プランには、毎日 20 回のクリーンアップ アクションが含まれています。アップグレードすると、無制限のクリーニングが可能になります。"
   },

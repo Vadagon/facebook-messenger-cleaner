@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Вы заархивировали $1 беседы!"},
+  "fbRestoreMilestoneMessage": {"message":"Вы восстановили $1 беседы!"},
   "fbDailyLimitDescription": {
     "message": "Бесплатный план включает в себя любые 20 действий по уборке каждый день. Обновите для неограниченной уборки."
   },

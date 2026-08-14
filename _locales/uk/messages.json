@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Ви заархівували $1 розмови!"},
+  "fbRestoreMilestoneMessage": {"message":"Ви відновили $1 розмови!"},
   "fbDailyLimitDescription": {
     "message": "Безкоштовний план включає 20 видалень, архівувань або відновлень на день. Оновіть для необмеженого очищення."
   },

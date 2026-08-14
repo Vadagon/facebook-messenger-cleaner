@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Bạn đã lưu trữ các cuộc trò chuyện $1!"},
+  "fbRestoreMilestoneMessage": {"message":"Bạn đã khôi phục các cuộc trò chuyện $1!"},
   "fbDailyLimitDescription": {
     "message": "Gói miễn phí bao gồm 20 hành động dọn dẹp bất kỳ mỗi ngày. Nâng cấp để làm sạch không giới hạn."
   },

@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"您已将$1对话存档！"},
+  "fbRestoreMilestoneMessage": {"message":"您已恢复$1对话！"},
   "fbDailyLimitDescription": {
     "message": "免费计划包括每天任意 20 次清理操作。升级后可无限次清洁。"
   },

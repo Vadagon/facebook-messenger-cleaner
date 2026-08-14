@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"¡Has archivado $1 conversaciones!"},
+  "fbRestoreMilestoneMessage": {"message":"¡Has restablecido $1 conversaciones!"},
   "fbDailyLimitDescription": {
     "message": "El plan gratuito incluye 20 acciones de limpieza cada día. Actualice para una limpieza ilimitada."
   },

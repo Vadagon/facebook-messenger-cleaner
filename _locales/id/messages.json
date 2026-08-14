@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Anda telah mengarsipkan percakapan $1!"},
+  "fbRestoreMilestoneMessage": {"message":"Anda telah memulihkan $1 percakapan!"},
   "fbDailyLimitDescription": {
     "message": "Paket gratis mencakup 20 tindakan pembersihan setiap hari. Tingkatkan untuk pembersihan tanpa batas."
   },

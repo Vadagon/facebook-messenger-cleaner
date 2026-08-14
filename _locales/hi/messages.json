@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"आपने $1 वार्तालापों को संग्रहीत किया है!"},
+  "fbRestoreMilestoneMessage": {"message":"आपने $1 वार्तालापों को बहाल कर दिया है!"},
   "fbDailyLimitDescription": {
     "message": "निःशुल्क योजना में प्रत्येक दिन कोई भी 20 सफ़ाई गतिविधियाँ शामिल हैं। असीमित सफ़ाई के लिए अपग्रेड करें।"
   },

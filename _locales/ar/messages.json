@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"لقد قمت بأرشفة $1 محادثات!"},
+  "fbRestoreMilestoneMessage": {"message":"لقد قمت باستعادة محادثات $1!"},
   "fbDailyLimitDescription": {
     "message": "تتضمن الخطة المجانية أي 20 إجراءات تنظيف كل يوم. الترقية لتنظيف غير محدود."
   },

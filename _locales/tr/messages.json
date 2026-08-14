@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"$1 sohbeti arşivlediniz!"},
+  "fbRestoreMilestoneMessage": {"message":"$1 sohbeti geri yüklediniz!"},
   "fbDailyLimitDescription": {
     "message": "Ücretsiz plan, her gün 20 temizleme eylemini içerir. Sınırsız temizlik için yükseltme yapın."
   },

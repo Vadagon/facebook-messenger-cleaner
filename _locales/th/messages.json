@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"คุณได้เก็บ $1 บทสนทนาเรียบร้อยแล้ว!"},
+  "fbRestoreMilestoneMessage": {"message":"คุณกู้คืนบทสนทนา $1 แล้ว!"},
   "fbDailyLimitDescription": {
     "message": "แผนฟรีมีการลบ เก็บถาวร หรือกู้คืน 20 ครั้งต่อวัน อัปเกรดเพื่อใช้งานแบบไม่จำกัด"
   },

@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"شما مکالمات $1 را بایگانی کرده‌اید!"},
+  "fbRestoreMilestoneMessage": {"message":"شما مکالمات $1 را بازیابی کردید!"},
   "fbDailyLimitDescription": {
     "message": "طرح رایگان شامل ۲۰ حذف، بایگانی یا بازیابی در روز است. برای استفاده نامحدود ارتقا دهید."
   },

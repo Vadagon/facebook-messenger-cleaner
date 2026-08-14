@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": { "message": "You’ve archived $1 conversations!", "description": "$1 = milestone count" },
+  "fbRestoreMilestoneMessage": { "message": "You’ve restored $1 conversations!", "description": "$1 = milestone count" },
   "fbDailyLimitDescription": {
     "message": "The free plan includes any 20 cleanup actions each day. Upgrade for unlimited cleaning."
   },

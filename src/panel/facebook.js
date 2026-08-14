@@ -93,12 +93,12 @@ function operationName(operation) {
 }
 
 function enqueueFacebookMilestone(operation) {
-  if (operation?.operation !== 'delete' || !operation.operationId) return;
+  if (!['delete', 'archive', 'unarchive'].includes(operation?.operation) || !operation.operationId) return;
   for (const milestone of MILESTONES) {
     const key = `${operation.operationId}:${milestone}`;
     if ((operation.processed || 0) >= milestone && !celebratedMilestones.has(key)) {
       celebratedMilestones.add(key);
-      celebrationQueue.push(milestone);
+      celebrationQueue.push({ milestone, operation: operation.operation });
     }
   }
   presentFacebookMilestone();
@@ -106,10 +106,13 @@ function enqueueFacebookMilestone(operation) {
 
 function presentFacebookMilestone() {
   if (celebrationOpen || !celebrationQueue.length) return;
-  const milestone = celebrationQueue.shift();
+  const { milestone, operation } = celebrationQueue.shift();
+  const messageKey = operation === 'archive'
+    ? 'fbArchiveMilestoneMessage'
+    : operation === 'unarchive' ? 'fbRestoreMilestoneMessage' : 'fbMilestoneMessage';
   celebrationOpen = true;
   ui.milestoneHeading.textContent = i18nText('milestoneTitle');
-  ui.milestoneCopy.textContent = i18nText('fbMilestoneMessage', [String(milestone)]);
+  ui.milestoneCopy.textContent = i18nText(messageKey, [String(milestone)]);
   ui.milestoneDialog.showModal();
 }
 

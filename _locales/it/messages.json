@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Hai archiviato le conversazioni di $1!"},
+  "fbRestoreMilestoneMessage": {"message":"Hai ripristinato le conversazioni $1!"},
   "fbDailyLimitDescription": {
     "message": "Il piano gratuito include 20 eliminazioni, archiviazioni o ripristini al giorno. Esegui l’upgrade per una pulizia illimitata."
   },

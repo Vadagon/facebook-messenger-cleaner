@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"您已將$1對話封存！"},
+  "fbRestoreMilestoneMessage": {"message":"您已恢復$1對話！"},
   "fbDailyLimitDescription": {
     "message": "免費方案每天包含 20 次刪除、封存或還原操作。升級後即可無限制清理。"
   },

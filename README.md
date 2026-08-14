@@ -36,7 +36,7 @@ The supplied artwork is included at 16, 32, 48, and 128 px under `icons/` and is
 - Delete is permanent and requires an explicit confirmation in the side panel.
 - Free access includes 20 successful delete, archive, or restore actions per local calendar day.
 - A CleanMySocial license removes the daily limit. Checkout and license validation use `cleanmysocial.verblike.com`. The check asks as `facebook-messenger-cleaner`, not the shared `cleanmysocial` group, so a licence bought for another tool does not unlock this one.
-- Deletion milestones at 10, 50, 100, 500, and 1,000 conversations show a congratulations and review prompt.
+- Delete, archive, and restore milestones at 10, 50, 100, 500, and 1,000 conversations show a congratulations and review prompt.
 - After the review link is opened, the footer promotes Mass Friends Remover for Facebook.
 - Operations pause while their Messenger tab is hidden and resume when the tab becomes visible.
 - The panel follows active-tab changes, full navigations, and Messenger single-page navigations.

@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Zarchiwizowano rozmowy $1!"},
+  "fbRestoreMilestoneMessage": {"message":"Rozmowy $1 zostały przywrócone!"},
   "fbDailyLimitDescription": {
     "message": "Bezpłatny plan obejmuje 20 usunięć, archiwizacji lub przywróceń dziennie. Uaktualnij, aby korzystać bez limitu."
   },

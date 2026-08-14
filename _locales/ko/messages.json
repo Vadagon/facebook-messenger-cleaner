@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"$1 개의 대화를 보관하셨습니다!"},
+  "fbRestoreMilestoneMessage": {"message":"$1 대화를 복원했습니다!"},
   "fbDailyLimitDescription": {
     "message": "무료 플랜에는 매일 20가지 정리 작업이 포함됩니다. 무제한 청소를 위해 업그레이드하세요."
   },

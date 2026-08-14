@@ -1,4 +1,6 @@
 {
+  "fbArchiveMilestoneMessage": {"message":"Je hebt $1 gesprekken gearchiveerd!"},
+  "fbRestoreMilestoneMessage": {"message":"Je hebt $1 gesprekken hersteld!"},
   "fbDailyLimitDescription": {
     "message": "Het gratis abonnement bevat dagelijks 20 verwijder-, archiveer- of herstelacties. Upgrade voor onbeperkt opruimen."
   },
