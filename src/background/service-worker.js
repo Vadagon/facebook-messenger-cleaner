@@ -1,10 +1,10 @@
 const MESSENGER_URL = 'https://www.facebook.com/messages/';
-const PURCHASE_URL = 'https://cleanmysocial.verblike.com/';
+const PURCHASE_URL = 'https://cleanmysocial.com/facebook-messenger-cleaner';
 const REVIEW_EXTENSION_ID = 'imobgpikmofiapbnijmebknbkmkncdkl';
 const FRIENDS_REMOVER_EXTENSION_ID = 'fegkbiinmaoipoonnlhekdoefgebmdnj';
 // Identify this extension specifically, so the server can tell which tool is
 // asking. Asking as 'cleanmysocial' means any purchase unlocks everything.
-const LICENSE_API = 'https://cleanmysocial.verblike.com/api/license?extension=facebook-messenger-cleaner&key=';
+const LICENSE_API = 'https://cleanmysocial.com/api/license?extension=facebook-messenger-cleaner&key=';
 const LICENSE_KEY_STORAGE = 'cms.entitlement.identity';
 const DAILY_USAGE_STORAGE = 'cms.entitlement.dailyMeter';
 const LICENSE_CACHE_STORAGE = 'cms.entitlement.verificationCache';

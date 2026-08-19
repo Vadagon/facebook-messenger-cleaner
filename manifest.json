@@ -3,7 +3,7 @@
   "name": "__MSG_extensionName__",
   "short_name": "__MSG_extensionShortName__",
   "description": "__MSG_extensionDescription__",
-  "version": "53",
+  "version": "54",
   "default_locale": "en",
   "minimum_chrome_version": "114",
   "icons": {
@@ -23,7 +23,7 @@
     "https://web.facebook.com/*",
     "https://m.facebook.com/*",
     "https://www.messenger.com/*",
-    "https://cleanmysocial.verblike.com/*"
+    "https://cleanmysocial.com/*"
   ],
   "background": {
     "service_worker": "src/background/service-worker.js",
